@@ -1,0 +1,76 @@
+# Torched Earth — site settings.
+# Everything the bot and the site builder need to know that isn't a news source.
+# Edit here, commit, and the next daily run picks it up.
+
+site_name: Torched Earth
+tagline: Climate change is in the news every day.
+domain: torchedearth.org
+base_url: https://torchedearth.org
+timezone: America/Los_Angeles
+
+# --- Front page rules ---------------------------------------------------
+homepage_days: 28            # a story stays on the front page this many days, then lives on its section page
+homepage_max: 150            # hard cap on front-page links (Drudge runs ~150)
+min_relevance: 6             # classifier's 0-10 "is this about climate?"; below this the item is discarded
+min_score_homepage: 4        # importance 1-10 needed to make the front page
+homepage_types: [substantive, technical]   # clickbait and reprints skip the front page but stay in the archive
+
+# --- Taxonomy -----------------------------------------------------------
+sections:
+  causes: Causes
+  effects: Effects
+  solutions: Solutions
+  other: Elsewhere
+types:                       # the label shown next to a headline ("" = no label)
+  technical: Study
+  substantive: ""
+  clickbait: Clickbait
+  reprint: Reprint
+
+# Domains treated as paywalled when a story arrives via a Google News search
+# (sources in feeds.yml carry their own paywall flag).
+paywalled_domains:
+  - nytimes.com
+  - wsj.com
+  - washingtonpost.com
+  - bloomberg.com
+  - ft.com
+  - economist.com
+  - theatlantic.com
+  - newyorker.com
+  - heatmap.news
+  - eenews.net
+  - latimes.com
+  - thetimes.com
+  - telegraph.co.uk
+  - seattletimes.com
+  - newscientist.com
+  - nature.com
+  - science.org
+
+# --- Classifier -----------------------------------------------------------
+llm:
+  provider: gemini             # gemini | anthropic | openai | xai  (override with env LLM_PROVIDER)
+  models:                      # override with env LLM_MODEL; check each provider for current names
+    gemini: gemini-3.1-flash-lite
+    anthropic: claude-haiku-4-5-20251001
+    openai: gpt-5-mini
+    xai: grok-4-fast
+  batch_size: 25               # headlines per request; ~20 requests/day at 500 headlines
+  pause_seconds: 7             # keeps the free Gemini tier under its ~10 requests/minute limit
+
+# --- Fetching -------------------------------------------------------------
+fetch:
+  google_news_window: 2d       # Google News search window (when:2d)
+  google_news_per_query: 40    # cap per query; feeds return up to 100
+  resolve_workers: 12          # parallel lookups when unwrapping Google's redirect links
+  default_weight: 5            # ranking weight for sources not in feeds.yml
+
+# --- Newsletter & social --------------------------------------------------
+newsletter_url: "https://buttondown.com/torchedearth"   # placeholder: your signup page
+newsletter_embed: ""            # optional: paste the provider's embed HTML to show a form on the site
+newsletter_top_n: 10
+social:
+  posts_per_day: 5
+  bluesky_handle: ""            # e.g. torchedearth.org (shown in footer once set)
+  mastodon_url: ""              # e.g. https://mastodon.social/@torchedearth

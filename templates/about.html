@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="prose">
+<p class="intro">People say that if climate change were really such a big deal, it would be in the news every day. It is. This site is the proof: a plain list of the day's climate stories, from the outlets you already know, with a link to each one.</p>
+<h2>How it works</h2>
+<p>Each morning a program reads the feeds of about thirty news outlets and runs a set of Google News searches. A language model reads every headline and keeps the ones that are about climate change, sorts each into <a href="{{ base }}causes/">Causes</a>, <a href="{{ base }}effects/">Effects</a>, <a href="{{ base }}solutions/">Solutions</a> or <a href="{{ base }}other/">Elsewhere</a>, notes whether it is original reporting, a study, a reprint or clickbait, and writes a one-sentence summary. When many outlets cover the same story, it appears once, with the others under "Also".</p>
+<p>A story stays on the front page for about four weeks, then lives on its section page. Everything stays in the <a href="{{ base }}archive/">archive</a>, which is searchable.</p>
+<h2>What it is not</h2>
+<p>It is not a news site. Nothing here is written by a reporter; the headlines are the publishers' own and the links go to them. Read the article, not the summary. The sorting is done by software and will sometimes be wrong; when it is, the story will still be there, just in the wrong column.</p>
+<h2>The newsletter</h2>
+<p>On Sundays the ten highest-ranked stories of the week go out by email. <a href="{{ site.newsletter_url }}">Subscribe here</a>.</p>
+<h2>Who</h2>
+<p>Torched Earth is run by a retired writer in Washington State who got tired of hearing that climate change isn't in the news.</p>
+</div>
+{% endblock %}

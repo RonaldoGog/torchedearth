@@ -1,0 +1,57 @@
+# Sources the bot reads every morning.
+#   name     shown on the site
+#   id       short slug, stable
+#   domain   used to recognise the same outlet when a story arrives via Google News
+#   rss      the feed URL (omit for outlets that killed RSS; add them to queries.yml instead)
+#   paywall  true if readers usually hit a subscription wall
+#   weight   1-10, how much to trust/rank this outlet; also decides which outlet
+#            represents a story that many outlets covered
+#   note     one line for the Sources page
+#   verify   true = feed URL not yet confirmed; the first run reports dead feeds in data/feed_status.json
+#
+# Adding a source is one entry here. Removing one is deleting the entry.
+
+feeds:
+  # ---- Climate specialists (free) ----
+  - {name: Inside Climate News, id: icn, domain: insideclimatenews.org, rss: https://insideclimatenews.org/feed/, paywall: false, weight: 9, note: Pulitzer-winning nonprofit climate newsroom.}
+  - {name: Carbon Brief, id: carbonbrief, domain: carbonbrief.org, rss: https://www.carbonbrief.org/feed/, paywall: false, weight: 9, note: UK site covering climate science and policy in depth.}
+  - {name: Grist, id: grist, domain: grist.org, rss: https://grist.org/feed/, paywall: false, weight: 8, note: Nonprofit climate and justice coverage.}
+  - {name: Yale Climate Connections, id: ycc, domain: yaleclimateconnections.org, rss: https://yaleclimateconnections.org/feed/, paywall: false, weight: 7, note: Explainers and weather-climate reporting.}
+  - {name: Climate Home News, id: climatehome, domain: climatechangenews.com, rss: https://www.climatechangenews.com/feed/, paywall: false, weight: 7, note: International climate politics and diplomacy.}
+  - {name: Mongabay, id: mongabay, domain: news.mongabay.com, rss: https://news.mongabay.com/feed/, paywall: false, weight: 7, note: Forests, oceans and biodiversity.}
+  - {name: DeSmog, id: desmog, domain: desmog.com, rss: https://www.desmog.com/feed/, paywall: false, weight: 6, note: Investigations into climate misinformation and lobbying.}
+  - {name: Wildfire Today, id: wildfiretoday, domain: wildfiretoday.com, rss: https://wildfiretoday.com/feed/, paywall: false, weight: 4, note: Wildfire news; only climate-linked stories pass the filter., verify: true}
+
+  # ---- General news with climate desks ----
+  - {name: The Guardian, id: guardian, domain: theguardian.com, rss: https://www.theguardian.com/environment/climate-crisis/rss, paywall: false, weight: 8, note: Climate crisis section.}
+  - {name: The New York Times, id: nyt, domain: nytimes.com, rss: https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml, paywall: true, weight: 8, note: Climate section.}
+  - {name: NPR, id: npr, domain: npr.org, rss: https://feeds.npr.org/1167/rss.xml, paywall: false, weight: 8, note: Climate coverage., verify: true}
+  - {name: BBC, id: bbc, domain: bbc.com, rss: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml, paywall: false, weight: 7, note: Science and environment.}
+  - {name: The Conversation, id: conversation, domain: theconversation.com, rss: https://theconversation.com/us/environment/articles.atom, paywall: false, weight: 7, note: Researchers writing for the public., verify: true}
+
+  # ---- Science ----
+  - {name: Phys.org, id: physorg, domain: phys.org, rss: https://phys.org/rss-feed/earth-news/, paywall: false, weight: 6, note: Earth science research news, mostly from university press offices.}
+  - {name: ScienceDaily, id: sciencedaily, domain: sciencedaily.com, rss: https://www.sciencedaily.com/rss/earth_climate/climate.xml, paywall: false, weight: 6, note: Research summaries.}
+  - {name: Nature Climate Change, id: nclimate, domain: nature.com, rss: https://www.nature.com/nclimate.rss, paywall: true, weight: 8, note: Peer-reviewed journal; abstracts are free.}
+  - {name: Eos, id: eos, domain: eos.org, rss: https://eos.org/feed, paywall: false, weight: 7, note: American Geophysical Union news magazine.}
+  - {name: New Scientist, id: newscientist, domain: newscientist.com, rss: https://www.newscientist.com/subject/environment/feed/, paywall: true, weight: 6, note: Environment section., verify: true}
+
+  # ---- Energy transition ----
+  - {name: CleanTechnica, id: cleantechnica, domain: cleantechnica.com, rss: https://cleantechnica.com/feed/, paywall: false, weight: 5, note: Clean-energy industry news and opinion.}
+  - {name: Electrek, id: electrek, domain: electrek.co, rss: https://electrek.co/feed/, paywall: false, weight: 5, note: EVs and solar.}
+
+  # ---- Outlets without usable RSS: found through Google News searches in queries.yml ----
+  # These entries carry the name/paywall/weight so their stories are labelled correctly.
+  - {name: Associated Press, id: ap, domain: apnews.com, paywall: false, weight: 9, note: Wire service; the original behind many reprints.}
+  - {name: Reuters, id: reuters, domain: reuters.com, paywall: false, weight: 9, note: Wire service; RSS feeds discontinued, found via search.}
+  - {name: The Washington Post, id: wapo, domain: washingtonpost.com, paywall: true, weight: 8, note: Climate and environment desk.}
+  - {name: CNN, id: cnn, domain: cnn.com, paywall: false, weight: 7, note: Climate section.}
+  - {name: Bloomberg, id: bloomberg, domain: bloomberg.com, paywall: true, weight: 8, note: Bloomberg Green.}
+  - {name: Axios, id: axios, domain: axios.com, paywall: false, weight: 6, note: Short-form energy and climate items.}
+  - {name: Heatmap, id: heatmap, domain: heatmap.news, paywall: true, weight: 7, note: Energy transition and climate policy.}
+  - {name: Canary Media, id: canary, domain: canarymedia.com, paywall: false, weight: 7, note: Clean-energy journalism.}
+  - {name: Copernicus Climate Change Service, id: copernicus, domain: climate.copernicus.eu, paywall: false, weight: 9, note: EU climate data agency; monthly bulletins and records.}
+  - {name: NOAA, id: noaa, domain: noaa.gov, paywall: false, weight: 9, note: US climate and ocean data.}
+  - {name: NASA, id: nasa, domain: nasa.gov, paywall: false, weight: 9, note: Earth science and climate data.}
+  - {name: Ember, id: ember, domain: ember-energy.org, paywall: false, weight: 8, note: Energy think tank; electricity data.}
+  - {name: International Energy Agency, id: iea, domain: iea.org, paywall: false, weight: 8, note: Energy data and reports.}

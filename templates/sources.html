@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="intro">Every morning the bot reads these outlets' feeds and runs a set of Google News searches, then a language model keeps only the stories that are about climate change.</p>
+<section class="sources">
+<ul>
+{% for s in sources %}
+  <li><a class="h" href="https://{{ s.domain }}">{{ s.name }}</a>{% if s.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}
+    <span class="meta">{% if s.count %}{{ s.count }} {{ 'story' if s.count == 1 else 'stories' }}{% else %}no stories yet{% endif %}{% if not s.rss %}, found through search{% endif %}{% set st = feed_status.get('feeds', {}).get(s.id) %}{% if st and st.startswith('error') %}<span class="status-error"> · feed unreachable on the last run</span>{% endif %}</span>
+    <div class="note">{{ s.note }}</div></li>
+{% endfor %}
+</ul>
+{% if other_sources %}
+<h2 class="month">Also seen through search</h2>
+<p class="meta">Outlets not on the list above whose stories came up in Google News searches.</p>
+<ul>{% for s in other_sources %}<li>{{ s.name }} <span class="meta">{{ s.count }} {{ 'story' if s.count == 1 else 'stories' }}</span></li>{% endfor %}</ul>
+{% endif %}
+</section>
+<div class="prose">
+<h2>What gets in</h2>
+<p>A story is listed if the model rates it at least 6 out of 10 for being about climate change — its causes, its effects or the response to it. A weather story makes it in when it connects to climate records or trends; a plain forecast doesn't. Stories are never copied: the site shows the headline, a one-sentence summary written by the model, and the outlet.</p>
+<h2>Paywalls</h2>
+<p>Outlets marked $ usually require a subscription. The site doesn't try to get around that. Where another outlet covered the same story, it appears under "Also", and free sources are listed first.</p>
+</div>
+{% endblock %}

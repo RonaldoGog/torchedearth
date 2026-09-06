@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tag, meta %}
+{% block content %}
+<p class="intro">Every story the site has listed, newest first. Search matches headlines, summaries and outlet names.</p>
+<div class="tools">
+  <input id="q" type="search" placeholder="Search the archive" aria-label="Search the archive" autocomplete="off">
+  <select id="sec" aria-label="Section"><option value="">All sections</option>{% for key, label in site.sections.items() %}<option value="{{ key }}">{{ label }}</option>{% endfor %}</select>
+  <select id="typ" aria-label="Type"><option value="">All types</option><option value="substantive">Reporting</option><option value="technical">Studies and reports</option><option value="reprint">Reprints</option><option value="clickbait">Clickbait</option></select>
+</div>
+<p class="count" id="count"></p>
+<section class="list">
+<ul id="rows">
+{% for it in rows %}
+  <li data-s="{{ it.section }}" data-t="{{ it.type }}" data-x="{{ (it.title ~ ' ' ~ it.summary ~ ' ' ~ it.source) | lower }}">
+    <a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}
+    <div class="sum">{{ it.summary }}</div>
+    <span class="meta">{{ meta(it) }} · {{ site.sections[it.section] }}</span>
+  </li>
+{% endfor %}
+</ul>
+</section>
+<script>
+(function () {
+  var q = document.getElementById('q'), sec = document.getElementById('sec'), typ = document.getElementById('typ');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#rows > li'));
+  var count = document.getElementById('count');
+  function apply() {
+    var words = q.value.toLowerCase().split(/\s+/).filter(Boolean), s = sec.value, t = typ.value, n = 0;
+    rows.forEach(function (li) {
+      var ok = (!s || li.dataset.s === s) && (!t || li.dataset.t === t) &&
+               words.every(function (w) { return li.dataset.x.indexOf(w) !== -1; });
+      li.classList.toggle('hidden', !ok); if (ok) n++;
+    });
+    count.textContent = n + ' of ' + rows.length + ' stories';
+  }
+  [q, sec, typ].forEach(function (el) { el.addEventListener('input', apply); });
+  apply();
+})();
+</script>
+{% endblock %}

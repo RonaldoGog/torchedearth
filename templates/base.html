@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page_title != site.site_name %}{{ page_title }} — {% endif %}{{ site.site_name }}</title>
+<meta name="description" content="{{ description }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:site_name" content="{{ site.site_name }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.site_name }}" href="{{ base }}feed.xml">
+<style>{{ css | safe }}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1><a href="{{ base }}">{{ site.site_name }}</a></h1>
+  <p class="thesis">{{ site.tagline }} <b>{{ stats_sentence }}</b></p>
+  <p class="dateline">{{ today }}. Headlines link to the original reporting.</p>
+  <nav class="sections" aria-label="Sections">
+    <a href="{{ base }}" class="{{ 'current' if current == 'home' }}">Today</a>
+    {% for key, label in site.sections.items() %}<a href="{{ base }}{{ key }}/" class="{{ 'current' if current == key }}">{{ label }}</a>
+    {% endfor %}<a href="{{ base }}archive/" class="{{ 'current' if current == 'archive' }}">Archive</a>
+    <a href="{{ base }}weekly/" class="{{ 'current' if current == 'weekly' }}">Weekly</a>
+    <a href="{{ base }}sources/" class="{{ 'current' if current == 'sources' }}">Sources</a>
+    <a href="{{ base }}about/" class="{{ 'current' if current == 'about' }}">About</a>
+  </nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer>
+  <div class="subscribe">
+    <h3>The week's most important climate stories, every Sunday.</h3>
+    {% if site.newsletter_embed %}{{ site.newsletter_embed | safe }}{% else %}
+    <p>One email a week. No ads, no tracking, unsubscribe in one click.</p>
+    <a class="btn" href="{{ site.newsletter_url }}">Subscribe</a>{% endif %}
+  </div>
+  <p style="margin-top:22px">$ marks sources that usually require a subscription; when another outlet covered the same story, it's listed under "Also". <b>Study</b> marks research, data releases and official reports. <b>Reprint</b> marks wire copy and rewrites of other outlets' work. <b>Clickbait</b> marks thin pieces with provocative headlines; they stay out of the front page but remain in the archive.</p>
+  <p>Headlines belong to their publishers. This site lists them, adds a one-sentence summary, and sends you to the original. Selection and sorting are done by software each morning; see <a href="{{ base }}about/">how it works</a> and <a href="{{ base }}sources/">the sources</a>.
+  {% if site.social.bluesky_handle %} Follow on <a href="https://bsky.app/profile/{{ site.social.bluesky_handle }}">Bluesky</a>.{% endif %}
+  {% if site.social.mastodon_url %} Follow on <a href="{{ site.social.mastodon_url }}">Mastodon</a>.{% endif %}
+  <a href="{{ base }}feed.xml">RSS</a>.</p>
+</footer>
+</div>
+</body>
+</html>

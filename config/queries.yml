@@ -1,0 +1,47 @@
+# Google News RSS searches. These catch stories from outlets that have no feed
+# (AP, Reuters, the Post, CNN, Bloomberg...) and climate stories that appear
+# outside dedicated climate desks. Each query returns up to 100 items from the
+# last two days; the classifier throws away anything that isn't about climate.
+#
+# Google's links redirect through news.google.com; the bot unwraps them to the
+# publisher's real URL so the archive can spot duplicates.
+
+topics:
+  - climate change
+  - global warming
+  - extreme heat
+  - heat wave
+  - heat dome
+  - wildfire
+  - drought
+  - flooding climate
+  - hurricane climate change
+  - sea level rise
+  - glacier OR "ice sheet" melting
+  - El Niño
+  - carbon emissions
+  - methane emissions
+  - fossil fuels climate
+  - IPCC
+  - renewable energy
+  - solar power record
+  - electric vehicles emissions
+  - battery storage grid
+  - climate policy
+  - climate lawsuit
+  - coral bleaching
+  - Copernicus climate
+
+# Outlet-specific searches for sources that don't offer RSS.
+sites:
+  - {domain: apnews.com, query: climate}
+  - {domain: reuters.com, query: climate}
+  - {domain: washingtonpost.com, query: climate}
+  - {domain: cnn.com, query: climate}
+  - {domain: bloomberg.com, query: climate}
+  - {domain: axios.com, query: climate}
+  - {domain: heatmap.news, query: climate}
+  - {domain: canarymedia.com, query: ""}
+  - {domain: climate.copernicus.eu, query: ""}
+  - {domain: iea.org, query: ""}
+  - {domain: ember-energy.org, query: ""}

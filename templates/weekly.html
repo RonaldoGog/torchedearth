@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="intro">Every Sunday: the stories that mattered most that week, in one email.</p>
+<div class="subscribe" style="margin-top:0">
+  <h3>Get it by email</h3>
+  <p>One message a week, no ads.</p>
+  <a class="btn" href="{{ site.newsletter_url }}">Subscribe</a>
+</div>
+<section class="list">
+<h2 class="month">Past issues</h2>
+{% if issues %}<ul>{% for i in issues %}<li><a class="h" href="{{ base }}weekly/{{ i }}.html">Week ending {{ i }}</a></li>{% endfor %}</ul>
+{% else %}<p class="empty">The first issue goes out the Sunday after launch.</p>{% endif %}
+</section>
+{% endblock %}

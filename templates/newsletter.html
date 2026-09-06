@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>{{ site.site_name }} — week ending {{ issue_label }}</title></head>
+<body style="margin:0;padding:24px;background:#ffffff;color:#000000;font-family:Georgia,'Times New Roman',serif;line-height:1.45">
+<div style="max-width:600px;margin:0 auto">
+<p style="font-family:Helvetica,Arial,sans-serif;font-weight:900;font-size:34px;letter-spacing:-0.04em;text-transform:uppercase;margin:0 0 4px"><a href="{{ site.base_url }}" style="color:#000;text-decoration:none">{{ site.site_name }}</a></p>
+<p style="margin:0 0 22px;color:#5c5c5c;font-family:Helvetica,Arial,sans-serif;font-size:14px">The most important climate stories of the week ending {{ issue_label }}. {{ total }} stories were listed on the site this week.</p>
+{% for it in items %}
+<p style="margin:0 0 18px"><a href="{{ it.url }}" style="color:#000;font-family:Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;text-decoration:none">{{ it.title }}</a>{% if it.type_label %} <span style="color:#b3320f;font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:700">{{ it.type_label }}</span>{% endif %}<br>
+<span style="font-size:17px">{{ it.summary }}</span><br>
+<span style="color:#5c5c5c;font-family:Helvetica,Arial,sans-serif;font-size:13px">{{ it.source }}{% if it.paywall %} $ {% endif %}, {{ it.date_label }}{% if it.also %} · Also: {% for a in it.also %}<a href="{{ a.url }}" style="color:#5c5c5c">{{ a.source }}</a>{% if a.paywall %} ${% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</span></p>
+{% endfor %}
+<p style="margin:26px 0 0;padding-top:14px;border-top:1px solid #d9d9d9;color:#5c5c5c;font-family:Helvetica,Arial,sans-serif;font-size:13px">Headlines belong to their publishers; links go to the original articles. $ marks subscription sources. <a href="{{ site.base_url }}/archive/" style="color:#5c5c5c">Search the archive</a>.</p>
+</div></body></html>

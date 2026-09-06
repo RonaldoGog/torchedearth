@@ -1,0 +1,3 @@
+{% macro tag(it) %}{% if it.type_label %}<span class="tag">{{ it.type_label }}</span>{% endif %}{% endmacro %}
+{% macro meta(it) %}{{ it.source }}{% if it.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}, {{ it.date_label }}{% endmacro %}
+{% macro also(it) %}{% if it.also %}<div class="also">Also: {% for a in it.also %}<a href="{{ a.url }}">{{ a.source }}</a>{% if a.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}{% endmacro %}

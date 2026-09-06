@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tag, meta, also %}
+{% block content %}
+<p class="intro">{{ intro }}</p>
+<p class="meta">Stories arrive here when they leave the front page. The newest are <a href="{{ base }}">on the front page</a>.</p>
+<section class="list">
+{% for month, items in months %}
+  <h2 class="month">{{ month }}</h2>
+  <ul>
+  {% for it in items %}
+    <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}
+      <div class="sum">{{ it.summary }}</div>
+      <span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p class="empty">Nothing here yet.</p>
+{% endfor %}
+</section>
+{% endblock %}

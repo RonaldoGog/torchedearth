@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tag, meta, also %}
+{% block content %}
+{% if lead %}
+<section class="lead">
+  <h2><a href="{{ lead.url }}">{{ lead.title }}</a>{{ tag(lead) }}</h2>
+  <p class="sum">{{ lead.summary }}</p>
+  <p class="meta">{{ meta(lead) }}</p>
+  {{ also(lead) }}
+</section>
+{% endif %}
+<section class="columns">
+{% for key in ['causes', 'effects', 'solutions'] %}
+  <div class="col">
+    <h3>{{ site.sections[key] }}</h3>
+    {% if columns[key] %}
+    <ul>
+    {% for it in columns[key] %}
+      <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty">Nothing new in the last {{ site.homepage_days }} days. <a href="{{ base }}{{ key }}/">Earlier stories</a>.</p>
+    {% endif %}
+  </div>
+{% endfor %}
+</section>
+{% if columns['other'] %}
+<section class="strip">
+  <h3>{{ site.sections['other'] }}</h3>
+  <ul>
+  {% for it in columns['other'] %}
+    <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

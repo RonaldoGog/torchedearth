@@ -1,0 +1,12 @@
+# Manual controls. Edit on GitHub (pencil icon), commit, and the site rebuilds
+# on the next run — or start a run by hand from the Actions tab.
+#
+# Paste the story's URL exactly as it appears on the site.
+
+lead: ""          # pin one story as the lead, e.g. https://example.com/story
+
+feature: []       # force stories onto the front page regardless of score or age
+  # - https://example.com/story
+
+hide: []          # remove stories from every page (wrong, off-topic, offensive)
+  # - https://example.com/story
