@@ -16,7 +16,7 @@ from datetime import date, timedelta
 from classify import classify, match_stories
 from common import DATA, load_json, load_yaml, save_json
 from dedupe import assign_groups
-from fetch import fetch_all
+from fetch import fetch_all, repair_google_links
 
 ITEMS = DATA / "items.json"
 DROPPED = DATA / "dropped.json"
@@ -47,13 +47,16 @@ def main(dry_run=False):
         return
 
     items.extend(new)
+    repair_google_links(items, feeds, settings)
     classify(items, settings)
 
-    # Ask the model which of today's stories are the same as each other or as last week's.
-    week_ago = (today - timedelta(days=7)).isoformat()
+    # Ask the model which of today's stories are the same as each other or as the last few days'.
+    match_days = int(settings.get("llm", {}).get("match_days", 3))
+    since = (today - timedelta(days=match_days)).isoformat()
     fresh = [i for i in new if i.get("status") == "ok" and i.get("relevance", 0) >= settings.get("min_relevance", 6)]
-    recent = [i for i in items if i.get("status") == "ok" and i not in fresh
-              and i.get("published", "") >= week_ago and i.get("group", i["id"]) == i["id"]]
+    fresh_ids = {i["id"] for i in fresh}
+    recent = [i for i in items if i.get("status") == "ok" and i["id"] not in fresh_ids
+              and i.get("published", "") >= since and i.get("group", i["id"]) == i["id"]]
     match_stories(fresh, recent, settings)
 
     keep = []

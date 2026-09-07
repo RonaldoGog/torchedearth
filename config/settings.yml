@@ -58,12 +58,16 @@ llm:
     xai: grok-4-fast
   batch_size: 25               # headlines per request; ~20 requests/day at 500 headlines
   pause_seconds: 7             # keeps the free Gemini tier under its ~10 requests/minute limit
+  match_days: 3                # story matcher compares today's items against this many days of earlier ones
+  match_min_confidence: 8      # matcher's 1-10 certainty two items are one story; below this they stay separate
 
 # --- Fetching -------------------------------------------------------------
 fetch:
   google_news_window: 2d       # Google News search window (when:2d)
   google_news_per_query: 40    # cap per query; feeds return up to 100
-  resolve_workers: 12          # parallel lookups when unwrapping Google's redirect links
+  resolve_workers: 4           # parallel lookups when unwrapping Google's links (more risks Google throttling)
+  cache_days: 7                # how long an unwrapped link is remembered in data/url_cache.json
+  repair_per_run: 150          # older stories still linking through Google: how many to unwrap per run (0 = off)
   default_weight: 5            # ranking weight for sources not in feeds.yml
 
 # --- Newsletter & social --------------------------------------------------

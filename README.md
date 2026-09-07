@@ -81,7 +81,7 @@ uses it (or run the workflow by hand).
     templates/     the page layouts (Jinja2 HTML)
     static/        style.css (inlined into every page)
     data/          the database: items.json (every story), dropped.json,
-                   feed_status.json, posted.json, newsletters/
+                   feed_status.json, url_cache.json, posted.json, newsletters/
     site/          the built website (regenerated each run; not committed)
     .github/workflows/site.yml   the daily schedule
 
@@ -124,6 +124,17 @@ first real run, or leave it: the bot only adds to it.
   watching the output is the right way to tune the feed list and thresholds.
 - Feeds die. `data/feed_status.json` records what each feed returned on the
   last run, and the Sources page flags feeds that were unreachable.
-- Google's news links redirect through Google; the bot unwraps them so
-  duplicates are recognised. If Google changes the format, stories from
-  searches still appear — the links just redirect through Google.
+- Google's news links are opaque tokens; the bot asks Google for the real
+  publisher URL (two quick requests per link, answers cached in
+  `data/url_cache.json`) so duplicates are recognised, outlets get their
+  weight and $ flag, and readers land on the publisher. If Google changes the
+  recipe, stories from searches still appear with links that bounce through
+  Google, `feed_status.json` shows "0 links unwrapped", and the open-source
+  googlenewsdecoder project (github.com/SSujitX/google-news-url-decoder) is
+  where to look for the new recipe. Links saved while unwrapping was broken are
+  repaired a batch at a time on later runs (`repair_per_run` in settings.yml).
+- Two stories are grouped under one headline only when the bot is confident
+  they report the same event: near-identical titles within a week, or a model
+  match with confidence of at least `match_min_confidence`. A group can never
+  span more than a week. If a story is wrongly hidden under another's "Also",
+  or wrongly shown twice, those two settings are the knobs.

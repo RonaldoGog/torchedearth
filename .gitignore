@@ -1,4 +1,3 @@
 site/
 __pycache__/
 *.pyc
-data/url_cache.json

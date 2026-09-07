@@ -18,6 +18,8 @@ import time
 
 import requests
 
+from dedupe import tokens
+
 SYSTEM = """You sort news items for Torched Earth, a site that lists climate-change headlines and links to the original articles.
 
 For each item, judging only from its headline, source and blurb, return:
@@ -32,7 +34,7 @@ For each item, judging only from its headline, source and blurb, return:
     technical = reports a specific study, dataset, forecast or official report (journals, agencies, think tanks, company data releases).
     substantive = original reporting or analysis with new information.
     clickbait = provocative or vague headline on thin content; listicles; celebrity angles; questions as headlines; speculative "could/may" pieces with no new reporting.
-    reprint = wire copy or a rewrite of another outlet's story or a press release (clues: "(Bloomberg) --", "(AP)", "Reuters", "according to a report by", press-release phrasing, aggregator sites).
+    reprint = wire copy or a rewrite of another outlet's story or a press release (clues: a non-wire outlet running copy credited "(Bloomberg) --", "(AP)" or "Reuters"; "according to a report by"; press-release phrasing; aggregator sites). A story published by Reuters, AP or Bloomberg themselves is their own reporting, not a reprint.
 - score: 1-10 importance for a reader trying to understand climate change this week (authority of the source, scale of what happened, novelty).
 - summary: one plain sentence, at most 25 words, saying what happened. No hype, no opinion, never "this article".
 
@@ -141,13 +143,31 @@ def classify(items, settings, log=print):
 # Title similarity catches wire reprints; it cannot tell that "World's oceans hit
 # hottest temperature ever recorded" and "Copernicus: daily sea surface
 # temperature breaks record" are the same story. The model can. Once a day,
-# today's new stories are compared against the last week's.
+# today's new stories are compared against the last few days'.
+#
+# The matcher used to be far too generous: asked to compare sixty new items against
+# several hundred recent ones, a small model linked anything on the same topic, and
+# every El Niño story for three weeks ended up as one headline with 57 "Also" links.
+# Three things keep it honest now: the prompt spells out that same topic is not the
+# same story; the model reports a confidence and only confident links are kept; and
+# only recent items that share some vocabulary with the new batch are shown to it.
 
-MATCH_SYSTEM = """You match news items that report the same event, announcement, study, ruling or data release.
-Two items are the same story when they are about the same thing that happened — many outlets covering one lawsuit, one report, one record — even from different angles or with different emphasis. Follow-ups with genuinely new developments, and different events on the same topic, are different stories.
+MATCH_SYSTEM = """You match news items that report the same story: the same single event, announcement, study, ruling, data release or record. "Same story" means a reader who had seen one item would learn nothing new from the headline of the other, apart from the outlet's angle or emphasis.
 
-You will get RECENT items (labels like R3) and NEW items (labels like N7). For each NEW item that is the same story as a RECENT item or as an earlier NEW item, output one object. Omit NEW items that match nothing.
-Respond with a JSON array only — no prose, no code fences — of objects with keys "item" (the NEW label) and "same_as" (the label it matches; prefer the RECENT label if one exists, otherwise the lowest-numbered NEW label)."""
+Be strict. These are NOT the same story:
+- two items on the same subject (El Niño, wildfires, Nepal's floods, the 1.5°C report) reporting different events, findings, places or days;
+- a study and a news event on the same topic;
+- a follow-up with a new development (a death toll rising, a lawsuit filed, a new forecast);
+- an explainer, opinion piece or overview and a news report on its subject.
+
+These ARE the same story: many outlets covering one lawsuit, one report, one record, one disaster on the same day; a wire story and its reprints; a press release and the coverage of it.
+
+You will get RECENT items (labels like R3) and NEW items (labels like N7). For each NEW item that is the same story as a RECENT item or as an earlier NEW item, output one object with keys "item" (the NEW label), "same_as" (the matching label; prefer the RECENT label if one exists, otherwise the lowest-numbered NEW label) and "confidence" (1-10: 10 = certainly the same event; 5 = same topic, probably a different event). When in doubt, leave it out — an unmatched duplicate costs little, a wrong match hides a story.
+Respond with a JSON array only — no prose, no code fences. Output [] if nothing matches."""
+
+def _words(it):
+    """Content words of an item's headline and summary (same tokenizer as dedupe.py)."""
+    return set(tokens(f"{it['title']} {it.get('summary', '')}"))
 
 
 def _line(label, it):
@@ -155,15 +175,20 @@ def _line(label, it):
 
 
 def match_stories(new_items, recent_items, settings, log=print):
-    """Set it['same_as'] = id of an earlier item that reports the same story."""
+    """Set it['same_as'] (and it['match_confidence']) = an earlier item that reports the same story."""
     provider, model, key = _config(settings)
     if not key or not new_items:
         return 0
+    llm = settings.get("llm", {})
+    min_conf = int(llm.get("match_min_confidence", 8))
     size = 60
     matched = 0
     for start in range(0, len(new_items), size):
         batch = new_items[start:start + size]
-        recent_lines = "\n".join(_line(f"R{n}", it) for n, it in enumerate(recent_items, 1)) or "(none)"
+        # Only show the model recent items that share at least two content words with something new.
+        batch_words = [_words(it) for it in batch]
+        candidates = [r for r in recent_items if any(len(_words(r) & w) >= 2 for w in batch_words)]
+        recent_lines = "\n".join(_line(f"R{n}", it) for n, it in enumerate(candidates, 1)) or "(none)"
         new_lines = "\n".join(_line(f"N{n}", it) for n, it in enumerate(batch, 1))
         user = f"RECENT items:\n{recent_lines}\n\nNEW items:\n{new_lines}"
         try:
@@ -175,12 +200,17 @@ def match_stories(new_items, recent_items, settings, log=print):
             try:
                 item = batch[int(str(r["item"]).strip("Nn")) - 1]
                 label = str(r["same_as"]).strip().upper()
-                target = recent_items[int(label[1:]) - 1] if label.startswith("R") else batch[int(label[1:]) - 1]
-            except (KeyError, ValueError, IndexError):
+                target = candidates[int(label[1:]) - 1] if label.startswith("R") else batch[int(label[1:]) - 1]
+                conf = int(r.get("confidence", 0))
+            except (KeyError, ValueError, IndexError, TypeError):
                 continue
-            if target is not item:
-                item["same_as"] = target["id"]
-                matched += 1
-        time.sleep(float(settings.get("llm", {}).get("pause_seconds", 7)))
+            if target is item or conf < min_conf:
+                continue
+            if not (_words(item) & _words(target)):  # two items with no words in common are never one story
+                continue
+            item["same_as"] = target["id"]
+            item["match_confidence"] = conf
+            matched += 1
+        time.sleep(float(llm.get("pause_seconds", 7)))
     log(f"story matching: {matched} of {len(new_items)} new items match an earlier story")
     return matched
