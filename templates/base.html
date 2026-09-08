@@ -17,7 +17,7 @@
 <header class="masthead">
   <h1><a href="{{ base }}">{{ site.site_name }}</a></h1>
   <p class="thesis">{{ site.tagline }} <b>{{ stats_sentence }}</b></p>
-  <p class="dateline">{{ today }}. Headlines link to the original reporting.</p>
+  <p class="dateline">Last updated <time class="stamp" datetime="{{ updated_iso }}">{{ updated }}</time> — the site is rebuilt once each morning, so a story published since then appears in the next update. Headlines link to the original reporting.</p>
   <nav class="sections" aria-label="Sections">
     <a href="{{ base }}" class="{{ 'current' if current == 'home' }}">Today</a>
     {% for key, label in site.sections.items() %}<a href="{{ base }}{{ key }}/" class="{{ 'current' if current == key }}">{{ label }}</a>

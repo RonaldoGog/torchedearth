@@ -24,7 +24,8 @@ a:focus-visible { outline: 3px solid var(--ember); outline-offset: 2px; }
 .masthead h1 a:hover { text-decoration: none; }
 .thesis { font-family: var(--serif); font-size: clamp(18px, 2.1vw, 22px); line-height: 1.35; margin: 14px 0 0; max-width: 44em; }
 .thesis b { font-weight: 400; color: var(--ember); }
-.dateline { color: var(--smoke); font-size: 14px; margin: 8px 0 0; }
+.dateline { color: var(--smoke); font-size: 14px; margin: 8px 0 0; max-width: 60em; }
+.dateline .stamp { color: var(--ink); font-weight: 700; }
 nav.sections { display: flex; flex-wrap: wrap; margin: 16px 0 0; font-size: 15px; font-weight: 700; }
 nav.sections a { display: inline-block; margin: 0 24px 8px 0; padding-bottom: 3px; border-bottom: 2px solid transparent; }
 nav.sections a:hover { text-decoration: none; border-bottom-color: var(--rule); }

@@ -63,13 +63,30 @@ def alpha_key(it):
     return re.sub(r"^[^0-9a-z]+", "", it["title"].lower())
 
 
-def local_today(settings):
-    """Today's date in the site's own time zone, so 'Today' means today for the readers."""
+def local_now(settings):
+    """The moment of this build, in the site's own time zone."""
     try:
         from zoneinfo import ZoneInfo
-        return datetime.now(ZoneInfo(settings.get("timezone", "UTC"))).date()
+        return datetime.now(ZoneInfo(settings.get("timezone", "UTC")))
     except Exception:
-        return date.today()
+        return datetime.now(timezone.utc)
+
+
+def local_today(settings):
+    """Today's date in the site's own time zone, so 'Today' means today for the readers."""
+    return local_now(settings).date()
+
+
+def updated_label(now):
+    """'Monday, September 8, 2026 at 6:15 a.m. PDT' — when the pages were last rebuilt.
+
+    Written out by hand rather than with strftime: the 12-hour and no-leading-zero
+    codes differ between Windows and Linux, and this runs on both.
+    """
+    hour = now.hour % 12 or 12
+    ampm = "a.m." if now.hour < 12 else "p.m."
+    zone = now.strftime("%Z") or "UTC"
+    return f"{now:%A, %B} {now.day}, {now.year} at {hour}:{now:%M} {ampm} {zone}"
 
 
 def prepare(items, settings, feeds, overrides, today):
@@ -197,13 +214,14 @@ def stats_sentence(stats):
     return f"{lead_in}{stats['total']:,} stories in the archive since {stats['since']}."
 
 
-def rss(front, settings, today):
+def rss(front, settings, now):
     def esc(s):
         return html.escape(s or "", quote=True)
     out = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>',
            f"<title>{esc(settings['site_name'])}</title>",
            f"<link>{esc(settings['base_url'])}/</link>",
-           f"<description>{esc(settings['tagline'])}</description>"]
+           f"<description>{esc(settings['tagline'])}</description>",
+           f"<lastBuildDate>{format_datetime(now)}</lastBuildDate>"]
     for r in front[:50]:
         pub = format_datetime(datetime.combine(parse_date(r["published"]), datetime.min.time(), tzinfo=timezone.utc))
         out.append(f"<item><title>{esc(r['title'])}</title><link>{esc(r['url'])}</link>"
@@ -215,7 +233,8 @@ def rss(front, settings, today):
 
 def main(today=None):
     settings = load_yaml("settings.yml")
-    today = today or local_today(settings)
+    now = local_now(settings)
+    today = today or now.date()
     feeds = load_yaml("feeds.yml")["feeds"]
     overrides = load_yaml("overrides.yml")
     items = load_json(DATA / "items.json", [])
@@ -225,7 +244,8 @@ def main(today=None):
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]))
     css = (STATIC / "style.css").read_text(encoding="utf-8")
     base = {"site": settings, "css": css, "base": "/", "stats_sentence": stats_sentence(ctx["stats"]),
-            "today": f"{today:%A, %B} {today.day}, {today.year}", "feed_status": status}
+            "today": f"{today:%A, %B} {today.day}, {today.year}", "feed_status": status,
+            "updated": updated_label(now), "updated_iso": now.isoformat(timespec="minutes")}
 
     if SITE.exists():
         shutil.rmtree(SITE)
@@ -258,7 +278,7 @@ def main(today=None):
     write("weekly/index.html", "weekly.html", current="weekly", page_title="Weekly",
           description="The weekly top-ten newsletter.", issues=[p.stem for p in issues])
 
-    (SITE / "feed.xml").write_text(rss(ctx["front"], settings, today), encoding="utf-8")
+    (SITE / "feed.xml").write_text(rss(ctx["front"], settings, now), encoding="utf-8")
     (SITE / "CNAME").write_text(settings["domain"] + "\n", encoding="utf-8")
     (SITE / ".nojekyll").write_text("", encoding="utf-8")
     recent = sum(len(d["stories"]) for d in ctx["days"])
