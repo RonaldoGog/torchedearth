@@ -5,13 +5,14 @@
     python bot/build.py --today 2026-09-05 # pretend it's another day (testing)
 
 Rules (all from config/settings.yml):
-  front page  = the lead, then every story from the last `recent_days` days
-                (today and yesterday) listed alphabetically under its date, not
-                yet sorted into sections; then older stories from the last
-                `homepage_days`, capped at `homepage_max`, grouped into
-                Causes / Effects / Solutions columns with an "Elsewhere" strip
-                for `other`. Only the types in `homepage_types` scoring
-                >= `min_score_homepage` reach the front page.
+  front page  = the lead, then stories from the last `recent_days` days
+                (today and yesterday) scoring >= `recent_min_score`, at most
+                `recent_max_per_day` a day, listed alphabetically under their
+                date, not yet sorted into sections; then older stories from
+                the last `homepage_days`, capped at `homepage_max`, grouped
+                into Causes / Effects / Solutions columns with an "Elsewhere"
+                strip for `other`. Only the types in `homepage_types` scoring
+                >= `min_score_homepage` reach the front page at all.
   section page = everything else in that section, newest first, by month
   archive      = every story, with a search box
 Nothing is ever "moved": a story's page is a function of its date, section and type.
@@ -112,21 +113,30 @@ def prepare(items, settings, feeds, overrides, today):
     )]
     by_rank = lambda r: (r["featured"], r.get("score", 0), r["published"])
 
-    # The newest stories (today and yesterday) all go up top, listed by day;
-    # older ones compete for the capped, sectioned part of the page below.
+    # The newest stories (today and yesterday) go up top, listed by day. The bar is
+    # higher there (`recent_min_score`, with `recent_max_per_day` as a ceiling) because
+    # the lists are alphabetical and uncapped otherwise; stories under the bar skip the
+    # front page and appear on their section page the same day. Older stories compete
+    # for the capped, sectioned part of the page below.
     recent_from = (today - timedelta(days=int(settings.get("recent_days", 2)) - 1)).isoformat()
-    recent = [r for r in eligible if r["published"] >= recent_from]
+    recent_min = int(settings.get("recent_min_score", settings["min_score_homepage"]))
+    per_day = int(settings.get("recent_max_per_day", 0)) or None
+    by_day = defaultdict(list)
+    for r in eligible:
+        if r["published"] >= recent_from and (r["featured"] or r.get("score", 0) >= recent_min):
+            by_day[r["published"]].append(r)
+    recent = []
+    for iso in by_day:
+        by_day[iso] = sorted(by_day[iso], key=by_rank, reverse=True)[:per_day]
+        recent += by_day[iso]
     older = sorted((r for r in eligible if r["published"] < recent_from), key=by_rank, reverse=True)
     older = older[: int(settings["homepage_max"])]
     front = recent + older
 
     lead = next((r for r in front if lead_url and canonical(r["url"]) == lead_url), None) or (max(front, key=by_rank) if front else None)
 
-    by_day = defaultdict(list)
-    for r in recent:
-        if r is not lead:
-            by_day[r["published"]].append(r)
-    days = [{"label": day_label(iso, today), "stories": sorted(by_day[iso], key=alpha_key)}
+    days = [{"label": day_label(iso, today),
+             "stories": sorted((r for r in by_day[iso] if r is not lead), key=alpha_key)}
             for iso in sorted(by_day, reverse=True)]
 
     columns = defaultdict(list)

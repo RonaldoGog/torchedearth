@@ -9,9 +9,11 @@ base_url: https://torchedearth.org
 timezone: America/Los_Angeles
 
 # --- Front page rules ---------------------------------------------------
-recent_days: 2               # the newest days (today and yesterday) are listed in full, alphabetically, above the sections
+recent_days: 2               # the newest days (today and yesterday) are listed alphabetically above the sections
+recent_min_score: 7          # importance 1-10 needed for those day lists (stories under it go to their section page)
+recent_max_per_day: 100      # ceiling per day list, highest scores kept (0 = no ceiling)
 homepage_days: 28            # a story stays on the front page this many days, then lives on its section page
-homepage_max: 150            # cap on the older, sectioned part of the front page (the day lists above it are uncapped)
+homepage_max: 100            # cap on the older, sectioned part of the front page below the day lists
 min_relevance: 6             # classifier's 0-10 "is this about climate?"; below this the item is discarded
 min_score_homepage: 4        # importance 1-10 needed to make the front page
 homepage_types: [substantive, technical]   # clickbait and reprints skip the front page but stay in the archive
