@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_macros.html" import ext %}
 {% block content %}
 <div class="prose">
 <p class="intro">People say that if climate change were really such a big deal, it would be in the news every day. It is. This site is the proof: a plain list of the day's climate stories, from the outlets you already know, with a link to each one.</p>
@@ -8,7 +9,7 @@
 <h2>What it is not</h2>
 <p>It is not a news site. Nothing here is written by a reporter; the headlines are the publishers' own and the links go to them. Read the article, not the summary. The sorting is done by software and will sometimes be wrong; when it is, the story will still be there, just in the wrong column.</p>
 <h2>The newsletter</h2>
-<p>On Sundays the ten highest-ranked stories of the week go out by email. <a href="{{ site.newsletter_url }}">Subscribe here</a>.</p>
+<p>On Sundays the ten highest-ranked stories of the week go out by email. <a href="{{ site.newsletter_url }}" {{ ext() }}>Subscribe here</a>.</p>
 <h2>Who</h2>
 <p>Torched Earth is run by a retired writer in Washington State who got tired of hearing that climate change isn't in the news.</p>
 </div>

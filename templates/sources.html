@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% from "_macros.html" import ext %}
 {% block content %}
 <p class="intro">Every morning the bot reads these outlets' feeds and runs a set of Google News searches, then a language model keeps only the stories that are about climate change.</p>
 <section class="sources">
 <ul>
 {% for s in sources %}
-  <li><a class="h" href="https://{{ s.domain }}">{{ s.name }}</a>{% if s.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}
+  <li><a class="h" href="https://{{ s.domain }}" {{ ext() }}>{{ s.name }}</a>{% if s.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}
     <span class="meta">{% if s.count %}{{ s.count }} {{ 'story' if s.count == 1 else 'stories' }}{% else %}no stories yet{% endif %}{% if not s.rss %}, found through search{% endif %}{% set st = feed_status.get('feeds', {}).get(s.id) %}{% if st and st.startswith('error') %}<span class="status-error"> · feed unreachable on the last run</span>{% endif %}</span>
     <div class="note">{{ s.note }}</div></li>
 {% endfor %}

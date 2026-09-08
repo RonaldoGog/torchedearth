@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% from "_macros.html" import tag, meta, also %}
+{% from "_macros.html" import tag, meta, also, ext %}
 {% block content %}
 {% if lead %}
 <section class="lead">
-  <h2><a href="{{ lead.url }}">{{ lead.title }}</a>{{ tag(lead) }}</h2>
+  <h2><a href="{{ lead.url }}" {{ ext() }}>{{ lead.title }}</a>{{ tag(lead) }}</h2>
   <p class="sum">{{ lead.summary }}</p>
   <p class="meta">{{ meta(lead) }}</p>
   {{ also(lead) }}
@@ -14,7 +14,7 @@
   <h3>{{ day.label }}</h3>
   <ul>
   {% for it in day.stories %}
-    <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ it.source }}{% if it.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}</span>{{ also(it) }}</li>
+    <li><a class="h" href="{{ it.url }}" {{ ext() }}>{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ it.source }}{% if it.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}</span>{{ also(it) }}</li>
   {% endfor %}
   </ul>
 </section>
@@ -29,7 +29,7 @@
     {% if columns[key] %}
     <ul>
     {% for it in columns[key] %}
-      <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
+      <li><a class="h" href="{{ it.url }}" {{ ext() }}>{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
     {% endfor %}
     </ul>
     {% else %}
@@ -43,7 +43,7 @@
   <h3>{{ site.sections['other'] }}</h3>
   <ul>
   {% for it in columns['other'] %}
-    <li><a class="h" href="{{ it.url }}">{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
+    <li><a class="h" href="{{ it.url }}" {{ ext() }}>{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ meta(it) }}</span>{{ also(it) }}</li>
   {% endfor %}
   </ul>
 </section>
