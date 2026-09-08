@@ -26,10 +26,10 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from common import DATA, SITE, STATIC, TEMPLATES, canonical, load_json, load_yaml, parse_date
 
 SECTION_INTRO = {
-    "causes": "What is driving warming: emissions, fossil fuels, land use and the science that ties them to rising temperatures.",
+    "causes": "What is driving warming: emissions, fossil fuels, land use, the science that ties them to rising temperatures, and the disinformation and corruption that keep it going.",
     "effects": "What warming is doing: heat, fire, water, storms, ice, oceans, ecosystems, health and money.",
     "solutions": "What is being done: clean energy, policy, courts, finance, adaptation and the fights over all of it.",
-    "other": "Everything else: politics, opinion, culture, misinformation and the coverage of climate itself.",
+    "other": "Opinion, politics, culture and the coverage of climate itself. Every op-ed, editorial and column lands here, whatever its subject — argument is not news.",
 }
 
 
@@ -49,6 +49,15 @@ def prepare(items, settings, feeds, overrides, today):
     types = settings["types"]
 
     visible = [i for i in items if i.get("status") == "ok" and canonical(i["url"]) not in hide]
+
+    # config/overrides.yml can move an individual story between sections.
+    moved = {canonical(u): key
+             for key, urls in (overrides.get("section") or {}).items() if key in settings["sections"]
+             for u in (urls or [])}
+    if moved:
+        for it in visible:
+            it["section"] = moved.get(canonical(it["url"]), it.get("section", "other"))
+
     by_group = defaultdict(list)
     for it in visible:
         by_group[it.get("group") or it["id"]].append(it)

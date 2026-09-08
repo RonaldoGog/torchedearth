@@ -26,10 +26,13 @@ For each item, judging only from its headline, source and blurb, return:
 
 - relevance: 0-10. How central is climate change (its causes, impacts, or responses) to the story? 10 = the story is about climate change; 5 = climate is one thread among several; 0 = unrelated. Weather and disaster stories count only when they connect to climate, climate-driven records or trends.
 - section: one of causes, effects, solutions, other.
-    causes = emissions, fossil fuels, deforestation, methane, carbon budgets, what drives warming, attribution of warming to human activity.
+    Apply these two rules first; they override the topic definitions below.
+    1. OPINION ALWAYS GOES IN other, whatever its subject. An item is opinion when its purpose is to argue a position or press a judgement rather than to report what happened: op-eds, editorials, columns, letters to the editor, commentary and guest posts, personal essays, advocacy pieces, "Why we must…", "It's time to…", "The case for…", a rhetorical-question headline that then argues, a named columnist's take. Straight news reports, studies, data releases, interviews, profiles and descriptive explainers are NOT opinion.
+    2. DISINFORMATION IS A CAUSE. Climate misinformation, disinformation and denial, fossil-fuel PR and influence campaigns, greenwashing, industry-funded advocacy, corruption, and the censoring or suppression of climate science and climate education (removing climate content from schoolbooks or agency sites, firing or muzzling climate scientists, killing climate research) all go in causes — unless the item is itself opinion, in which case rule 1 wins and it goes in other. Ordinary political and legal fights over climate policy are not disinformation; those are solutions.
+    causes = emissions, fossil fuels, deforestation, methane, carbon budgets, what drives warming, attribution of warming to human activity, and the disinformation and corruption in rule 2.
     effects = heat, fire, drought, floods, storms, sea level, ice, oceans, ecosystems, health, economic damage, water shortages, migration.
     solutions = clean energy, EVs, efficiency, policy and regulation, courts and litigation, finance, adaptation, carbon removal, activism.
-    other = politics without a concrete policy action, culture, opinion, misinformation and denial, media coverage of climate itself, explainers.
+    other = opinion of every kind (rule 1), politics without a concrete policy action, culture, media coverage of climate itself, explainers.
 - type: one of technical, substantive, clickbait, reprint.
     technical = reports a specific study, dataset, forecast or official report (journals, agencies, think tanks, company data releases).
     substantive = original reporting or analysis with new information.

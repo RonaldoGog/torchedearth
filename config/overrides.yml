@@ -10,3 +10,18 @@ feature: []       # force stories onto the front page regardless of score or age
 
 hide: []          # remove stories from every page (wrong, off-topic, offensive)
   # - https://example.com/story
+
+section: {}       # move a story to a different section when the bot gets it wrong
+  # causes:
+  #   - https://example.com/story
+  # effects: []
+  # solutions: []
+  # other: []
+  #
+  # Standing rules the bot already follows, so you shouldn't need this often:
+  #   every opinion piece — op-ed, editorial, column, letter, commentary — goes
+  #   to Elsewhere whatever its subject, and climate disinformation, denial,
+  #   fossil-fuel PR and the suppression of climate science go to Causes.
+  #
+  # A story that still links through news.google.com gets its real publisher
+  # link later; if that happens, re-paste the new URL from the site.
