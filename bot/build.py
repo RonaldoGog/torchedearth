@@ -31,9 +31,9 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from common import DATA, SITE, STATIC, TEMPLATES, canonical, load_json, load_yaml, parse_date
 
 SECTION_INTRO = {
-    "causes": "What is driving warming: emissions, fossil fuels, land use, the science that ties them to rising temperatures, and the disinformation and corruption that keep it going.",
+    "causes": "What is driving warming: emissions, fossil fuels, land use, the science that ties them to rising temperatures — and the steps backward: targets scrapped, rules rolled back, protections cut, and the disinformation and corruption behind them.",
     "effects": "What warming is doing: heat, fire, water, storms, ice, oceans, ecosystems, health and money.",
-    "solutions": "What is being done: clean energy, policy, courts, finance, adaptation and the fights over all of it.",
+    "solutions": "What is being done: clean energy, policy, courts, finance, adaptation — progress, not promises. Setbacks are filed under Causes.",
     "other": "Opinion, politics, culture and the coverage of climate itself. Every op-ed, editorial and column lands here, whatever its subject — argument is not news.",
 }
 
