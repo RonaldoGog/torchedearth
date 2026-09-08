@@ -19,8 +19,7 @@ feeds:
   - {name: Yale Climate Connections, id: ycc, domain: yaleclimateconnections.org, rss: https://yaleclimateconnections.org/feed/, paywall: false, weight: 7, note: Explainers and weather-climate reporting.}
   - {name: Climate Home News, id: climatehome, domain: climatechangenews.com, rss: https://www.climatechangenews.com/feed/, paywall: false, weight: 7, note: International climate politics and diplomacy.}
   - {name: Mongabay, id: mongabay, domain: news.mongabay.com, rss: https://news.mongabay.com/feed/, paywall: false, weight: 7, note: Forests, oceans and biodiversity.}
-  - {name: DeSmog, id: desmog, domain: desmog.com, rss: https://www.desmog.com/feed/, paywall: false, weight: 6, note: Investigations into climate misinformation and lobbying.}
-  - {name: Wildfire Today, id: wildfiretoday, domain: wildfiretoday.com, rss: https://wildfiretoday.com/feed/, paywall: false, weight: 4, note: Wildfire news; only climate-linked stories pass the filter., verify: true}
+  - {name: Wildfire Today, id: wildfiretoday, domain: wildfiretoday.com, rss: https://wildfiretoday.com/feed/, paywall: false, weight: 4, note: Wildfire news; only climate-linked stories pass the filter.}
 
   # ---- General news with climate desks ----
   - {name: The Guardian, id: guardian, domain: theguardian.com, rss: https://www.theguardian.com/environment/climate-crisis/rss, paywall: false, weight: 8, note: Climate crisis section.}
@@ -55,3 +54,14 @@ feeds:
   - {name: NASA, id: nasa, domain: nasa.gov, paywall: false, weight: 9, note: Earth science and climate data.}
   - {name: Ember, id: ember, domain: ember-energy.org, paywall: false, weight: 8, note: Energy think tank; electricity data.}
   - {name: International Energy Agency, id: iea, domain: iea.org, paywall: false, weight: 8, note: Energy data and reports.}
+  - {name: DeSmog, id: desmog, domain: desmog.com, paywall: false, weight: 6, note: Investigations into climate misinformation and lobbying. Its feed sits behind a bot-blocking challenge, so stories are found through search.}
+  - {name: ProPublica, id: propublica, domain: propublica.org, paywall: false, weight: 8, note: Investigative nonprofit; environment desk.}
+  - {name: The Atlantic, id: atlantic, domain: theatlantic.com, paywall: true, weight: 7, note: Science and climate features.}
+  - {name: PBS NewsHour, id: pbs, domain: pbs.org, paywall: false, weight: 7, note: Climate and science segments.}
+  - {name: CBS News, id: cbs, domain: cbsnews.com, paywall: false, weight: 6, note: Climate and science desk.}
+  - {name: NBC News, id: nbc, domain: nbcnews.com, paywall: false, weight: 6, note: Climate and science desk.}
+  - {name: The Boston Globe, id: bostonglobe, domain: bostonglobe.com, paywall: true, weight: 6, note: Climate section.}
+  - {name: The Texas Tribune, id: texastribune, domain: texastribune.org, paywall: false, weight: 6, note: Nonprofit; environment and energy in Texas.}
+  - {name: Climate.gov, id: climategov, domain: climate.gov, paywall: false, weight: 9, note: NOAA's climate explainers and event trackers.}
+  - {name: Context, id: context, domain: context.news, paywall: false, weight: 7, note: The Thomson Reuters Foundation's climate and justice newsroom.}
+  - {name: Fox News, id: foxnews, domain: foxnews.com, paywall: false, weight: 4, note: Included to keep the sceptical side of the coverage in view.}

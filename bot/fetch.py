@@ -41,13 +41,25 @@ def _source_index(feeds):
 
 
 def fetch_feed(feed):
-    """One curated RSS/Atom feed -> (items, status_string)."""
-    try:
-        parsed = feedparser.parse(_get(feed["rss"]).content)
-    except Exception as e:  # network error, 404, etc.
-        return [], f"error: {e.__class__.__name__}"
-    if parsed.bozo and not parsed.entries:
-        return [], "error: not a valid feed"
+    """One curated RSS/Atom feed -> (items, status_string).
+
+    Tried first with the bot's own identity, then — if the site refuses that or hands
+    back a web page instead of a feed — as an ordinary browser. Some hosts block
+    anything that calls itself a bot. (A site behind a JavaScript "prove you are not a
+    robot" challenge, like DeSmog, blocks both; use a Google News search for those.)"""
+    parsed, error = None, None
+    for ua in (UA, BROWSER_UA):
+        try:
+            r = requests.get(feed["rss"], headers={"User-Agent": ua}, timeout=TIMEOUT)
+            r.raise_for_status()
+            parsed = feedparser.parse(r.content)
+            if parsed.entries:
+                break
+            error = "not a valid feed"
+        except Exception as e:  # network error, 403, 404, etc.
+            error = e.__class__.__name__
+    if parsed is None or not parsed.entries:
+        return [], f"error: {error}"
     items = []
     for e in parsed.entries:
         link = e.get("link") or ""
