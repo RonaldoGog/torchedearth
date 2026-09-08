@@ -5,15 +5,19 @@
     python bot/build.py --today 2026-09-05 # pretend it's another day (testing)
 
 Rules (all from config/settings.yml):
-  front page  = representative stories from the last `homepage_days`, of the
-                types in `homepage_types`, scoring >= `min_score_homepage`,
-                capped at `homepage_max`, grouped into Causes / Effects / Solutions
-                columns with an "Elsewhere" strip for `other`
+  front page  = the lead, then every story from the last `recent_days` days
+                (today and yesterday) listed alphabetically under its date, not
+                yet sorted into sections; then older stories from the last
+                `homepage_days`, capped at `homepage_max`, grouped into
+                Causes / Effects / Solutions columns with an "Elsewhere" strip
+                for `other`. Only the types in `homepage_types` scoring
+                >= `min_score_homepage` reach the front page.
   section page = everything else in that section, newest first, by month
   archive      = every story, with a search box
 Nothing is ever "moved": a story's page is a function of its date, section and type.
 """
 import html
+import re
 import shutil
 import sys
 from collections import defaultdict
@@ -40,6 +44,31 @@ def date_label(iso, today):
 
 def month_label(iso):
     return parse_date(iso).strftime("%B %Y")
+
+
+def day_label(iso, today):
+    """'Today · Monday, September 8' for the front page's day-by-day blocks."""
+    d = parse_date(iso)
+    full = f"{d:%A, %B} {d.day}" if d.year == today.year else f"{d:%A, %B} {d.day}, {d.year}"
+    if d == today:
+        return f"Today · {full}"
+    if d == today - timedelta(days=1):
+        return f"Yesterday · {full}"
+    return full
+
+
+def alpha_key(it):
+    """Sort key for an alphabetical headline list: ignore case and leading quotes or punctuation."""
+    return re.sub(r"^[^0-9a-z]+", "", it["title"].lower())
+
+
+def local_today(settings):
+    """Today's date in the site's own time zone, so 'Today' means today for the readers."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo(settings.get("timezone", "UTC"))).date()
+    except Exception:
+        return date.today()
 
 
 def prepare(items, settings, feeds, overrides, today):
@@ -76,17 +105,32 @@ def prepare(items, settings, feeds, overrides, today):
         it.setdefault("date_label", date_label(it["published"], today))
 
     cutoff = (today - timedelta(days=int(settings["homepage_days"]))).isoformat()
-    front = [r for r in reps if r["featured"] or (
+    eligible = [r for r in reps if r["featured"] or (
         r["published"] >= cutoff
         and r.get("type") in settings["homepage_types"]
         and r.get("score", 0) >= settings["min_score_homepage"]
     )]
-    front.sort(key=lambda r: (r["featured"], r.get("score", 0), r["published"]), reverse=True)
-    front = front[: int(settings["homepage_max"])]
+    by_rank = lambda r: (r["featured"], r.get("score", 0), r["published"])
 
-    lead = next((r for r in front if lead_url and canonical(r["url"]) == lead_url), None) or (front[0] if front else None)
+    # The newest stories (today and yesterday) all go up top, listed by day;
+    # older ones compete for the capped, sectioned part of the page below.
+    recent_from = (today - timedelta(days=int(settings.get("recent_days", 2)) - 1)).isoformat()
+    recent = [r for r in eligible if r["published"] >= recent_from]
+    older = sorted((r for r in eligible if r["published"] < recent_from), key=by_rank, reverse=True)
+    older = older[: int(settings["homepage_max"])]
+    front = recent + older
+
+    lead = next((r for r in front if lead_url and canonical(r["url"]) == lead_url), None) or (max(front, key=by_rank) if front else None)
+
+    by_day = defaultdict(list)
+    for r in recent:
+        if r is not lead:
+            by_day[r["published"]].append(r)
+    days = [{"label": day_label(iso, today), "stories": sorted(by_day[iso], key=alpha_key)}
+            for iso in sorted(by_day, reverse=True)]
+
     columns = defaultdict(list)
-    for r in front:
+    for r in older:
         if r is not lead:
             columns[r.get("section", "other")].append(r)
     for col in columns.values():
@@ -127,7 +171,7 @@ def prepare(items, settings, feeds, overrides, today):
          if it["source_id"] not in {f["id"] for f in feeds}),
         key=lambda s: -s["count"])
 
-    return {"lead": lead, "columns": columns, "sections": sections, "archive": archive,
+    return {"lead": lead, "days": days, "columns": columns, "sections": sections, "archive": archive,
             "stats": stats, "sources": sources, "other_sources": other_sources, "front": front}
 
 
@@ -160,8 +204,8 @@ def rss(front, settings, today):
 
 
 def main(today=None):
-    today = today or date.today()
     settings = load_yaml("settings.yml")
+    today = today or local_today(settings)
     feeds = load_yaml("feeds.yml")["feeds"]
     overrides = load_yaml("overrides.yml")
     items = load_json(DATA / "items.json", [])
@@ -184,7 +228,7 @@ def main(today=None):
         target.write_text(page, encoding="utf-8")
 
     write("index.html", "index.html", current="home", page_title=settings["site_name"],
-          description=settings["tagline"], lead=ctx["lead"], columns=ctx["columns"])
+          description=settings["tagline"], lead=ctx["lead"], days=ctx["days"], columns=ctx["columns"])
     for key, label in settings["sections"].items():
         write(f"{key}/index.html", "section.html", current=key, page_title=label,
               description=SECTION_INTRO[key], intro=SECTION_INTRO[key], months=ctx["sections"][key],
@@ -207,7 +251,8 @@ def main(today=None):
     (SITE / "feed.xml").write_text(rss(ctx["front"], settings, today), encoding="utf-8")
     (SITE / "CNAME").write_text(settings["domain"] + "\n", encoding="utf-8")
     (SITE / ".nojekyll").write_text("", encoding="utf-8")
-    print(f"built site/: front page {len(ctx['front'])} stories, archive {len(ctx['archive'])}, lead: {ctx['lead']['title'] if ctx['lead'] else '—'}")
+    recent = sum(len(d["stories"]) for d in ctx["days"])
+    print(f"built site/: front page {len(ctx['front'])} stories ({recent} in the day lists), archive {len(ctx['archive'])}, lead: {ctx['lead']['title'] if ctx['lead'] else '—'}")
 
 
 if __name__ == "__main__":

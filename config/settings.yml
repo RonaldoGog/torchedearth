@@ -9,8 +9,9 @@ base_url: https://torchedearth.org
 timezone: America/Los_Angeles
 
 # --- Front page rules ---------------------------------------------------
+recent_days: 2               # the newest days (today and yesterday) are listed in full, alphabetically, above the sections
 homepage_days: 28            # a story stays on the front page this many days, then lives on its section page
-homepage_max: 150            # hard cap on front-page links (Drudge runs ~150)
+homepage_max: 150            # cap on the older, sectioned part of the front page (the day lists above it are uncapped)
 min_relevance: 6             # classifier's 0-10 "is this about climate?"; below this the item is discarded
 min_score_homepage: 4        # importance 1-10 needed to make the front page
 homepage_types: [substantive, technical]   # clickbait and reprints skip the front page but stay in the archive
@@ -66,7 +67,9 @@ fetch:
   google_news_window: 2d       # Google News search window (when:2d)
   google_news_per_query: 40    # cap per query; feeds return up to 100
   resolve_workers: 4           # parallel lookups when unwrapping Google's links (more risks Google throttling)
+  resolve_budget_seconds: 480  # stop unwrapping after this long per run; the rest waits for a later run
   cache_days: 7                # how long an unwrapped link is remembered in data/url_cache.json
+  retry_failed_days: 3         # a link Google refused to unwrap isn't asked about again for this long
   repair_per_run: 150          # older stories still linking through Google: how many to unwrap per run (0 = off)
   default_weight: 5            # ranking weight for sources not in feeds.yml
 

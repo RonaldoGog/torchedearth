@@ -108,6 +108,38 @@ BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 BATCH_URL = "https://news.google.com/_/DotsSplashUi/data/batchexecute"
 RESOLVE_PAUSE = 0.5   # seconds between lookups, per worker
 
+# Unwrapping is bounded three ways, because Google refuses most lookups on a bad day
+# and one run once spent four and a half hours being refused politely:
+#   - a time budget per run (settings fetch.resolve_budget_seconds); when it's spent,
+#     remaining links are skipped and picked up on a later run
+#   - a circuit breaker: after RESOLVE_STRIKES "slow down" (429) answers the run stops
+#     asking Google at all
+#   - failures are remembered in url_cache.json and not retried for
+#     fetch.retry_failed_days, so the same dead link isn't asked about every morning
+RESOLVE_STRIKES = 3
+_resolve = {"deadline": None, "strikes": 0, "tripped": False, "skipped": 0}
+
+
+def start_resolve_budget(settings):
+    secs = float(settings.get("fetch", {}).get("resolve_budget_seconds", 480))
+    _resolve.update(deadline=time.monotonic() + secs, strikes=0, tripped=False, skipped=0)
+
+
+def _resolve_open():
+    if _resolve["tripped"]:
+        return False
+    return _resolve["deadline"] is None or time.monotonic() < _resolve["deadline"]
+
+
+def _cache_split(cache, settings):
+    """Drop stale entries. Successes live `cache_days`; failures are remembered `retry_failed_days`."""
+    fcfg = settings.get("fetch", {})
+    now = datetime.now(timezone.utc)
+    keep_ok = (now - timedelta(days=int(fcfg.get("cache_days", 7)))).date().isoformat()
+    keep_failed = (now - timedelta(days=int(fcfg.get("retry_failed_days", 3)))).date().isoformat()
+    return {k: v for k, v in cache.items() if isinstance(v, dict)
+            and ((v.get("url") and v.get("seen", "") >= keep_ok) or (not v.get("url") and v.get("failed", "") >= keep_failed))}
+
 
 def _ask_google(token):
     page = requests.get(f"https://news.google.com/articles/{token}",
@@ -142,33 +174,49 @@ def _ask_google(token):
     return None
 
 
-def resolve_google_link(url):
-    """Turn a news.google.com link into the publisher's URL. Returns None if it can't."""
+def _resolve_one(url):
+    """('ok', publisher_url) | ('failed', None) if Google wouldn't say | ('skipped', None) if out of budget."""
     token = _google_token(url)
     if not token:
-        return None
-    for attempt in range(3):
+        return "failed", None
+    if not _resolve_open():
+        _resolve["skipped"] += 1
+        return "skipped", None
+    for attempt in range(2):
         try:
             found = _ask_google(token)
             time.sleep(RESOLVE_PAUSE)
             if found:
-                return found
+                return "ok", found
             break
         except requests.HTTPError as e:
             if e.response is not None and e.response.status_code == 429:  # Google asking us to slow down
-                time.sleep(15 * (attempt + 1))
-                continue
+                _resolve["strikes"] += 1
+                if _resolve["strikes"] >= RESOLVE_STRIKES:
+                    _resolve["tripped"] = True
+                if attempt == 0 and not _resolve["tripped"]:
+                    time.sleep(15)
+                    continue
+                _resolve["skipped"] += 1   # rate-limited, not refused: try again another day
+                return "skipped", None
             break
         except Exception:
             break
-    # Older fallbacks, kept in case Google ever reverts.
-    try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, allow_redirects=True)
-        if "news.google.com" not in r.url:
-            return r.url
-    except Exception:
-        pass
-    return _decode_google_link(url)
+    # Older fallback, kept in case Google ever reverts to plain redirects.
+    if _resolve_open():
+        try:
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, allow_redirects=True)
+            if "news.google.com" not in r.url:
+                return "ok", r.url
+        except Exception:
+            pass
+    found = _decode_google_link(url)
+    return ("ok", found) if found else ("failed", None)
+
+
+def resolve_google_link(url):
+    """Turn a news.google.com link into the publisher's URL. Returns None if it can't."""
+    return _resolve_one(url)[1]
 
 
 def fetch_google(queries, settings, source_index):
@@ -198,32 +246,39 @@ def fetch_google(queries, settings, source_index):
             raw.append({"glink": e.get("link"), "title": title, "source_name": source_name,
                         "published": _date(e), "blurb": strip_html(e.get("summary") or "")[:400]})
 
-    # Unwrap Google's links to the publisher's URL, in parallel. Successful lookups
-    # are cached in data/url_cache.json (committed with the rest of data/) so a link
-    # is only ever asked about once; entries drop out after `cache_days`.
+    # Unwrap Google's links to the publisher's URL, in parallel. Lookups are cached in
+    # data/url_cache.json (committed with the rest of data/): a success is remembered
+    # for `cache_days`, a failure for `retry_failed_days`, so no link is asked about
+    # every morning. Bounded by the run's resolve budget (see start_resolve_budget).
     today = datetime.now(timezone.utc).date().isoformat()
-    keep_days = int(fcfg.get("cache_days", 7))
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=keep_days)).date().isoformat()
-    cache = {k: v for k, v in cache.items() if isinstance(v, dict) and v.get("seen", "") >= cutoff}
+    cache = _cache_split(cache, settings)
+    if _resolve["deadline"] is None:
+        start_resolve_budget(settings)
     todo = sorted({r["glink"] for r in raw if r["glink"] and r["glink"] not in cache})
     workers = int(fcfg.get("resolve_workers", 4))
-    resolved = failed = 0
+    resolved = failed = skipped = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
-        for glink, final in zip(todo, ex.map(resolve_google_link, todo)):
-            if final and "news.google.com" not in final:
+        for glink, (state, final) in zip(todo, ex.map(_resolve_one, todo)):
+            if state == "ok" and final and "news.google.com" not in final:
                 cache[glink] = {"url": final, "seen": today}
                 resolved += 1
+            elif state == "skipped":
+                skipped += 1
             else:
+                cache[glink] = {"failed": today}
                 failed += 1
     for r in raw:
-        if r["glink"] in cache:
+        if cache.get(r["glink"], {}).get("url"):
             cache[r["glink"]]["seen"] = today
     save_json(URL_CACHE, cache)
-    statuses["resolve"] = f"{resolved} links unwrapped, {failed} could not be (left pointing at Google)"
+    statuses["resolve"] = (f"{resolved} links unwrapped, {failed} could not be (left pointing at Google, "
+                           f"not retried for {int(fcfg.get('retry_failed_days', 3))} days), {skipped} skipped: "
+                           + ("Google asked us to stop" if _resolve["tripped"] else "out of time for this run"))
 
     items = []
     for r in raw:
-        url = cache[r["glink"]]["url"] if r["glink"] in cache else r["glink"]
+        hit = cache.get(r["glink"]) or {}
+        url = hit["url"] if hit.get("url") else r["glink"]
         if not url or not r["title"]:
             continue
         source, source_id, paywall, weight = label_source(url, r["source_name"], source_index, settings)
@@ -260,26 +315,36 @@ def repair_google_links(items, feeds, settings):
     carry a default weight and no paywall flag. Unwrap a batch of them each run, newest first,
     and relabel. Ids are left alone so groups and the dropped list stay valid."""
     limit = int(settings.get("fetch", {}).get("repair_per_run", 150))
-    todo = sorted((i for i in items if "news.google.com" in i.get("url", "")),
+    cache = _cache_split(load_json(URL_CACHE, {}), settings)
+    today = datetime.now(timezone.utc).date().isoformat()
+    todo = sorted((i for i in items if "news.google.com" in i.get("url", "") and i["url"] not in cache),
                   key=lambda i: i.get("published", ""), reverse=True)[:limit]
-    if not todo:
+    if not todo or not _resolve_open():
         return 0
+    if _resolve["deadline"] is None:
+        start_resolve_budget(settings)
     index = _source_index(feeds)
     workers = int(settings.get("fetch", {}).get("resolve_workers", 4))
-    fixed = 0
+    fixed = failed = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
-        for it, final in zip(todo, ex.map(resolve_google_link, [i["url"] for i in todo])):
-            if final and "news.google.com" not in final:
+        for it, (state, final) in zip(todo, ex.map(_resolve_one, [i["url"] for i in todo])):
+            if state == "ok" and final and "news.google.com" not in final:
+                cache[it["url"]] = {"url": canonical(final), "seen": today}
                 it["url"] = canonical(final)
                 it["source"], it["source_id"], it["paywall"], it["weight"] = label_source(final, it["source"], index, settings)
                 fixed += 1
-    print(f"repaired {fixed} of {len(todo)} old Google links")
+            elif state == "failed":
+                cache[it["url"]] = {"failed": today}
+                failed += 1
+    save_json(URL_CACHE, cache)
+    print(f"repaired {fixed} of {len(todo)} old Google links ({failed} refused, {len(todo) - fixed - failed} skipped)")
     return fixed
 
 
 def fetch_all(feeds, queries, settings):
     """Everything, de-duplicated by id. Returns (items, feed_status)."""
     status = {"run": datetime.now(timezone.utc).isoformat(timespec="seconds"), "feeds": {}, "google": {}}
+    start_resolve_budget(settings)   # one budget for this run's unwrapping, shared with repair_google_links
     items = {}
     for feed in feeds:
         if not feed.get("rss"):

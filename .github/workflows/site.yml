@@ -1,6 +1,9 @@
 # Runs the bot every morning and publishes the site to GitHub Pages.
 # On Sundays it also builds the weekly newsletter.
-# Manual runs: Actions tab -> "Update site" -> Run workflow.
+# Manual runs: Actions tab -> "Update site" -> Run workflow. Tick "Rebuild the
+# pages only" to republish from the stories already saved (about a minute) —
+# no fetching, classifying or posting. Use it after changing a template, the
+# stylesheet or overrides.yml.
 name: Update site
 
 on:
@@ -9,6 +12,10 @@ on:
     - cron: "0 15 * * 0"    # Sunday newsletter, 15:00 UTC
   workflow_dispatch:
     inputs:
+      rebuild_only:
+        description: "Rebuild the pages only (no fetching, classifying or posting)"
+        type: boolean
+        default: false
       newsletter:
         description: "Also build the weekly newsletter"
         type: boolean
@@ -35,6 +42,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Fetch and classify today's headlines
+        if: inputs.rebuild_only != true
         run: python bot/pipeline.py
         env:
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
@@ -52,6 +60,7 @@ jobs:
         run: python bot/build.py
 
       - name: Post to social accounts
+        if: inputs.rebuild_only != true
         run: python bot/social.py
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
@@ -60,11 +69,14 @@ jobs:
           MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
 
       - name: Save the database back to the repository
+        # A run can take a while; if a change was pushed by hand in the meantime,
+        # put today's data on top of it instead of failing the push.
         run: |
           git config user.name "torchedearth-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/
           git commit -m "Daily update $(date -u +%F)" || echo "nothing new"
+          git pull --rebase origin main
           git push
 
       - uses: actions/upload-pages-artifact@v3

@@ -43,6 +43,15 @@ nav.sections a.current { border-bottom-color: var(--ember); }
 .also a { text-decoration: underline; text-decoration-color: var(--rule); }
 .also a:hover { text-decoration-color: var(--ember); }
 
+/* Day lists: everything from today and yesterday, alphabetical, not yet sectioned */
+.day { padding: 18px 0 4px; border-bottom: 1px solid var(--rule); }
+.day h3 { font-size: 15px; font-weight: 700; margin: 0 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--ember); }
+.day ul { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 40px; }
+.day li { break-inside: avoid; margin: 0 0 10px; line-height: 1.25; }
+.day a.h { font-size: 15px; }
+.day .meta, .day .also { font-size: 13px; }
+.older { margin: 26px 0 -10px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--smoke); }
+
 /* Three columns = the three sections */
 .columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 40px; padding: 24px 0 8px; }
 .col h3, .strip h3 { font-size: 15px; font-weight: 700; margin: 0 0 14px; padding-bottom: 6px; border-bottom: 2px solid var(--ember); }
@@ -89,7 +98,7 @@ footer a { text-decoration: underline; text-decoration-color: var(--rule); }
   html { font-size: 16px; }
   .columns { grid-template-columns: 1fr; gap: 10px 0; }
   .col { padding-bottom: 8px; }
-  .strip ul { columns: 1; }
+  .strip ul, .day ul { columns: 1; }
   .lead h2 { max-width: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

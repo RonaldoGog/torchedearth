@@ -21,10 +21,12 @@ steer it; everything else is automatic.
 4. **Match.** The model also says which of today's stories are the same story
    as each other or as last week's, so one event covered by twelve outlets
    appears once with the others under "Also:".
-5. **Publish.** The site is rebuilt and pushed live. Front page = last four
-   weeks; section pages = everything older; archive = everything, searchable.
-   Nothing is ever moved by hand — a story's page follows from its date,
-   section and type.
+5. **Publish.** The site is rebuilt and pushed live. Front page = the lead,
+   then everything from today and yesterday listed alphabetically under its
+   date, then the rest of the last four weeks sorted into Causes / Effects /
+   Solutions / Elsewhere; section pages = everything older; archive =
+   everything, searchable. Nothing is ever moved by hand — a story's page
+   follows from its date, section and type.
 6. **Share.** The top five new stories go to Bluesky and Mastodon.
 7. **Sundays:** the week's top ten become the newsletter, saved to the site
    and pushed to the email provider.
