@@ -61,7 +61,8 @@ def main(dry_run=False):
 
     keep = []
     for it in items:
-        if it.get("status") == "ok" and it.get("relevance", 0) < settings.get("min_relevance", 6):
+        # Stories imported from the earlier hand-built sites were chosen by a person; never drop them.
+        if it.get("status") == "ok" and it.get("relevance", 0) < settings.get("min_relevance", 6) and not it.get("archive"):
             dropped.add(it["id"])
         else:
             keep.append(it)

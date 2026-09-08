@@ -40,6 +40,7 @@ nav.sections a.current { border-bottom-color: var(--ember); }
 .pay { font-weight: 700; color: var(--ink); }
 .tag { color: var(--ember); font-size: 13px; font-weight: 700; margin-left: 8px; white-space: nowrap; }
 .also { color: var(--smoke); font-size: 13px; margin-top: 3px; }
+.arch { color: var(--ember-dark); font-size: 12px; font-style: italic; margin-left: 8px; white-space: nowrap; }
 .also a { text-decoration: underline; text-decoration-color: var(--rule); }
 .also a:hover { text-decoration-color: var(--ember); }
 

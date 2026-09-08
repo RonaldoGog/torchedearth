@@ -103,7 +103,8 @@ def _prompt(batch):
 
 def _apply(it, r):
     it["relevance"] = max(0, min(10, int(r.get("relevance", 0))))
-    it["section"] = r.get("section") if r.get("section") in SECTIONS else "other"
+    if not it.get("section_locked"):   # imported stories keep the section chosen by hand
+        it["section"] = r.get("section") if r.get("section") in SECTIONS else "other"
     it["type"] = r.get("type") if r.get("type") in TYPES else "substantive"
     it["score"] = max(1, min(10, int(r.get("score", 5))))
     it["summary"] = str(r.get("summary", "")).strip()[:240]

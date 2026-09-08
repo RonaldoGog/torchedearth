@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import tag, meta, also, ext %}
+{% from "_macros.html" import tag, meta, also, ext, arch %}
 {% block content %}
 {% if lead %}
 <section class="lead">
@@ -14,7 +14,7 @@
   <h3>{{ day.label }}</h3>
   <ul>
   {% for it in day.stories %}
-    <li><a class="h" href="{{ it.url }}" {{ ext() }}>{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ it.source }}{% if it.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}</span>{{ also(it) }}</li>
+    <li><a class="h" href="{{ it.url }}" {{ ext() }}>{{ it.title }}</a>{{ tag(it) }}<br><span class="meta">{{ it.source }}{% if it.paywall %} <span class="pay" title="Subscription required">$</span>{% endif %}{{ arch(it) }}</span>{{ also(it) }}</li>
   {% endfor %}
   </ul>
 </section>

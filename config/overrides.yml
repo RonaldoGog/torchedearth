@@ -8,8 +8,8 @@ lead: ""          # pin one story as the lead, e.g. https://example.com/story
 feature: []       # force stories onto the front page regardless of score or age
   # - https://example.com/story
 
-hide: []          # remove stories from every page (wrong, off-topic, offensive)
-  # - https://example.com/story
+hide:             # remove stories from every page (wrong, off-topic, offensive)
+  - https://bloomberg.com/energy   # a section front page the bot mistook for a story, dated 2015
 
 section: {}       # move a story to a different section when the bot gets it wrong
   # causes:

@@ -1,0 +1,539 @@
+diff --git a/.gitignore b/.gitignore
+index 7d53474..14e4750 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,4 +1,3 @@
+ site/
+ __pycache__/
+ *.pyc
+-data/url_cache.json
+diff --git a/README.md b/README.md
+index 1de9b98..901ac92 100644
+--- a/README.md
++++ b/README.md
+@@ -81,7 +81,7 @@ uses it (or run the workflow by hand).
+     templates/     the page layouts (Jinja2 HTML)
+     static/        style.css (inlined into every page)
+     data/          the database: items.json (every story), dropped.json,
+-                   feed_status.json, posted.json, newsletters/
++                   feed_status.json, url_cache.json, posted.json, newsletters/
+     site/          the built website (regenerated each run; not committed)
+     .github/workflows/site.yml   the daily schedule
+ 
+@@ -124,6 +124,17 @@ first real run, or leave it: the bot only adds to it.
+   watching the output is the right way to tune the feed list and thresholds.
+ - Feeds die. `data/feed_status.json` records what each feed returned on the
+   last run, and the Sources page flags feeds that were unreachable.
+-- Google's news links redirect through Google; the bot unwraps them so
+-  duplicates are recognised. If Google changes the format, stories from
+-  searches still appear — the links just redirect through Google.
++- Google's news links are opaque tokens; the bot asks Google for the real
++  publisher URL (two quick requests per link, answers cached in
++  `data/url_cache.json`) so duplicates are recognised, outlets get their
++  weight and $ flag, and readers land on the publisher. If Google changes the
++  recipe, stories from searches still appear with links that bounce through
++  Google, `feed_status.json` shows "0 links unwrapped", and the open-source
++  googlenewsdecoder project (github.com/SSujitX/google-news-url-decoder) is
++  where to look for the new recipe. Links saved while unwrapping was broken are
++  repaired a batch at a time on later runs (`repair_per_run` in settings.yml).
++- Two stories are grouped under one headline only when the bot is confident
++  they report the same event: near-identical titles within a week, or a model
++  match with confidence of at least `match_min_confidence`. A group can never
++  span more than a week. If a story is wrongly hidden under another's "Also",
++  or wrongly shown twice, those two settings are the knobs.
+diff --git a/bot/classify.py b/bot/classify.py
+index 7c6aaea..d4f4a9e 100644
+--- a/bot/classify.py
++++ b/bot/classify.py
+@@ -18,6 +18,8 @@ import time
+ 
+ import requests
+ 
++from dedupe import tokens
++
+ SYSTEM = """You sort news items for Torched Earth, a site that lists climate-change headlines and links to the original articles.
+ 
+ For each item, judging only from its headline, source and blurb, return:
+@@ -32,7 +34,7 @@ For each item, judging only from its headline, source and blurb, return:
+     technical = reports a specific study, dataset, forecast or official report (journals, agencies, think tanks, company data releases).
+     substantive = original reporting or analysis with new information.
+     clickbait = provocative or vague headline on thin content; listicles; celebrity angles; questions as headlines; speculative "could/may" pieces with no new reporting.
+-    reprint = wire copy or a rewrite of another outlet's story or a press release (clues: "(Bloomberg) --", "(AP)", "Reuters", "according to a report by", press-release phrasing, aggregator sites).
++    reprint = wire copy or a rewrite of another outlet's story or a press release (clues: a non-wire outlet running copy credited "(Bloomberg) --", "(AP)" or "Reuters"; "according to a report by"; press-release phrasing; aggregator sites). A story published by Reuters, AP or Bloomberg themselves is their own reporting, not a reprint.
+ - score: 1-10 importance for a reader trying to understand climate change this week (authority of the source, scale of what happened, novelty).
+ - summary: one plain sentence, at most 25 words, saying what happened. No hype, no opinion, never "this article".
+ 
+@@ -141,13 +143,31 @@ def classify(items, settings, log=print):
+ # Title similarity catches wire reprints; it cannot tell that "World's oceans hit
+ # hottest temperature ever recorded" and "Copernicus: daily sea surface
+ # temperature breaks record" are the same story. The model can. Once a day,
+-# today's new stories are compared against the last week's.
++# today's new stories are compared against the last few days'.
++#
++# The matcher used to be far too generous: asked to compare sixty new items against
++# several hundred recent ones, a small model linked anything on the same topic, and
++# every El Niño story for three weeks ended up as one headline with 57 "Also" links.
++# Three things keep it honest now: the prompt spells out that same topic is not the
++# same story; the model reports a confidence and only confident links are kept; and
++# only recent items that share some vocabulary with the new batch are shown to it.
++
++MATCH_SYSTEM = """You match news items that report the same story: the same single event, announcement, study, ruling, data release or record. "Same story" means a reader who had seen one item would learn nothing new from the headline of the other, apart from the outlet's angle or emphasis.
++
++Be strict. These are NOT the same story:
++- two items on the same subject (El Niño, wildfires, Nepal's floods, the 1.5°C report) reporting different events, findings, places or days;
++- a study and a news event on the same topic;
++- a follow-up with a new development (a death toll rising, a lawsuit filed, a new forecast);
++- an explainer, opinion piece or overview and a news report on its subject.
++
++These ARE the same story: many outlets covering one lawsuit, one report, one record, one disaster on the same day; a wire story and its reprints; a press release and the coverage of it.
+ 
+-MATCH_SYSTEM = """You match news items that report the same event, announcement, study, ruling or data release.
+-Two items are the same story when they are about the same thing that happened — many outlets covering one lawsuit, one report, one record — even from different angles or with different emphasis. Follow-ups with genuinely new developments, and different events on the same topic, are different stories.
++You will get RECENT items (labels like R3) and NEW items (labels like N7). For each NEW item that is the same story as a RECENT item or as an earlier NEW item, output one object with keys "item" (the NEW label), "same_as" (the matching label; prefer the RECENT label if one exists, otherwise the lowest-numbered NEW label) and "confidence" (1-10: 10 = certainly the same event; 5 = same topic, probably a different event). When in doubt, leave it out — an unmatched duplicate costs little, a wrong match hides a story.
++Respond with a JSON array only — no prose, no code fences. Output [] if nothing matches."""
+ 
+-You will get RECENT items (labels like R3) and NEW items (labels like N7). For each NEW item that is the same story as a RECENT item or as an earlier NEW item, output one object. Omit NEW items that match nothing.
+-Respond with a JSON array only — no prose, no code fences — of objects with keys "item" (the NEW label) and "same_as" (the label it matches; prefer the RECENT label if one exists, otherwise the lowest-numbered NEW label)."""
++def _words(it):
++    """Content words of an item's headline and summary (same tokenizer as dedupe.py)."""
++    return set(tokens(f"{it['title']} {it.get('summary', '')}"))
+ 
+ 
+ def _line(label, it):
+@@ -155,15 +175,20 @@ def _line(label, it):
+ 
+ 
+ def match_stories(new_items, recent_items, settings, log=print):
+-    """Set it['same_as'] = id of an earlier item that reports the same story."""
++    """Set it['same_as'] (and it['match_confidence']) = an earlier item that reports the same story."""
+     provider, model, key = _config(settings)
+     if not key or not new_items:
+         return 0
++    llm = settings.get("llm", {})
++    min_conf = int(llm.get("match_min_confidence", 8))
+     size = 60
+     matched = 0
+     for start in range(0, len(new_items), size):
+         batch = new_items[start:start + size]
+-        recent_lines = "\n".join(_line(f"R{n}", it) for n, it in enumerate(recent_items, 1)) or "(none)"
++        # Only show the model recent items that share at least two content words with something new.
++        batch_words = [_words(it) for it in batch]
++        candidates = [r for r in recent_items if any(len(_words(r) & w) >= 2 for w in batch_words)]
++        recent_lines = "\n".join(_line(f"R{n}", it) for n, it in enumerate(candidates, 1)) or "(none)"
+         new_lines = "\n".join(_line(f"N{n}", it) for n, it in enumerate(batch, 1))
+         user = f"RECENT items:\n{recent_lines}\n\nNEW items:\n{new_lines}"
+         try:
+@@ -175,12 +200,17 @@ def match_stories(new_items, recent_items, settings, log=print):
+             try:
+                 item = batch[int(str(r["item"]).strip("Nn")) - 1]
+                 label = str(r["same_as"]).strip().upper()
+-                target = recent_items[int(label[1:]) - 1] if label.startswith("R") else batch[int(label[1:]) - 1]
+-            except (KeyError, ValueError, IndexError):
++                target = candidates[int(label[1:]) - 1] if label.startswith("R") else batch[int(label[1:]) - 1]
++                conf = int(r.get("confidence", 0))
++            except (KeyError, ValueError, IndexError, TypeError):
++                continue
++            if target is item or conf < min_conf:
++                continue
++            if not (_words(item) & _words(target)):  # two items with no words in common are never one story
+                 continue
+-            if target is not item:
+-                item["same_as"] = target["id"]
+-                matched += 1
+-        time.sleep(float(settings.get("llm", {}).get("pause_seconds", 7)))
++            item["same_as"] = target["id"]
++            item["match_confidence"] = conf
++            matched += 1
++        time.sleep(float(llm.get("pause_seconds", 7)))
+     log(f"story matching: {matched} of {len(new_items)} new items match an earlier story")
+     return matched
+diff --git a/bot/dedupe.py b/bot/dedupe.py
+index b735cb3..f71a267 100644
+--- a/bot/dedupe.py
++++ b/bot/dedupe.py
+@@ -8,25 +8,39 @@ Two signals: title similarity within a 7-day window (catches wire reprints) and
+ `same_as` links written by the model's story matcher in classify.py (catches the
+ same story told in different words). Only the last three weeks are re-examined
+ each run, so old groups stay stable.
++
++Two guards keep groups honest. A group may never span more than WINDOW_DAYS
++between its earliest and latest item: one event gets covered for a few days, so
++anything that would stretch a group across weeks is a different story, however
++similar it sounds. And a model link is only trusted when the matcher recorded a
++confidence for it (links from before the matcher was tightened carry none and
++are ignored).
+ """
+ from datetime import timedelta
+ from difflib import SequenceMatcher
+ import re
++import unicodedata
+ 
+ from common import parse_date
+ 
++# Words that say nothing about which story a headline is: grammar, news-speak, and
++# the site's own subject ("climate change", "global warming" open half the headlines).
+ STOPWORDS = set("""a an the of to in on for and or with as by at from is are was were be has have
+ its it this that new says say said report reports study finds after over amid could may
+-than into out about us up how why what will would""".split())
++than into out about us up how why what will would climate change global warming""".split())
+ 
+ WINDOW_DAYS = 7
+ LOOKBACK_DAYS = 21
+ THRESHOLD = 0.62
++MIN_SHARED = 2      # two titles must share at least this many real words ...
++MIN_OVERLAP = 0.34  # ... making up at least this fraction of all their words, before the
++                    # looser word-order comparison below is even consulted
+ 
+ 
+ def tokens(title):
+-    words = re.findall(r"[a-z0-9]+", title.lower())
+-    return [w for w in words if w not in STOPWORDS and len(w) > 2]
++    plain = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()  # Niño -> Nino
++    words = re.findall(r"[a-z0-9]+", plain.lower())
++    return [w for w in words if w not in STOPWORDS and (len(w) > 2 or w.isdigit())]  # numbers count
+ 
+ 
+ def similarity(a, b):
+@@ -37,6 +51,8 @@ def similarity(a, b):
+     jaccard = len(sa & sb) / len(sa | sb)
+     if jaccard >= THRESHOLD:
+         return jaccard
++    if len(sa & sb) < MIN_SHARED or jaccard < MIN_OVERLAP:
++        return 0.0
+     seq = SequenceMatcher(None, " ".join(ta), " ".join(tb))
+     return max(jaccard, seq.ratio() if seq.quick_ratio() >= THRESHOLD else 0.0)
+ 
+@@ -56,6 +72,7 @@ def assign_groups(items, today):
+     cutoff = (today - timedelta(days=LOOKBACK_DAYS)).isoformat()
+     recent = sorted((i for i in items if i.get("published", "") >= cutoff), key=lambda i: i["published"])
+     parent = {i["id"]: i["id"] for i in recent}
++    span = {i["id"]: (parse_date(i["published"]), parse_date(i["published"])) for i in recent}
+ 
+     def find(x):
+         while parent[x] != x:
+@@ -63,9 +80,21 @@ def assign_groups(items, today):
+             x = parent[x]
+         return x
+ 
++    def union(a, b):
++        """Merge the groups of a and b unless the result would span more than WINDOW_DAYS."""
++        ra, rb = find(a), find(b)
++        if ra == rb:
++            return
++        lo = min(span[ra][0], span[rb][0])
++        hi = max(span[ra][1], span[rb][1])
++        if (hi - lo).days > WINDOW_DAYS:
++            return
++        parent[rb] = ra
++        span[ra] = (lo, hi)
++
+     for it in recent:
+-        if it.get("same_as") in parent:
+-            parent[find(it["id"])] = find(it["same_as"])
++        if it.get("same_as") in parent and it.get("match_confidence"):
++            union(it["same_as"], it["id"])
+ 
+     for idx, a in enumerate(recent):
+         da = parse_date(a["published"])
+@@ -75,7 +104,7 @@ def assign_groups(items, today):
+             if find(a["id"]) == find(b["id"]):
+                 continue
+             if similarity(a["title"], b["title"]) >= THRESHOLD:
+-                parent[find(b["id"])] = find(a["id"])
++                union(a["id"], b["id"])
+ 
+     groups = {}
+     for it in recent:
+diff --git a/bot/fetch.py b/bot/fetch.py
+index dc4d1e7..4ba1563 100644
+--- a/bot/fetch.py
++++ b/bot/fetch.py
+@@ -6,10 +6,11 @@ Nothing here decides whether a story is about climate — that's classify.py.
+ """
+ import base64
+ import concurrent.futures
++import json
+ import re
+ import time
+ import urllib.parse
+-from datetime import datetime, timezone
++from datetime import datetime, timedelta, timezone
+ 
+ import feedparser
+ import requests
+@@ -75,12 +76,16 @@ def google_news_url(query, window):
+     return f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+ 
+ 
++def _google_token(url):
++    m = re.search(r"news\.google\.com/(?:rss/)?(?:articles|read)/([^/?#]+)", url)
++    return m.group(1) if m else None
++
++
+ def _decode_google_link(url):
+-    """Best effort: older Google News links embed the target URL in base64."""
+-    m = re.search(r"/articles/([^/?]+)", url)
+-    if not m:
++    """Fallback for the old link format, where the target URL was inside the base64 token."""
++    token = _google_token(url)
++    if not token:
+         return None
+-    token = m.group(1)
+     try:
+         raw = base64.urlsafe_b64decode(token + "=" * (-len(token) % 4))
+     except Exception:
+@@ -92,16 +97,78 @@ def _decode_google_link(url):
+     return re.split(r"[\x00-\x1f]", found)[0].rstrip("\x01\x02\x03").strip("\"'") or None
+ 
+ 
++# Since 2024 Google's news links no longer redirect and no longer contain the target
++# URL. The publisher's URL has to be asked for: load the article page to pick up a
++# signature and timestamp, then post those to Google's internal "batchexecute"
++# endpoint, which answers with the real link. This is the method the open-source
++# googlenewsdecoder package uses (github.com/SSujitX/google-news-url-decoder); if
++# Google changes things again, that project is the place to look for the new recipe.
++BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
++              "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
++BATCH_URL = "https://news.google.com/_/DotsSplashUi/data/batchexecute"
++RESOLVE_PAUSE = 0.5   # seconds between lookups, per worker
++
++
++def _ask_google(token):
++    page = requests.get(f"https://news.google.com/articles/{token}",
++                        headers={"User-Agent": BROWSER_UA}, timeout=TIMEOUT)
++    page.raise_for_status()
++    sig = re.search(r'data-n-a-sg="([^"]+)"', page.text)
++    ts = re.search(r'data-n-a-ts="([^"]+)"', page.text)
++    if not sig or not ts:
++        return None
++    req = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
++           f'"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{token}",{ts.group(1)},"{sig.group(1)}"]')
++    body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", req, None, "generic"]]]))
++    r = requests.post(BATCH_URL, data=body, timeout=TIMEOUT,
++                      headers={"User-Agent": BROWSER_UA,
++                               "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
++    r.raise_for_status()
++    # The reply is an anti-hijack prefix, then one or more JSON arrays (sometimes each
++    # preceded by a byte count). The URL is inside a JSON string in the first array.
++    text = r.text
++    start = text.find("[[")
++    if start < 0:
++        return None
++    outer, _ = json.JSONDecoder().raw_decode(text, start)
++    for part in outer:
++        if isinstance(part, list) and len(part) > 2 and isinstance(part[2], str):
++            try:
++                inner = json.loads(part[2])
++            except ValueError:
++                continue
++            if isinstance(inner, list) and len(inner) > 1 and str(inner[1]).startswith("http"):
++                return inner[1]
++    return None
++
++
+ def resolve_google_link(url):
+-    """Turn a news.google.com redirect into the publisher's URL (or leave it)."""
++    """Turn a news.google.com link into the publisher's URL. Returns None if it can't."""
++    token = _google_token(url)
++    if not token:
++        return None
++    for attempt in range(3):
++        try:
++            found = _ask_google(token)
++            time.sleep(RESOLVE_PAUSE)
++            if found:
++                return found
++            break
++        except requests.HTTPError as e:
++            if e.response is not None and e.response.status_code == 429:  # Google asking us to slow down
++                time.sleep(15 * (attempt + 1))
++                continue
++            break
++        except Exception:
++            break
++    # Older fallbacks, kept in case Google ever reverts.
+     try:
+         r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, allow_redirects=True)
+         if "news.google.com" not in r.url:
+             return r.url
+     except Exception:
+         pass
+-    decoded = _decode_google_link(url)
+-    return decoded or url
++    return _decode_google_link(url)
+ 
+ 
+ def fetch_google(queries, settings, source_index):
+@@ -131,38 +198,85 @@ def fetch_google(queries, settings, source_index):
+             raw.append({"glink": e.get("link"), "title": title, "source_name": source_name,
+                         "published": _date(e), "blurb": strip_html(e.get("summary") or "")[:400]})
+ 
+-    # Unwrap Google's redirect links in parallel (cached across days).
+-    todo = {r["glink"] for r in raw if r["glink"] and r["glink"] not in cache}
+-    workers = int(fcfg.get("resolve_workers", 12))
++    # Unwrap Google's links to the publisher's URL, in parallel. Successful lookups
++    # are cached in data/url_cache.json (committed with the rest of data/) so a link
++    # is only ever asked about once; entries drop out after `cache_days`.
++    today = datetime.now(timezone.utc).date().isoformat()
++    keep_days = int(fcfg.get("cache_days", 7))
++    cutoff = (datetime.now(timezone.utc) - timedelta(days=keep_days)).date().isoformat()
++    cache = {k: v for k, v in cache.items() if isinstance(v, dict) and v.get("seen", "") >= cutoff}
++    todo = sorted({r["glink"] for r in raw if r["glink"] and r["glink"] not in cache})
++    workers = int(fcfg.get("resolve_workers", 4))
++    resolved = failed = 0
+     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+         for glink, final in zip(todo, ex.map(resolve_google_link, todo)):
+-            cache[glink] = final
++            if final and "news.google.com" not in final:
++                cache[glink] = {"url": final, "seen": today}
++                resolved += 1
++            else:
++                failed += 1
++    for r in raw:
++        if r["glink"] in cache:
++            cache[r["glink"]]["seen"] = today
+     save_json(URL_CACHE, cache)
++    statuses["resolve"] = f"{resolved} links unwrapped, {failed} could not be (left pointing at Google)"
+ 
+     items = []
+-    paywalled = set(settings.get("paywalled_domains", []))
+-    default_weight = int(fcfg.get("default_weight", 5))
+     for r in raw:
+-        url = cache.get(r["glink"], r["glink"])
++        url = cache[r["glink"]]["url"] if r["glink"] in cache else r["glink"]
+         if not url or not r["title"]:
+             continue
+-        dom = domain_of(url)
+-        known = source_index.get(dom) or next((f for d, f in source_index.items() if dom.endswith("." + d)), None)
++        source, source_id, paywall, weight = label_source(url, r["source_name"], source_index, settings)
+         items.append({
+             "id": item_id(url),
+             "url": canonical(url),
+             "title": r["title"],
+-            "source": known["name"] if known else (r["source_name"] or dom),
+-            "source_id": known["id"] if known else slug(r["source_name"] or dom),
++            "source": source,
++            "source_id": source_id,
+             "published": r["published"],
+             "blurb": r["blurb"],
+-            "paywall": bool(known.get("paywall")) if known else any(dom == p or dom.endswith("." + p) for p in paywalled),
+-            "weight": int(known.get("weight", default_weight)) if known else default_weight,
++            "paywall": paywall,
++            "weight": weight,
+             "via": "google",
+         })
+     return items, statuses
+ 
+ 
++def label_source(url, source_name, source_index, settings):
++    """(source, source_id, paywall, weight) for a publisher URL: from feeds.yml if the
++    outlet is listed there, otherwise from Google's name for it and settings.paywalled_domains."""
++    dom = domain_of(url)
++    known = source_index.get(dom) or next((f for d, f in source_index.items() if dom.endswith("." + d)), None)
++    if known:
++        return known["name"], known["id"], bool(known.get("paywall")), int(known.get("weight", 5))
++    paywalled = settings.get("paywalled_domains", [])
++    name = source_name or dom
++    return (name, slug(name), any(dom == p or dom.endswith("." + p) for p in paywalled),
++            int(settings.get("fetch", {}).get("default_weight", 5)))
++
++
++def repair_google_links(items, feeds, settings):
++    """Stories saved while unwrapping wasn't working still link through news.google.com and
++    carry a default weight and no paywall flag. Unwrap a batch of them each run, newest first,
++    and relabel. Ids are left alone so groups and the dropped list stay valid."""
++    limit = int(settings.get("fetch", {}).get("repair_per_run", 150))
++    todo = sorted((i for i in items if "news.google.com" in i.get("url", "")),
++                  key=lambda i: i.get("published", ""), reverse=True)[:limit]
++    if not todo:
++        return 0
++    index = _source_index(feeds)
++    workers = int(settings.get("fetch", {}).get("resolve_workers", 4))
++    fixed = 0
++    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
++        for it, final in zip(todo, ex.map(resolve_google_link, [i["url"] for i in todo])):
++            if final and "news.google.com" not in final:
++                it["url"] = canonical(final)
++                it["source"], it["source_id"], it["paywall"], it["weight"] = label_source(final, it["source"], index, settings)
++                fixed += 1
++    print(f"repaired {fixed} of {len(todo)} old Google links")
++    return fixed
++
++
+ def fetch_all(feeds, queries, settings):
+     """Everything, de-duplicated by id. Returns (items, feed_status)."""
+     status = {"run": datetime.now(timezone.utc).isoformat(timespec="seconds"), "feeds": {}, "google": {}}
+@@ -177,7 +291,17 @@ def fetch_all(feeds, queries, settings):
+         time.sleep(0.3)
+     got, st = fetch_google(queries, settings, _source_index(feeds))
+     status["google"] = st
++    print("google links:", st.get("resolve", "no searches ran"))
+     for it in got:
+         items.setdefault(it["id"], it)
+     save_json(DATA / "feed_status.json", status)
+     return list(items.values()), status
++
++
++if __name__ == "__main__":
++    # Quick check that Google links unwrap. With no arguments it tries three links from
++    # the archive:  python bot/fetch.py      or:  python bot/fetch.py <news.google.com link>
++    import sys
++    links = sys.argv[1:] or [i["url"] for i in load_json(DATA / "items.json", []) if "news.google.com" in i["url"]][:3]
++    for u in links:
++        print(resolve_google_link(u) or "could not unwrap", "<-", u[:60] + "...")
+diff --git a/bot/pipeline.py b/bot/pipeline.py
+index c120519..c70544f 100644
+--- a/bot/pipeline.py
++++ b/bot/pipeline.py
+@@ -16,7 +16,7 @@ from datetime import date, timedelta
+ from classify import classify, match_stories
+ from common import DATA, load_json, load_yaml, save_json
+ from dedupe import assign_groups
+-from fetch import fetch_all
++from fetch import fetch_all, repair_google_links
+ 
+ ITEMS = DATA / "items.json"
+ DROPPED = DATA / "dropped.json"
+@@ -47,13 +47,16 @@ def main(dry_run=False):
+         return
+ 
+     items.extend(new)
++    repair_google_links(items, feeds, settings)
+     classify(items, settings)
+ 
+-    # Ask the model which of today's stories are the same as each other or as last week's.
+-    week_ago = (today - timedelta(days=7)).isoformat()
++    # Ask the model which of today's stories are the same as each other or as the last few days'.
++    match_days = int(settings.get("llm", {}).get("match_days", 3))
++    since = (today - timedelta(days=match_days)).isoformat()
+     fresh = [i for i in new if i.get("status") == "ok" and i.get("relevance", 0) >= settings.get("min_relevance", 6)]
+-    recent = [i for i in items if i.get("status") == "ok" and i not in fresh
+-              and i.get("published", "") >= week_ago and i.get("group", i["id"]) == i["id"]]
++    fresh_ids = {i["id"] for i in fresh}
++    recent = [i for i in items if i.get("status") == "ok" and i["id"] not in fresh_ids
++              and i.get("published", "") >= since and i.get("group", i["id"]) == i["id"]]
+     match_stories(fresh, recent, settings)
+ 
+     keep = []
+diff --git a/config/settings.yml b/config/settings.yml
+index 15b2b77..6b53e89 100644
+--- a/config/settings.yml
++++ b/config/settings.yml
+@@ -58,12 +58,16 @@ llm:
+     xai: grok-4-fast
+   batch_size: 25               # headlines per request; ~20 requests/day at 500 headlines
+   pause_seconds: 7             # keeps the free Gemini tier under its ~10 requests/minute limit
++  match_days: 3                # story matcher compares today's items against this many days of earlier ones
++  match_min_confidence: 8      # matcher's 1-10 certainty two items are one story; below this they stay separate
+ 
+ # --- Fetching -------------------------------------------------------------
+ fetch:
+   google_news_window: 2d       # Google News search window (when:2d)
+   google_news_per_query: 40    # cap per query; feeds return up to 100
+-  resolve_workers: 12          # parallel lookups when unwrapping Google's redirect links
++  resolve_workers: 4           # parallel lookups when unwrapping Google's links (more risks Google throttling)
++  cache_days: 7                # how long an unwrapped link is remembered in data/url_cache.json
++  repair_per_run: 150          # older stories still linking through Google: how many to unwrap per run (0 = off)
+   default_weight: 5            # ranking weight for sources not in feeds.yml
+ 
+ # --- Newsletter & social --------------------------------------------------
