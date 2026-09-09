@@ -60,7 +60,7 @@ feeds:
   - {name: The Boston Globe, id: bostonglobe, domain: bostonglobe.com, rss: "https://www.bostonglobe.com/arc/outboundfeeds/rss/?outputType=xml", paywall: true, weight: 6, note: Undocumented general feed; the Globe publishes no working section feeds., verify: true}
   - {name: Fox News, id: foxnews, domain: foxnews.com, rss: https://moxie.foxnews.com/google-publisher/latest.xml, paywall: false, weight: 4, note: Included to keep the sceptical side of the coverage in view. General feed only - the Fox science feed stopped updating in August 2026.}
   - {name: NOAA, id: noaa, domain: noaa.gov, rss: https://www.noaa.gov/rss.xml, paywall: false, weight: 9, note: US climate and ocean data. Agency-wide feed, only part of it is climate.}
-  - {name: NASA, id: nasa, domain: nasa.gov, rss: https://science.nasa.gov/feed/earth-observatory/natural-events, paywall: false, weight: 9, note: Earth Observatory; imagery and events rather than news articles.}
+  - {name: NASA, id: nasa, domain: nasa.gov, rss: https://www.nasa.gov/earth/feed/, paywall: false, weight: 9, note: Earth science; low volume, so the Google News search stays too. The science.nasa.gov Earth Observatory feed reads fine from a browser but its CDN refused the GitHub runner (HTTPError, 9 Sep 2026)., verify: true}
 
   # ---- No usable feed: found through Google News searches in queries.yml ----
   # These entries carry the name/paywall/weight so their stories are labelled correctly.
