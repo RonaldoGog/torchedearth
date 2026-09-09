@@ -132,9 +132,18 @@ RESOLVE_STRIKES = 3
 _resolve = {"deadline": None, "strikes": 0, "tripped": False, "skipped": 0}
 
 
-def start_resolve_budget(settings):
-    secs = float(settings.get("fetch", {}).get("resolve_budget_seconds", 480))
+def start_resolve_budget(settings, seconds=None):
+    secs = float(seconds if seconds is not None
+                 else settings.get("fetch", {}).get("resolve_budget_seconds", 480))
     _resolve.update(deadline=time.monotonic() + secs, strikes=0, tripped=False, skipped=0)
+
+
+def _oldest_last(iso):
+    """Sort key that puts the newest date first in an ascending sort."""
+    try:
+        return tuple(-int(part) for part in str(iso).split("-")[:3])
+    except (TypeError, ValueError):
+        return (0, 0, 0)
 
 
 def _resolve_open():
@@ -266,7 +275,21 @@ def fetch_google(queries, settings, source_index):
     cache = _cache_split(cache, settings)
     if _resolve["deadline"] is None:
         start_resolve_budget(settings)
-    todo = sorted({r["glink"] for r in raw if r["glink"] and r["glink"] not in cache})
+    # Which links get asked about matters as much as how many: on a throttled morning
+    # only the first few hundred of these get an answer. Ask about the ones most likely
+    # to reach a reader first — outlets already listed in feeds.yml, then newest —
+    # rather than in URL order, which is what the alphabetical sort amounted to.
+    listed = {(f.get("name") or "").lower() for f in source_index.values()}
+    pending = {}
+    for r in raw:
+        glink = r["glink"]
+        if not glink or glink in cache:
+            continue
+        key = (0 if (r["source_name"] or "").lower() in listed else 1,
+               _oldest_last(r["published"]), glink)
+        if glink not in pending or key < pending[glink]:
+            pending[glink] = key
+    todo = sorted(pending, key=pending.get)
     workers = int(fcfg.get("resolve_workers", 4))
     resolved = failed = skipped = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
@@ -330,11 +353,19 @@ def repair_google_links(items, feeds, settings):
     cache = _cache_split(load_json(URL_CACHE, {}), settings)
     today = datetime.now(timezone.utc).date().isoformat()
     todo = sorted((i for i in items if "news.google.com" in i.get("url", "") and i["url"] not in cache),
-                  key=lambda i: i.get("published", ""), reverse=True)[:limit]
-    if not todo or not _resolve_open():
+                  key=lambda i: (i.get("published", ""), i.get("score", 0)), reverse=True)[:limit]
+    if not todo:
         return 0
-    if _resolve["deadline"] is None:
-        start_resolve_budget(settings)
+    # Repair holds its own budget and its own strike count. It used to share the search
+    # step's, and checked whether that was still open before starting — so on any morning
+    # Google tripped the breaker during the searches, this did nothing at all. That is how
+    # 1,265 stories, 41% of the archive, were still linking through Google on 9 Sep 2026.
+    # If the searches did trip it, wait before asking again rather than walking straight
+    # back into the rate limit.
+    fcfg = settings.get("fetch", {})
+    if _resolve["tripped"]:
+        time.sleep(float(fcfg.get("repair_cooldown_seconds", 60)))
+    start_resolve_budget(settings, seconds=fcfg.get("repair_budget_seconds", 180))
     index = _source_index(feeds)
     workers = int(settings.get("fetch", {}).get("resolve_workers", 4))
     fixed = failed = 0

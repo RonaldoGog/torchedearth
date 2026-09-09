@@ -39,29 +39,37 @@ feeds:
   - {name: CleanTechnica, id: cleantechnica, domain: cleantechnica.com, rss: https://cleantechnica.com/feed/, paywall: false, weight: 5, note: Clean-energy industry news and opinion.}
   - {name: Electrek, id: electrek, domain: electrek.co, rss: https://electrek.co/feed/, paywall: false, weight: 5, note: EVs and solar.}
 
-  # ---- Outlets without usable RSS: found through Google News searches in queries.yml ----
+  # ---- Feeds added 9 Sep 2026, replacing their Google News searches ----
+  # An outlet moved here stops arriving through news.google.com, so its stories keep a
+  # direct link and get the right name, paywall flag and weight from the moment they land.
+  # Its entry in queries.yml was removed at the same time.
+  - {name: Canary Media, id: canary, domain: canarymedia.com, rss: https://www.canarymedia.com/rss, paywall: false, weight: 7, note: Clean-energy journalism.}
+  - {name: Heatmap, id: heatmap, domain: heatmap.news, rss: https://heatmap.news/feeds/feed.rss, paywall: true, weight: 7, note: Energy transition and climate policy.}
+  - {name: CBS News, id: cbs, domain: cbsnews.com, rss: https://www.cbsnews.com/latest/rss/climate, paywall: false, weight: 6, note: Climate desk. (The sibling /environment feed exists but is always empty - do not switch to it.)}
+  - {name: NBC News, id: nbc, domain: nbcnews.com, rss: https://feeds.nbcnews.com/nbcnews/public/science, paywall: false, weight: 6, note: Science desk; NBC publishes no climate-only feed.}
+  - {name: PBS NewsHour, id: pbs, domain: pbs.org, rss: https://www.pbs.org/newshour/feeds/rss/science, paywall: false, weight: 7, note: Science segments, heavy on climate.}
+  - {name: ProPublica, id: propublica, domain: propublica.org, rss: https://www.propublica.org/feeds/propublica/main, paywall: false, weight: 8, note: Investigative nonprofit; main feed, low enough volume that the climate filter does the sorting.}
+  - {name: The Texas Tribune, id: texastribune, domain: texastribune.org, rss: https://www.texastribune.org/topics/environment/feed/, paywall: false, weight: 6, note: Nonprofit; Texas environment and energy.}
+  - {name: Copernicus Climate Change Service, id: copernicus, domain: climate.copernicus.eu, rss: https://climate.copernicus.eu/rss.xml, paywall: false, weight: 9, note: EU climate data agency. Roughly monthly; the search it replaces was returning nothing at all.}
+
+  # ---- Feed *and* a Google News search ----
+  # These feeds work but are general, thin or off-news, so the queries.yml search stays
+  # as well. Stories may briefly appear twice until a Google link is unwrapped.
+  - {name: The Washington Post, id: wapo, domain: washingtonpost.com, rss: https://feeds.washingtonpost.com/rss/national/energy-environment, paywall: true, weight: 8, note: Climate and environment desk. Feed is the legacy energy-environment slug and carries very few items., verify: true}
+  - {name: The Atlantic, id: atlantic, domain: theatlantic.com, rss: https://www.theatlantic.com/feed/channel/science/, paywall: true, weight: 7, note: Science channel, full article text. (The /planet channel feed exists but is always empty.), verify: true}
+  - {name: The Boston Globe, id: bostonglobe, domain: bostonglobe.com, rss: "https://www.bostonglobe.com/arc/outboundfeeds/rss/?outputType=xml", paywall: true, weight: 6, note: Undocumented general feed; the Globe publishes no working section feeds., verify: true}
+  - {name: Fox News, id: foxnews, domain: foxnews.com, rss: https://moxie.foxnews.com/google-publisher/latest.xml, paywall: false, weight: 4, note: Included to keep the sceptical side of the coverage in view. General feed only - the Fox science feed stopped updating in August 2026.}
+  - {name: NOAA, id: noaa, domain: noaa.gov, rss: https://www.noaa.gov/rss.xml, paywall: false, weight: 9, note: US climate and ocean data. Agency-wide feed, only part of it is climate.}
+  - {name: NASA, id: nasa, domain: nasa.gov, rss: https://science.nasa.gov/feed/earth-observatory/natural-events, paywall: false, weight: 9, note: Earth Observatory; imagery and events rather than news articles.}
+
+  # ---- No usable feed: found through Google News searches in queries.yml ----
   # These entries carry the name/paywall/weight so their stories are labelled correctly.
+  # Checked 9 Sep 2026 - none of these has a feed worth wiring up.
   - {name: Associated Press, id: ap, domain: apnews.com, paywall: false, weight: 9, note: Wire service; the original behind many reprints.}
   - {name: Reuters, id: reuters, domain: reuters.com, paywall: false, weight: 9, note: Wire service; RSS feeds discontinued, found via search.}
-  - {name: The Washington Post, id: wapo, domain: washingtonpost.com, paywall: true, weight: 8, note: Climate and environment desk.}
-  - {name: CNN, id: cnn, domain: cnn.com, paywall: false, weight: 7, note: Climate section.}
-  - {name: Bloomberg, id: bloomberg, domain: bloomberg.com, paywall: true, weight: 8, note: Bloomberg Green.}
-  - {name: Axios, id: axios, domain: axios.com, paywall: false, weight: 6, note: Short-form energy and climate items.}
-  - {name: Heatmap, id: heatmap, domain: heatmap.news, paywall: true, weight: 7, note: Energy transition and climate policy.}
-  - {name: Canary Media, id: canary, domain: canarymedia.com, paywall: false, weight: 7, note: Clean-energy journalism.}
-  - {name: Copernicus Climate Change Service, id: copernicus, domain: climate.copernicus.eu, paywall: false, weight: 9, note: EU climate data agency; monthly bulletins and records.}
-  - {name: NOAA, id: noaa, domain: noaa.gov, paywall: false, weight: 9, note: US climate and ocean data.}
-  - {name: NASA, id: nasa, domain: nasa.gov, paywall: false, weight: 9, note: Earth science and climate data.}
-  - {name: Ember, id: ember, domain: ember-energy.org, paywall: false, weight: 8, note: Energy think tank; electricity data.}
-  - {name: International Energy Agency, id: iea, domain: iea.org, paywall: false, weight: 8, note: Energy data and reports.}
+  - {name: CNN, id: cnn, domain: cnn.com, paywall: false, weight: 7, note: Climate section. Its RSS feeds still parse but stopped updating in 2023.}
+  - {name: Bloomberg, id: bloomberg, domain: bloomberg.com, paywall: true, weight: 8, note: Bloomberg Green. The Green feed is dead; only general Bloomberg feeds respond.}
+  - {name: Axios, id: axios, domain: axios.com, paywall: false, weight: 6, note: Short-form energy and climate items. A climate feed may exist at api.axios.com but could not be reached to confirm.}
+  - {name: Ember, id: ember, domain: ember-energy.org, paywall: false, weight: 8, note: Energy think tank; electricity data. Its feed is valid RSS containing no items - the content sits outside WordPress feeds.}
+  - {name: International Energy Agency, id: iea, domain: iea.org, paywall: false, weight: 8, note: Energy data and reports. Publishes no feed at all; email newsletters only.}
   - {name: DeSmog, id: desmog, domain: desmog.com, paywall: false, weight: 6, note: Investigations into climate misinformation and lobbying. Its feed sits behind a bot-blocking challenge, so stories are found through search.}
-  - {name: ProPublica, id: propublica, domain: propublica.org, paywall: false, weight: 8, note: Investigative nonprofit; environment desk.}
-  - {name: The Atlantic, id: atlantic, domain: theatlantic.com, paywall: true, weight: 7, note: Science and climate features.}
-  - {name: PBS NewsHour, id: pbs, domain: pbs.org, paywall: false, weight: 7, note: Climate and science segments.}
-  - {name: CBS News, id: cbs, domain: cbsnews.com, paywall: false, weight: 6, note: Climate and science desk.}
-  - {name: NBC News, id: nbc, domain: nbcnews.com, paywall: false, weight: 6, note: Climate and science desk.}
-  - {name: The Boston Globe, id: bostonglobe, domain: bostonglobe.com, paywall: true, weight: 6, note: Climate section.}
-  - {name: The Texas Tribune, id: texastribune, domain: texastribune.org, paywall: false, weight: 6, note: Nonprofit; environment and energy in Texas.}
-  - {name: Climate.gov, id: climategov, domain: climate.gov, paywall: false, weight: 9, note: NOAA's climate explainers and event trackers.}
-  - {name: Context, id: context, domain: context.news, paywall: false, weight: 7, note: The Thomson Reuters Foundation's climate and justice newsroom.}
-  - {name: Fox News, id: foxnews, domain: foxnews.com, paywall: false, weight: 4, note: Included to keep the sceptical side of the coverage in view.}

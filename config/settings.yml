@@ -73,6 +73,9 @@ fetch:
   cache_days: 7                # how long an unwrapped link is remembered in data/url_cache.json
   retry_failed_days: 3         # a link Google refused to unwrap isn't asked about again for this long
   repair_per_run: 150          # older stories still linking through Google: how many to unwrap per run (0 = off)
+  repair_budget_seconds: 180   # repair's own time budget, separate from the searches' — so a throttled
+                               # search step no longer leaves the backlog untouched
+  repair_cooldown_seconds: 60  # if Google cut the searches off, wait this long before asking it again
   default_weight: 5            # ranking weight for sources not in feeds.yml
 
 # --- Newsletter & social --------------------------------------------------
