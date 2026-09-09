@@ -5,7 +5,8 @@
     python bot/build.py --today 2026-09-05 # pretend it's another day (testing)
 
 Rules (all from config/settings.yml):
-  front page  = the lead, then stories from the last `recent_days` days
+  front page  = the lead (the best of today's stories), then stories from the
+                last `recent_days` days
                 (today and yesterday) scoring >= `recent_min_score`, at most
                 `recent_max_per_day` a day, listed most important first under
                 their date, not yet sorted into sections; then older stories
@@ -122,7 +123,11 @@ def prepare(items, settings, feeds, overrides, today):
         and r.get("type") in settings["homepage_types"]
         and r.get("score", 0) >= settings["min_score_homepage"]
     )]
-    by_rank = lambda r: (r["featured"], r.get("score", 0), r["published"])
+    # Rank: pinned stories first, then importance, then how far the outlet is
+    # trusted (`weight` in feeds.yml; 5 for anything not listed there), then
+    # recency. Weight is what keeps a scraped rewrite from outranking the Guardian
+    # when the classifier hands them the same score.
+    by_rank = lambda r: (r["featured"], r.get("score", 0), r.get("weight", 5), r["published"])
 
     # The newest stories (today and yesterday) go up top, listed by day, most
     # important first. The bar is higher there (`recent_min_score`, with
@@ -144,7 +149,25 @@ def prepare(items, settings, feeds, overrides, today):
     older = older[: int(settings["homepage_max"])]
     front = recent + older
 
-    lead = next((r for r in front if lead_url and canonical(r["url"]) == lead_url), None) or (max(front, key=by_rank) if front else None)
+    # The lead is the best of today's stories, not the best of the last four weeks:
+    # a site that updates every morning should not open on a four-day-old headline.
+    # Yesterday's stand in if today has none, the whole front page only if neither
+    # day does. A story still linking through Google rather than to the publisher
+    # is never the lead — the one headline every reader clicks has to land somewhere
+    # real. `overrides.yml lead:` overrules all of this.
+    def can_lead(r):
+        return "news.google.com" not in r["url"]
+
+    lead = next((r for r in front if lead_url and canonical(r["url"]) == lead_url), None)
+    if lead is None:
+        for iso in sorted(by_day, reverse=True):          # today, then yesterday
+            pool = [r for r in by_day[iso] if can_lead(r)]
+            if pool:
+                lead = max(pool, key=by_rank)
+                break
+        else:
+            pool = [r for r in front if can_lead(r)] or front
+            lead = max(pool, key=by_rank) if pool else None
 
     # by_day[iso] is already in `by_rank` order (featured, then score, then date),
     # so the day lists read most important first.
