@@ -27,6 +27,7 @@ from email.utils import format_datetime
 from datetime import datetime, timezone
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup, escape
 
 from common import DATA, SITE, STATIC, TEMPLATES, canonical, load_json, load_yaml, parse_date
 
@@ -221,16 +222,34 @@ def prepare(items, settings, feeds, overrides, today):
             "stats": stats, "sources": sources, "other_sources": other_sources, "front": front}
 
 
-def stats_sentence(stats):
+def stats_sentence(stats, base="/"):
+    """The one number in the masthead: how much climate news arrived since yesterday.
+
+    It used to also give a weekly count and an archive total, both cut on 9 Sep 2026.
+    "this week" was ambiguous (rolling seven days? since Monday?) and the archive total
+    read as a claim the site does not make — the pre-2026 stories are a hand-picked
+    sample, not every climate story published since 2017, which is what "2,705 stories
+    since February 2017" invites a reader to assume.
+
+    `today` counts stories the bot found in the latest run, so it means new *to this
+    site* since yesterday's update; a handful each day were published earlier and only
+    surfaced now. Empty string when nothing is new, so the masthead just shows the
+    tagline rather than a zero.
+
+    The count links to the archive so the claim can be checked: the front page shows
+    only the stories above the importance bar, and a reader who counts the headlines
+    and comes up short should be able to find the rest in one click. Returned as
+    Markup so the template renders the anchor rather than escaping it.
+    """
     if not stats["total"]:
         return "The bot hasn't run yet."
-    parts = []
-    if stats["today"]:
-        parts.append(f"{stats['today']} new since yesterday")
-    parts.append(f"{stats['week']} this week" if stats["week"] else "")
-    parts = [p for p in parts if p]
-    lead_in = ", ".join(parts) + ". " if parts else ""
-    return f"{lead_in}{stats['total']:,} stories in the archive since {stats['since']}."
+    if not stats["today"]:
+        return ""
+    n = stats["today"]
+    word = "story" if n == 1 else "stories"
+    link = (f'<a href="{escape(base)}archive/" '
+            f'aria-label="Browse the archive: {n:,} new {word} since yesterday">{n:,}</a>')
+    return Markup(f"{link} new {word} since yesterday.")
 
 
 def rss(front, settings, now):
@@ -262,7 +281,7 @@ def main(today=None):
 
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]))
     css = (STATIC / "style.css").read_text(encoding="utf-8")
-    base = {"site": settings, "css": css, "base": "/", "stats_sentence": stats_sentence(ctx["stats"]),
+    base = {"site": settings, "css": css, "base": "/", "stats_sentence": stats_sentence(ctx["stats"], "/"),
             "today": f"{today:%A, %B} {today.day}, {today.year}", "feed_status": status,
             "updated": updated_label(now), "updated_iso": now.isoformat(timespec="minutes")}
 
