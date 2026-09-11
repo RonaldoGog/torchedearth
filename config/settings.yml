@@ -17,6 +17,7 @@ homepage_max: 100            # cap on the older, sectioned part of the front pag
 min_relevance: 6             # classifier's 0-10 "is this about climate?"; below this the item is discarded
 min_score_homepage: 4        # importance 1-10 needed to make the front page
 homepage_types: [substantive, technical]   # clickbait and reprints skip the front page but stay in the archive
+also_max: 10                 # outlets listed on a headline's "Also:" line before the rest are counted (0 = list them all)
 
 # --- Taxonomy -----------------------------------------------------------
 sections:

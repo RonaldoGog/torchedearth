@@ -105,11 +105,18 @@ def prepare(items, settings, feeds, overrides, today):
     for it in visible:
         by_group[it.get("group") or it["id"]].append(it)
 
+    # A wire story can be picked up by dozens of outlets; the lead on 10 Sep 2026 carried
+    # 63 "Also" links in one grey run of text, which tells a reader nothing. List the
+    # first `also_max` (they are sorted free-and-well-regarded first) and count the rest.
+    also_max = int(settings.get("also_max", 10)) or None
+
     reps = []
     for gid, members in by_group.items():
         rep = next((m for m in members if m["id"] == gid), None) or max(members, key=lambda m: m.get("weight", 5))
         others = sorted((m for m in members if m is not rep), key=lambda m: (m.get("paywall", False), -m.get("weight", 5)))
-        rep["also"] = [{"source": m["source"], "url": m["url"], "paywall": m.get("paywall", False)} for m in others]
+        rep["also_more"] = max(0, len(others) - also_max) if also_max else 0
+        rep["also"] = [{"source": m["source"], "url": m["url"], "paywall": m.get("paywall", False)}
+                       for m in (others[:also_max] if also_max else others)]
         rep["type_label"] = types.get(rep.get("type", "substantive"), "")
         rep["date_label"] = date_label(rep["published"], today)
         rep["featured"] = canonical(rep["url"]) in feature
