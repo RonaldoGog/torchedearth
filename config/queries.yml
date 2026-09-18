@@ -45,6 +45,10 @@ sites:
   - {domain: noaa.gov, query: climate}
   - {domain: nasa.gov, query: climate}
   - {domain: desmog.com, query: ""}
+  # Feeds that stopped working, 18 Sep 2026: Climate Home 403s every fetcher, Wildfire
+  # Today refuses the GitHub runner. Both are wholly on-topic, so no query term is needed.
+  - {domain: climatechangenews.com, query: ""}
+  - {domain: wildfiretoday.com, query: ""}
   - {domain: theatlantic.com, query: climate}
   - {domain: bostonglobe.com, query: climate}
   - {domain: foxnews.com, query: climate}

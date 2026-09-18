@@ -17,9 +17,9 @@ feeds:
   - {name: Carbon Brief, id: carbonbrief, domain: carbonbrief.org, rss: https://www.carbonbrief.org/feed/, paywall: false, weight: 9, note: UK site covering climate science and policy in depth.}
   - {name: Grist, id: grist, domain: grist.org, rss: https://grist.org/feed/, paywall: false, weight: 8, note: Nonprofit climate and justice coverage.}
   - {name: Yale Climate Connections, id: ycc, domain: yaleclimateconnections.org, rss: https://yaleclimateconnections.org/feed/, paywall: false, weight: 7, note: Explainers and weather-climate reporting.}
-  - {name: Climate Home News, id: climatehome, domain: climatechangenews.com, rss: https://www.climatechangenews.com/feed/, paywall: false, weight: 7, note: International climate politics and diplomacy.}
+  - {name: Climate Home News, id: climatehome, domain: climatechangenews.com, paywall: false, weight: 7, note: International climate politics and diplomacy. Its feed started returning 403 to every automated fetcher in September 2026 and the site no longer advertises one, so stories are found through search.}
   - {name: Mongabay, id: mongabay, domain: news.mongabay.com, rss: https://news.mongabay.com/feed/, paywall: false, weight: 7, note: Forests, oceans and biodiversity.}
-  - {name: Wildfire Today, id: wildfiretoday, domain: wildfiretoday.com, rss: https://wildfiretoday.com/feed/, paywall: false, weight: 4, note: Wildfire news; only climate-linked stories pass the filter.}
+  - {name: Wildfire Today, id: wildfiretoday, domain: wildfiretoday.com, paywall: false, weight: 4, note: Wildfire news; only climate-linked stories pass the filter. Its feed is healthy from a browser but refuses the GitHub runner, so stories are found through search.}
 
   # ---- General news with climate desks ----
   - {name: The Guardian, id: guardian, domain: theguardian.com, rss: https://www.theguardian.com/environment/climate-crisis/rss, paywall: false, weight: 8, note: Climate crisis section.}
