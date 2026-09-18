@@ -15,8 +15,8 @@ name: Repair Google links
 on:
   schedule:
     # Every three hours, kept clear of the 13:15 UTC daily run and the 15:00 Sunday
-    # newsletter. Seven batches of 150 a day, against the ~440 the morning run manages.
-    - cron: "40 2,5,8,11,17,20,23 * * *"
+    # newsletter. Four batches of 150 a day, against the ~440 the morning run manages.
+    - cron: "40 16,20,0,4 * * *"
   workflow_dispatch:
     inputs:
       batch:
