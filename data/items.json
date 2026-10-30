@@ -943,7 +943,7 @@
  },
  {
   "id": "53374046470d",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbms0ZndoZ0h0eEdFOHRtUDFjdTlDRUJzYnAwYXdENURuWWtaSjJyVWhhclY5TGhPcHZMX3RUUE1BMzRZQVRSY0dhTEs4QkpLNzVtWFdfM2pSSGlFWlI2VF9mcUpraWJRWGg0UjZFN1NWcFJGZjhSWFIwdTBZaE9XVC1BWmgxQ1Zhd2hZa1FCZ2J4S2hDSHpaZFBhTlhRemFkOVZRVjlkYnVkTzVieXRWZWRVa0Z4TU9xaXpNWjgwQQ?oc=5",
+  "url": "https://forbes.com/sites/jamiehailstone/2026/10/30/lord-nicholas-stern-on-the-economics-of-climate-change-20-years-on",
   "title": "Lord Nicholas Stern On The Economics Of Climate Change, 20 Years On",
   "source": "Forbes",
   "source_id": "forbes",
@@ -963,14 +963,14 @@
  },
  {
   "id": "88be411298d7",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRHpranFaRnZtajJfSWtsUnNJaU9tSGtWTTVYOW9vczJLT1RTX1VxSmdUWm1aUlo2by1jQXVUUU9mTFd5SmY1amhkd3p0T2RjaGliUzBwVEttS3RxXzJqNWFXTjBaX3YweS1QLTlxSkFCQ2dLMV9jLVVSeWZSVzdrUWxzX0dSczEyNVN0WFBHWlAyZHN4MVBTM3Bael9uaWxTX3pSZ1dkdzY?oc=5",
+  "url": "https://bloomberg.com/news/newsletters/2026-10-30/climate-change-is-making-disaster-vigilance-routine",
   "title": "Climate Change Is Putting Us in a Permanent State of Vigilance",
-  "source": "Bloomberg.com",
-  "source_id": "bloomberg-com",
+  "source": "Bloomberg",
+  "source_id": "bloomberg",
   "published": "2026-10-30",
   "blurb": "Climate Change Is Putting Us in a Permanent State of Vigilance Bloomberg.com",
-  "paywall": false,
-  "weight": 5,
+  "paywall": true,
+  "weight": 8,
   "via": "google",
   "found": "2026-10-30",
   "status": "ok",
@@ -1293,7 +1293,7 @@
  },
  {
   "id": "c1ba4094458c",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaE1peWhmT3pndnctdjJjbDBNWDNCNndJdjJ6VkNQcF9lUzlscG4wU21XOWlkRDNUcWh0N2x6SXpRcG01M3RGOGltRGdSRWt2SWd4SWk4WHR4ei14eFc1MVFVR0ppOHdod3h4UUJYOF9TMEE5V052dnpvSWNGTkJUMVlZYlJ2ek56bzN1eGlXa0diYkREdjRNZnVlWGYzaHhKZC1halR2Zw?oc=5",
+  "url": "https://preventionweb.net/news/how-fast-world-has-moved-closer-15degc-global-warming-paris-agreement",
   "title": "How fast the world has moved closer to 1.5°C of global warming since the Paris Agreement",
   "source": "PreventionWeb.net",
   "source_id": "preventionweb-net",
@@ -1357,7 +1357,7 @@
  },
  {
   "id": "eeb6100ac61d",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNODJTckszTFFvSXlmT0ZIdHNqUVJXZXUzRGo0WXJYWW9Ld2NxazZGU0c2TlR5cjRsbWp4Rl9lZVdmR1BjU2dNemJtNEJza05kdEVjcml0bm81SEFYUWhWWEFERHFyTTQyR0dvRjI1bmxiX1lRUnVxZzhuUncyVGR6VWU5TzhDRFVxSWVHaGhEcnV3SHFGWWo2bUxIZEprM1lmSjRZMlowbVM4TEJXeWtzaTlLblVFZkt1clE?oc=5",
+  "url": "https://tc.columbia.edu/articles/2026/october/preparing-young-people-for-a-future-society-that-wont-go-as-planned",
   "title": "Research & Impact: Preparing Young People for a Future Society That Won’t Go as Planned",
   "source": "Teachers College - Columbia University",
   "source_id": "teachers-college-columbia-university",
@@ -1377,7 +1377,7 @@
  },
  {
   "id": "3455ece524b9",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVHc0QnBfSGNDenl0QlByZXp5ZjhwSWdMQmhxYUJtUUFKZk1DYlprWFE4VTUwR0w4Tjg3TExUUE1WSGRldzlDYng3UGdGc0Y4NXZvcjMxUzJrblE3VVREUEJjTFNjdGwzYVZwTmdMdEo1ZWZKXzRnOHVRcFJDelg4TWM1dDJ1TFVxLVk3N1ptM3dOZHozN3NMUVZ1THh2d1N3a0RJZV80YlA4a2xlQ1FnR2U2Vmo2Vlk?oc=5",
+  "url": "https://wchstv.com/news/local/restraining-order-blocks-probe-into-climate-change-claims-from-environmentalist-groups",
   "title": "Restraining order blocks probe into climate change claims from environmentalist groups",
   "source": "WCHS",
   "source_id": "wchs",
@@ -1421,7 +1421,7 @@
  },
  {
   "id": "183d7f708a41",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWJWVHU3ZjJwQ2U2WDlkWWp3eF9XTDdjVFBWaHRMQkdpVVkyRC1PYlhnZ25TbUJMLVpHTlFwdHZMVnVlRmVMXzVBdmNIZWR0U1ZzaTdIUlBFclZjYVNEZnRiZ0g3WnFOUUtmeHJReEFIQklIVnRIQlFJcEIwT2VoRzRQZUNVNDZNdm5sUUpxaG40VnBnNG8zUF8wNG45RVotLXdCRFYwZTRRamtnOWF0btIBvgFBVV95cUxOU1NFd25kWVpQTUE2dmxaWlUwWVhwSEJmUnJKeThnZ0NJaHFHSHowSFA5YTdrd3NpbGxmbHIwSC04ZVhZZ0hPNWdqc3VOWnA1Y0c0SHRyNFVWMFpreGswT1RySC1zZk11ZmVEczlrSGdyOUdIQ2xGSGhScDgzODlrYm1iRFJKZVVwRTVJR0lVQTN1X2dYRDdPT293d3dSV1QwcWxjLUNqVDE2M0ZsMUJ1WTJ1OUdPLUJfNDBUWDNB?oc=5",
+  "url": "https://downtoearth.org.in/climate-change/why-the-who-must-declare-climate-change-a-public-health-emergency",
   "title": "Why the WHO must declare climate change a public health emergency",
   "source": "Down To Earth",
   "source_id": "down-to-earth",
@@ -1573,7 +1573,7 @@
  },
  {
   "id": "e8334457ec5b",
-  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZnZqZW5OaVJ4SF85QzU0SHdaN29QaVZoQjZsdHB3bVZHNmVzNF9WR25ySVczZ0J3N1FobGJieTFFVXRsOGl6Qngwam5wNXc1bFNET2t5TFdqSVRpa3k4T2JkQWp5RlVranNlR0ZNWFJ2aVp4MldZclNGazJHRXpKdDduM0pZenM0Q0Z2ZWtHdFFVWFhaZXh0VG42TlVIN1IyY3BoWTBkdDZicXpNbW02Vy1qVWZIOWxvbEVmM3BPb2pxRXFOTUp4V1M3SlbSAdIBQVVfeXFMTjVNcUtxQUs2MmpuUTQtU214UjNvRDNUeTY0d3U1Qk96T2NEZjZpR2dYS0lSTXRoMW95WU5CZW1GSGt6MEVBX0dXOW1YZDR4WjBGUzFUNW8yaXRlU2V3OGo4NGpUV21YSVpoOTRrZUhjSUJwNi10NzA4M2Z2LU1kNnVsOUJBWVp6Ymx5dGxJS1NNRnFrcGhzdGp0R1lvSG9Rdnd3aGJ0V1hfYWo0SnpuYTB5S0hNbUtEeUpHUWlXQXpieXlGM2t2ek9MYk1uZEVaX1hn?oc=5",
+  "url": "https://business-standard.com/opinion/columns/from-closing-window-to-overshoot-the-retreat-on-climate-action-126103001930_1.html",
   "title": "From closing window to overshoot: The retreat on climate action",
   "source": "Business Standard",
   "source_id": "business-standard",
@@ -1655,7 +1655,7 @@
  },
  {
   "id": "263ebf65758b",
-  "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSlBCSEJoelhhMVBXbm4zVGpCT1lpWEVBcXV3RENnQmNsSllWYlo4NXN2Z194RzAwOFBOZGxaUDVKNFBmclo5QTQ3cE5Vd2ROLWpINXJoUjBjcjVzaWhja0dvbTNTZVQtdGNCYXFjVlBMR1R2TWlPOXFKcHRoaUF4NmNLOUk2WXoyNDdUVFByYm5xck5hUkwzUEhSM19Ga1lNdXJsUzRLanJmRjFGWVR6RkZkd1RBaktHTk5EU2t5ZDJxcVF5YUE?oc=5",
+  "url": "https://fox5vegas.com/video/2026/10/30/rtc-unveils-dual-direction-bus-shelters-battle-extreme-heat-across-las-vegas-valley",
   "title": "RTC unveils ‘dual-direction’ bus shelters to battle extreme heat across Las Vegas Valley",
   "source": "FOX5 Vegas",
   "source_id": "fox5-vegas",
@@ -1695,13 +1695,13 @@
  },
  {
   "id": "724d9504305f",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORE1qeUlfd1VyZzZrdFhTd0Q3eFNUT18xSFQtTFpqdS1TQkluMVJTQWlSTEVSdjZ6ZW1xc3I5NVFyRExpVjdpU3ZBck85VWNpRVdCRFg1Y256eFVHRFEzYzlZT1cwTkJ5MF8tR0RjMWlFRFlVNWh3QzlwRURYSEZ5QlQ5M3EwNXlPb0JSTktybnZ2dEVPcXVFRUV4NmxvSTdUbnJmMEM0QndvcnBQWFE?oc=5",
+  "url": "https://latimes.com/california/story/2026-10-30/coastal-la-once-went-without-a-c-record-heat-changed-that",
   "title": "L.A.'s Westside once bragged about not needing air conditioning. This year's heat changed that",
   "source": "Los Angeles Times",
   "source_id": "los-angeles-times",
   "published": "2026-10-30",
   "blurb": "L.A.'s Westside once bragged about not needing air conditioning. This year's heat changed that Los Angeles Times",
-  "paywall": false,
+  "paywall": true,
   "weight": 5,
   "via": "google",
   "found": "2026-10-30",
@@ -1755,7 +1755,7 @@
  },
  {
   "id": "e6d4a187eab9",
-  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZGgyYzRCb1lDYzY0RDloeGRWZXRQSkZsTmlYN2ZpWWxKOW5JLUtndVYtbXNTUEhHa2YzY0lBbXRHdm9MNmlGZWtCSlQwTFdZdzI4OHFRQnZkZFpzZkRxNzduOUMwR0lrRFpWQ0FsLVd0S0dBMl96d2RvenJ5Wl9QVWVFSkhodzhRMmI5YUhuSEw3QmFCZWczRWo4VnZsVUVkMVo4RHlOUzVmS2pZZmp6STg2R0laQXdCN2ZuSA?oc=5",
+  "url": "https://mg.co.za/the-green-guardian/2026-10-30-climate-change-puts-sa-s-young-and-old-at-greater-risk-from-extreme-heat",
   "title": "Climate change puts SA’s young and old at greater risk from extreme heat",
   "source": "Mail & Guardian",
   "source_id": "mail-guardian",
@@ -1865,7 +1865,7 @@
  },
  {
   "id": "05afe0341649",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZUlZc0ZpTmR2Um5MUHNJNWJtcEZFV0E1MDVRUkJPR0lNbEItTENtWDloY04yODFhLWpGTGNTQnZKdDFYSHYzR2pTZ0RaM0JpYlVUbV82dkg5bjlkSnlKejFVY1l6aHRXZXpiVkFjbkQzOHN3MGVUQzZyWXhKck52b0pRTXlyWGprclh3UGtSTm9EUG45LXV4dGVvQkVoUDZRdGFNV3FTa1BJdU1RektCR3BwTTRSTy04RUJPVnhBRQ?oc=5",
+  "url": "https://swissinfo.ch/eng/climate-adaptation/swiss-climate-adaptation-plan-criticised-after-record-summer-heat/92302246",
   "title": "Swiss climate adaptation plan criticised after record summer heat",
   "source": "SWI swissinfo.ch",
   "source_id": "swi-swissinfo-ch",
@@ -1885,7 +1885,7 @@
  },
  {
   "id": "7d07f68e2345",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb09HNXgxaXdXajdLMkgzeDVOTFNzQkdxVjBKNXZWVW90TmhKdVpMdjNYbEEwTU1PZVFaZG9QanVnYTJrNzRndUJWWFh6dVRoYU1jQTlVc3diM1dUb1dSME9wZDZock9Fb3paS0pQOXltMWZtY21FeGhXWExseW03ZGd2bU1iYloyU1hlZF9ESDRuX0VjRlBLbTFJQWxTVE1WSy0tdVpIblI?oc=5",
+  "url": "https://agencia.fapesp.br/heat-waves-and-pollution-increase-stroke-risk-in-older-adults-study-finds/59503",
   "title": "Heat waves and pollution increase stroke risk in older adults, study finds",
   "source": "Agência FAPESP",
   "source_id": "ag-ncia-fapesp",
@@ -2067,7 +2067,7 @@
  },
  {
   "id": "09d7b00f7b55",
-  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVWVmZVo3U3owY0NPRHRxZUFTWGJOdFVLcEh5MXpmT3VTN0d6ZUh4QWFBRTJNTnF1YUYtZXFyUnVSaFFjZVVVdU4wUzQwX0xiZ1o4ZV95TmlzWlJiNDRFVnRHeU1aUm9KWGtxZlZQcWVYZTZkSGM2c2NYaE5RQ2RObFhheVMxRzFqc3JKRTk5THFCeWM4b3BUTkcxNWdyTkJfeVJTajJBZ21lSnVHeHdxb1J6YVfSAboBQVVfeXFMTjhIMUdQTnlQdlNfcjhfclhCY0prZ2RJcF9KamRBQ3QwQVhGb18yd2d0MXJMbkt0MnU1WnpvQV9jQnVldkYzcU4xN205WVRIOE4yZXd3c1paYkVLU0pzcnozRjFGYkw4UlhGN2FGV1VoeHZXN0tWNDVuTU9YbVlrRC16X1FQdzlBYzdmM2N2dU5zalBrZ2dvVDVJZGl6Z1dKcndfYWU0VmY5X3Y1aHkzcFNRZ1NfdGwwZHJR?oc=5",
+  "url": "https://aljazeera.com/news/2026/10/30/smoke-from-wildfires-killed-3500-people-in-indonesia-in-september-report",
   "title": "Smoke from wildfires killed 3,500 people in Indonesia in September: Report",
   "source": "Al Jazeera",
   "source_id": "al-jazeera",
@@ -2089,7 +2089,7 @@
  },
  {
   "id": "4fbc1dcc41e0",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLTQ0UUlHTVhnY1FhNWFrbkdXX3dzVVI4ejhvcGo4dXBWMkR2WkwwMGxzTUpkdFhweDNscVlzQ0dvcm9aRG15R2lseGpWckozdEZDQkpOVDlXamZIakptX3Z4LU9tVDhFaVhIWjZvejg1YW1pR2lVVnB5TWFqR0xpakc3djVZSlZSeE1FNjNWekxhLWF3QzU1RV9xajlJRTVmVXVJVldQZzFMdm9GNkZZ?oc=5",
+  "url": "https://kiowacountypress.net/content/schools-need-more-air-filtration-protect-youth-wildfire-smoke-study-finds",
   "title": "Schools need more air filtration to protect youth from wildfire smoke, study finds",
   "source": "Kiowa County Press",
   "source_id": "kiowa-county-press",
@@ -2151,7 +2151,7 @@
  },
  {
   "id": "1821db295364",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUWhqWmJCRURKMTlfOG0tMmtfY29kS0g0ZjVCUFBkSlA3eUJwSnVKRDA2UEJOY0ZGR0ljcEV1RElXQUZJWW52b3RPYzRyN01udm1WdmFRajFCYjR2cGg2N2hKTWF5RGY2dXNaNlhFZEotSzBpaVY4MWxSR3J1Q05vZDZya3hsenZCSkhSV3poWllkdU9nSllLWXA2MFE4RTMyTW9uQktsY2xfejI0S0J6OQ?oc=5",
+  "url": "https://denvergazette.com/2026/10/30/douglas-county-breaks-ground-on-helitack-hangar-for-wildfire-response",
   "title": "Douglas County breaks ground on helitack hangar for wildfire response",
   "source": "Denver Gazette",
   "source_id": "denver-gazette",
@@ -2211,7 +2211,7 @@
  },
  {
   "id": "398b65792b12",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT2NxLUxGd2tKWWpWWG1RV25zMzFNTVFlaUQwaVVFOHVGbmJ6UHh0THVWZEhBZUlMN0tKd3hxVUhBbXUyN1VGWUJFZldjUFYzUHdsLXdsVlptOXdLSXZCRmFmclNIa3hfN3o1QW1DS25PeGF0WS1hdnhZX2tRaEpKNkExM3dpcHJaQ3pDOTdPSjAwNDhCN1BNVWlreG1CSm4xRV9zRkx5UkRGWWVmeGlqZ1lWMU1GY1U?oc=5",
+  "url": "https://wlox.com/video/2026/10/30/digital-desk-elevated-wildfire-risk-continues-monitoring-weekend-rain-chances",
   "title": "DIGITAL DESK: Elevated wildfire risk continues; monitoring weekend rain chances",
   "source": "WLOX",
   "source_id": "wlox",
@@ -2273,7 +2273,7 @@
  },
  {
   "id": "6f0065af1a6a",
-  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNjVDaGNsdVozWW5LSTF4SWVmME5CazBIUTA4TEN3b2o2YWI1VjgyM0o0WHpFRkJ3N3VHdGF3Z0pjZ0RoblNxUy1EeXJwZU9teUl2MjFrWkRMSkl4STBVT1JXLS1HY3ZlcFhoRE1fSElWOHBFTTBmekFOSlBXd0ZCS1pfR3FLSkxEazhfX3BEQ09xZzA3M2RORWE1WG8yTURkdG5vdmxpVy1ZUDJreE5NbndoWFRnZw?oc=5",
+  "url": "https://wtip.org/federal-financial-assistance-now-available-to-businesses-impacted-by-bwcaw-closures-and-wildfires",
   "title": "Federal financial assistance now available to businesses impacted by BWCAW closures and wildfires",
   "source": "WTIP",
   "source_id": "wtip",
@@ -2313,7 +2313,7 @@
  },
  {
   "id": "45fbbf4fab79",
-  "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFhiOHcxSFhEbTBxdkxKdmd1akIzS3hSaWtNdGZWMlRfNkRob1VqLW1GaDdLYnRSLVIzeU9xcmlfeUpTSlR6ZzhMcFk3MkF5UGhYRGt2YUgwWDFNbDg3bk9QMHRIVmlhSUxqVG1JVGZMeFJYQWRteEZHWmVUSS13MDUzR3RzX21nVWQ3WDhZejhkZy1SejFKRmZ1X2pWVVpOWDY3Yk5yblNObThlNUVKTXk4OHh0OEdBM0UydEdtaUR6OVFVWlHSAcYBQVVfeXFMUHlDVEpZekoyMmZLZHJoT0twVTB0T0ExQTkxYmQya2pjdHZLQnc2UlNqZ0lhcWJnOUtQcUw2Q3VIWjFmQk1qRHh2a3ZHelo3MnRvTmk5Z3lDLVo4d0pFVUxDV2ZwaUdhVmVsNVNHQ2cxMFQ1VW91dDA4UUdQREM3WGhKUUVvcFJ2YmtKUlNFa2VqS2F6aE9kVWRLOWR0b3dsZXcybGpyUDBCQktzUGpTTnowTGlaMmhzejNLOXVNeTZoQW9ua053?oc=5",
+  "url": "https://scmp.com/news/asia/southeast-asia/article/3372692/indonesias-wildfire-smoke-crisis-claims-over-3500-lives-september",
   "title": "3,560 lives lost to ‘avoidable’ Indonesia wildfire smoke crisis in September",
   "source": "South China Morning Post",
   "source_id": "south-china-morning-post",
@@ -2335,7 +2335,7 @@
  },
  {
   "id": "a4ef0da76d26",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNa0xVckFJMVlqNjB5NnhjZTlScjBrczc0Qmh6QmhTaEVZdG8xbXNjZW45SE5EV0hOSzMtTXQ1YVQxdUlJY1lldXFidk40YlVvOUVCNnlLUEFpYThhQ1lVWEJJSDI3WnRySjR1ZzF4T2FkczdxcmtaUF9XT3pnZDg2eGIzTjlkTUo4WHJTWGdOcHU4MFl0WGdKa2VaYXFCdDhKc296UFR0LVhsUFJrdDFmbHhiMjEwMHc?oc=5",
+  "url": "https://earth.com/environment/wildfire-smoke-is-invading-americas-schools-and-staying-indoors-may-not-be-enough",
   "title": "Wildfire smoke is invading America’s schools, and staying indoors may not be enough",
   "source": "Earth.com",
   "source_id": "earth-com",
@@ -2357,7 +2357,7 @@
  },
  {
   "id": "5ac54ecdffe0",
-  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWndlRzU3a0w2cmQ3TjJlWi0yTzhCVlZTSWtOLXBCN1hzX0NGS1FxWXVLdlVZZlJSZjItRWtTR1pGWDJaNXFkY0tXYlZhSGpXdTZZQS1VU2J3cEdoZ3ZYcGNPVjE3TmdiQXFlSWp3Z05yTlp5Mm02UkE4NlpYVlE2cTN3aUI3M3FpUV9pVldNWDZ6Rk1IUlcxM2dpTDM3X0JSR2RQaFF1Zk4zOV9SZGRXTlZYOHM?oc=5",
+  "url": "https://thechurchnews.com/living-faith/2026/10/30/church-statement-drought-great-salt-lake-water-conservation",
   "title": "Church issues statement on drought and the Great Salt Lake",
   "source": "Church News",
   "source_id": "church-news",
@@ -2377,7 +2377,7 @@
  },
  {
   "id": "39d80257155a",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcGtDcEUta3VxX29FYWtTcmlzejB2WWR5Rk9DbWpJOHhxdHc3Um9BWGJzQUNoamVaVHViYWJzTVhhQ3VTRmlsSUFCYWE3XzZWb2oyaG1fbkZVNkZkamJCTlVZODRKd3gwaXMzQ0pJZnBQQUswMFJsamFiUTFDeTI1bC1rTGxmY3ltOEM0TDlQWF9tNDZ3cWpZX0FDZmRIZUh0dHpRZE9mU3d6SE1GVjQ2QllaTGNKNGZYX25BY0pMcw?oc=5",
+  "url": "https://cvilletomorrow.org/through-a-historic-drought-virginia-cattle-farmers-fight-to-keep-herds-fed-and-farms-alive",
   "title": "Through a historic drought, Virginia cattle farmers fight to keep herds fed and farms alive",
   "source": "Charlottesville Tomorrow",
   "source_id": "charlottesville-tomorrow",
@@ -2517,7 +2517,7 @@
  },
  {
   "id": "adea86377ef3",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVDktX18zOGhtUnFBX2FTbEh5UUQ5ejNjZlUwZkp4aS1ZcXdKdlR4TVd1TkloS01yekFlQTVuYzlvbDgwbVZLckk4TTBrWlJMS2tXazlnQ0ZVUmxjZFIxa1FyUlVXSDNlbGZRSzFVUTZQZGgtQVFmRU5jWGlqOEUyb2NqT01ydERpOWcxNW5adktIN1VUUUFxWktvNHpqWG9UdFFsZ19xMnB2eWM3Tzhv?oc=5",
+  "url": "https://ktlo.com/2026/10/30/some-rain-in-forecast-doesnt-look-like-drought-buster-one-new-burn-ban-issued",
   "title": "Some rain in forecast, doesn’t look like drought buster, one new burn ban issued",
   "source": "KTLO",
   "source_id": "ktlo",
@@ -2537,7 +2537,7 @@
  },
  {
   "id": "a692b1abae2d",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORWRSRjRldkstR2dGMzREY0FwZmpFblhlOUMxVW1PamdHa01kU25ENWVpNW1GZGpib1FGYzRFajZBMEhhXzBxbTVkaktTNDQ5UDJ1ZDJ4SFdlTnd6aTBBZFl4d0hlZlFNSEZPWWZsQVpLLXRuZDYzWGxfTjlfNE5ZVXNJdmZSZmV5RHdYZGNKWTdGZmV5aUdnb3BVSTJCb2tCLXpfZEdJR1E5SG9yd3RV?oc=5",
+  "url": "https://middleeasteye.net/news/how-drought-and-oil-expansion-are-eroding-livelihoods-iraqs-hawizeh-marshes",
   "title": "How drought and oil expansion are eroding livelihoods in Iraq's Hawizeh Marshes",
   "source": "Middle East Eye",
   "source_id": "middle-east-eye",
@@ -2599,7 +2599,7 @@
  },
  {
   "id": "544a6576df47",
-  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZ3JpVk9LMWxBb3RWMlVVeGV0aVhSa18tY1NBLXl6UWNTX2E0ZnlxUlc4OUMxa1c0LThkcENGNV9fcklteGJGaE5fZHo2b2k1TlkzeGhjNUxmcWpNWHhocHZDMTFXMjM0M3JRNmlYS1k1THIxVmlza3RKbmdYZHBhX0FrYi1YbFQ3eU5VNVMyS3NkQ2toRXQ0Mk5PeXotMjdYUnRualVHdFkxVDJ5N3hqcm4yMlZGZVhfdHg2N1B1QlZSeW5VWncyLWt4aXA?oc=5",
+  "url": "https://motherjones.com/politics/2026/10/two-navy-veterans-one-flooding-district-why-sea-level-rise-matters-in-kiggans-vs-luria",
   "title": "Two Navy Veterans, One Flooding District: Why Sea-Level Rise Matters in Kiggans vs. Luria",
   "source": "Mother Jones",
   "source_id": "mother-jones",
@@ -2639,14 +2639,14 @@
  },
  {
   "id": "6ea944886b92",
-  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVTFWSjYzTlB0WGRmRXljRTZEMjhZYUpoRGVrRF9Icl9WRXlQcDVZVGlaV1FRci1hYjZCTzFXMkw2ZW9rU1hPcXE2eW1pRUQ2Y1VpSVhtSGxLS19vazJNWEROcVlCSGEwMHg4VkpTLURQV2l2Y3ZHSVM4Mk5EWWk1VXY0aUsyY2gzX090cjFwaW9ldF9DNUlQbWxSNTNiWjlHcmpDMm5BU0Q1TUhva24tRmRNM0NuUkU2bXJQYmtET0czdkE?oc=5",
+  "url": "https://bloomberg.com/news/articles/2026-10-30/wildfires-floods-and-extreme-weather-are-creating-a-new-evacuation-mindset",
   "title": "Climate Change Is Teaching Us to Be Ready to Run",
-  "source": "Bloomberg.com",
-  "source_id": "bloomberg-com",
+  "source": "Bloomberg",
+  "source_id": "bloomberg",
   "published": "2026-10-30",
   "blurb": "Climate Change Is Teaching Us to Be Ready to Run Bloomberg.com",
-  "paywall": false,
-  "weight": 5,
+  "paywall": true,
+  "weight": 8,
   "via": "google",
   "found": "2026-10-30",
   "status": "ok",
@@ -2659,7 +2659,7 @@
  },
  {
   "id": "035cdd6832ec",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeGtpVGJWN1V6MGpGYXZVT2xDMjQxQUxNa25QMFlta09XM0t6NTZsNzdSRWw5aDFPano3cjJTVUlDc1pvWFBwc3FaYnpUdTBaamZqTU00bnV2am5lU2lPNTFfVjFQM1JZRG44SXAyMGdkMGFzTnNDUGx2VWUxcm9QSEZyWWJXTTBLdk5UejgyTnFfSEMyOHhSY2wwWkdXQkc3VzYwei1tVVZjd0ZwZ0NLYXpLQk01d0xZWk9RZ1lLOA?oc=5",
+  "url": "https://radiotamazuj.org/en/news/article/south-sudanese-children-demand-climate-action-as-floods-threaten-their-future",
   "title": "South Sudanese children demand climate action as floods threaten their future",
   "source": "Radio Tamazuj",
   "source_id": "radio-tamazuj",
@@ -2679,7 +2679,7 @@
  },
  {
   "id": "5143a41e492e",
-  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSDhuX21NeWtpbGNETFp1cXQtMG1CUUJ4SnpHc095TWJWcGpFSjFnVVZNWEJiZnV2SGNQSjYwSUhhS1VkcmkzZDFiR0tLUkRaNlJnSFFiWHZLOHQyT1kzQi1USE53MjJDYzF0YThVNDhKYXhvV0x0SHRnLVdHWWNGV2JOSkJvRjc5aXp5VnFzV1dIblVmX0YzQzM4bEVpVldxTHk0MU1DSDNtUXhiMTZIdzViUXJIQQ?oc=5",
+  "url": "https://radionigeria.gov.ng/2026/10/30/flooding-food-security-and-governments-responsibility-in-a-changing-climate",
   "title": "Flooding, Food Security and Government’s Responsibility in a Changing Climate",
   "source": "FRCN HQ",
   "source_id": "frcn-hq",
@@ -2699,7 +2699,7 @@
  },
  {
   "id": "e5e324b810a2",
-  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWlJzT2xfZTJULVhFZnZ2V2JzZnhWeWpJQnlPZGpUdENKQkNrVThpbHdVMUs1Z0NEMFNXVUV3R3hXdlJuS3RzVzducWc5WXBON0ctaWg3aW5qMmpYT0tHVUppSUxoZDNpSVQ1WU9XVHVwY1RNOTFhcGltMUFCaWhsa083UWFIOWR1VTR5LUlJenhENTB6NUcwSTJVSk9uR0s5S3l6eUdNYzlBdGNoRm9IbU0zbzdxazFMV09RVtIBwwFBVV95cUxNby1qVlBNZVJpT0NCQmcxaFlrYzA3NGw1SGJFMms3eXoyTEFkX21ZM2pGUTlfcDVQX0w1RHNnY1c5emFQbEVDTkJSZFI2VmhRaFhwWlRmSFdXTTRNVFBraGJPOTF0UW91X3l6eFNIeW9LczhxT1RIclRNVTNUSi1HTnRQZGJ2WUFqMzdfc1JQRWlWOW43RlRqUUt1ZVNUQXVtY09uZGwzTzh1VVFsY0dUVldLYnNIVnB0M3d5RWswX2x5ZFE?oc=5",
+  "url": "https://indianexpress.com/article/explained/explained-climate/glof-explained-bhutan-lake-flood-himalayan-risks-10943377",
   "title": "Bhutan glacial lake burst: What are GLOFs, and why are such events recurring in the Himalayas?",
   "source": "The Indian Express",
   "source_id": "the-indian-express",
@@ -2761,7 +2761,7 @@
  },
  {
   "id": "01e5bdc567e5",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNk0yTWpiV2trN1R0VjdRZFkxTUVwRWsxdUIyNEo0VUJlNXRVVHRheDU3dTgyM1lDcTZNZFI3dk1yN3lxLUVmSUtzdl9lNG12UFN0ODZMSHAzaFZVWXJadFc3ZnZ1MVZhcnhxSXFmUkZVTUtLTmpkVWluVWZ2X3FTN0RuLVJXR1hrM1NJOEtWM05FX1hUYXlQZkkwY3R1NXRiN1M2TmlkVlg0Mjc1UXRkY01xZTNuVEIt?oc=5",
+  "url": "https://theborneopost.com/2026/10/30/miri-turns-to-nature-based-solutions-to-tackle-urban-flooding-climate-risks",
   "title": "Miri turns to nature-based solutions to tackle urban flooding, climate risks",
   "source": "Borneo Post",
   "source_id": "borneo-post",
@@ -2783,7 +2783,7 @@
  },
  {
   "id": "553c55195ce3",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcTUyQ0l0NnNuaDRSN2JxQWhudkpsTjF5dHlTUEpfWUJhVjR1RWFMUjcwTnp3cTNaTjFmVE4yQ1FwRld3M1djcGxtX0ktck1taml2NW9DSmhhVV9QMEw5cTVqZ0JzVzRBRzFHS2EwbDVzN3F4T2hGbnhRNldJa0hfbHBsMHVGcEZHZWxLNWFCNUZzT1dUSW56U3hxbVNFTzZyVElCaGNEVlA3NDA?oc=5",
+  "url": "https://eco-business.com/news/bangladeshs-most-climate-vulnerable-areas-struggle-to-access-bank-credit",
   "title": "Bangladesh’s most climate-vulnerable areas struggle to access bank credit",
   "source": "Eco-Business",
   "source_id": "eco-business",
@@ -2843,7 +2843,7 @@
  },
  {
   "id": "ab0faf1ae7c3",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOakZ4NnpVUk5ldWFmZmRCYkVEZGxqckdhdVkzdXN4Tml2ZWRkVUZaYUNCOElFUzBOUUlXclJRZEN3TTgyMzNjMWZHaGJBSndWVVhMQk9TM29iVDc4T1c1SGRPYkQ3REotOTRhV0pLbkVvUnhDNURFNVZTU2llTmxwbWxOSDRHN0ZpcWZDWW12R3dyT3AtVXhIYUkxNnQzZmlmajlodmN6bGRVYWFMNFp5aENFVXJvSFVlS0E?oc=5",
+  "url": "https://uri.edu/news/2026/10/rising-waters-documentary-screening-looks-at-challenges-facing-one-rhode-island-town",
   "title": "‘Rising Waters’ documentary screening looks at challenges facing one Rhode Island town – Rhody Today",
   "source": "The University of Rhode Island",
   "source_id": "the-university-of-rhode-island",
@@ -3009,7 +3009,7 @@
  },
  {
   "id": "b77387113728",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX3hlYkthaXgyLUVOVm9UVTV4d29zNUZDTWd1ZTRvME05eWsxNGVZN2trRWVFX2RVM1M2RVdOZk85M2YzNnNqTlNBMFpLbVk3a1dHUFpldHRrdmwwNFFEcVlIVC11V0RPUlgtQkozdG5KUmtYZ2lVZ0lYR0REMklTTVlvN2tUTmd0SWpOY1dhaENzb0JWa2s5QUZaVHoxbjhEM3loaWJabUh3V2tsUVBiNmxR?oc=5",
+  "url": "https://cambridgeindependent.co.uk/news/thwaites-glacier-will-continue-to-melt-for-next-150-years-b-9488460",
   "title": "Thwaites Glacier will continue to melt for next 150 years, British Antarctic Survey researchers show",
   "source": "Cambridge Independent",
   "source_id": "cambridge-independent",
@@ -3159,7 +3159,7 @@
  },
  {
   "id": "ee7ec732bd28",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY0RWNE8zWTZTTlJpUHE1aXZoOVIwbmZGMjhianFWcXRmVHk0LVk1SkxFWlBUenZyV3NNN2o5SzhubEo2anhfU3JtdjNlSFM4cmpIV3YxWEZLR0JBVFBqbG9hWjJZUnRfbnlwYzlPM1UxYkFxa09sNlhucW1GLThaR3cwdmV4b09lU2djb1RXRW9CWlNoLXlJT2cwSDZhYnQwMVowYzBTdmMtQjc3ODJWUElB?oc=5",
+  "url": "https://thegardenisland.com/2026/10/30/hawaii-news/hawaii-coral-bleaching-is-small-despite-powerful-el-nino",
   "title": "Hawaii coral bleaching is small despite powerful El Nino",
   "source": "The Garden Island",
   "source_id": "the-garden-island",
@@ -3261,7 +3261,7 @@
  },
  {
   "id": "517fe191a6f6",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOblVnRElMQmdfTU9qY2w1aF8zejI1SU9yQUZSd0dnY1pfZVVHQzBrbWVrNXVBVGc1RURMRXl4WUU0b2NQNVRPNGpFcHpuV0d0SERFNl95ZTlFVC1aUHI5aHVHdkItQ3BLZnUtb055ZEpCZUlfaWh6YjhvSWZmUVFXb3NDZTRyQ2FjaHV3aXJBQnZrQ1Z5S0pJUmtLdVJjWGtxNWhqMXcwbmlYakJST2lEUFprX19tcGtsbDk3T0dR?oc=5",
+  "url": "https://citybiz.co/article/927019/pebblebrook-hotel-trust-reports-45-reduction-in-greenhouse-gas-emissions-intensity",
   "title": "Pebblebrook Hotel Trust Reports 45% Reduction in Greenhouse Gas Emissions Intensity",
   "source": "citybiz",
   "source_id": "citybiz",
@@ -3281,7 +3281,7 @@
  },
  {
   "id": "03b5d93f7694",
-  "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT3d2a3BUVGwtQXI0R1VQSzVXTkFobWs4R2dNYnhRYjFTRjVobm4xTWVZRGhESkcyQ25FejcyMUs1THpIbEFUWXJSclQ0eWJBSGJQemR6MEZDT3Z3U1E3Zl9WUjVBNEdiNVNybVpvTzhhS0dlMzNXVDUxbkZlTGVRVXZid0p0aVJnczU5cXJ1T2NkUDhNVThVOVhCZDFTdlNhUEx5NzBnby1MajhYcHhfV0ZuM1ZuTlZkOC1uVXFFLWQ?oc=5",
+  "url": "https://naharnet.com/stories/en/323459-china-s-record-breaking-exports-of-clean-tech-are-making-a-big-dent-in-emissions",
   "title": "China's record-breaking exports of clean tech are making a big dent in emissions",
   "source": "Naharnet",
   "source_id": "naharnet",
@@ -3323,7 +3323,7 @@
  },
  {
   "id": "074c4417dafc",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcUJJSTE2bFhseEg5U1pFa0NZUXpOaWFseENFdmkxNlppUVYta0U4amc5TE5HMUNIT21nNjI5N0hCVVRJX2hXVUZWUV9hczMweXpwMXdQYkthUXZ2T1lSdW93aHFHX3R2UGg5SFVyMktIUHlaV2lWaGtQOHkzRkpqYmYyX2ZCY0xYeTNEUFVWSGZ2eEpxZWZZcl91MTVHNnAyLUtXSDFKUFJqNzd1d0dpY1pPeEV1dEtaWVE?oc=5",
+  "url": "https://bioengineer.org/digital-simulation-cuts-travel-emissions-and-costs-in-postgraduate-maternal-medicine-training",
   "title": "Digital simulation cuts travel emissions and costs in postgraduate maternal medicine training",
   "source": "bioengineer.org",
   "source_id": "bioengineer-org",
@@ -3385,7 +3385,7 @@
  },
  {
   "id": "cfafad58cdf8",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZlZncnJhTFcyS3BXZEVsem9SS2E1WGs5M010SWtqWFdsZE9HRWlKbVRqTjg4TG9XeFNRcGYwY0phdzc0TEJQS0dOcE9yazRWN0lPeW83Qkc5RXB4ZXJuZ2NSUUU2bkFOSGdfeEJ0UW9kbExSV3VRUHNQM0dVbkVXendFZUhhbEhaby1qcWQwZ3lOZWxCNWxMTlhvaTAyeTRqbHBoMlQwMG5rbTAxYXc?oc=5",
+  "url": "https://fortmorgantimes.com/2026/10/29/greenhouse-gas-benefits-of-ag-irrigation-outweigh-emissions-costs",
   "title": "SALUTE TO AG: Greenhouse gas benefits of ag irrigation outweigh emissions costs",
   "source": "The Fort Morgan Times",
   "source_id": "the-fort-morgan-times",
@@ -3405,7 +3405,7 @@
  },
  {
   "id": "b54af6b4d2cf",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYmhrR0tScDN2OENVaURhNmRSZV8xZ2F4cS1tc0QyZ0JzckhrejRXdkFyQ1B4Wk1USlBvNFFMNjdTdXY1dnpIV1NZRjRaOEpMY2FsczJLWmsyeS11dkcxNHd3aFVRV25CZGh2N1FZU1U1U1k3N0x4c3NKT2hzZnR4UndyQ3NEZkx5UDNjZThzSlp0dzhEWHhlWlRnb2lObmtNTlZiWDJ6Sl8tNFRlVHppT2tn?oc=5",
+  "url": "https://greenerideal.com/news/concrete-does-absorb-co2-but-a-2026-study-finds-its-under-10-of-what-cement-emits",
   "title": "Concrete Does Absorb CO2, but a 2026 Study Finds It’s Under 10% of What Cement Emits",
   "source": "Greener Ideal",
   "source_id": "greener-ideal",
@@ -3425,7 +3425,7 @@
  },
  {
   "id": "74750e15fe22",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRGFycGNRVGpRYzdLUmYyM2JqQV9rdWEzeVI0QnkzbDZkNHZoc05FalZWRXlGdm9kLVhBNGJ2WDRsMHFpYU1pNzNfdzVJRFpLQU1LMWFmc2k5eXhnR0RWQlE5cU5xZ3BURXFPZEdfWW5nTl94dUs4ZVRtbHRSaUxIcG4wZnR3YWNLd0tXQ2IwRnh4dHdEeWwyVm1EN1pjY2VMT1F2M1Awel9teGtzbDAySnp6a21qazFBeWc?oc=5",
+  "url": "https://nypost.com/2026/10/29/personal-finance/california-climate-rules-could-drive-some-banks-out-of-state-feds-warn",
   "title": "Exclusive | Little-known California climate rule could drive banks out of the state, feds warn",
   "source": "New York Post",
   "source_id": "new-york-post",
@@ -3487,7 +3487,7 @@
  },
  {
   "id": "5bceaa380d68",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbWhiWFVGSm9zWElBOFBsVUg2ZVhyMS16NFBQN0Y5Y3kzNHRDaTdrOF91OFF2WjlIdzhNUnJORlN1MHRJSkt4eWpxNG54Tm5FZTd2ZkJpWkZ5U1AxMnFyUy1yTG9TMHNxV2tlUWJzTWNWQmNvS3ROTGRDNXZFNTdKTGNMckR2Zzk4ZDhWd0tjMGlLQ0tUdGtFZlhUZV9NLWNoWHR0UzUzMVpadko4?oc=5",
+  "url": "https://taxpayer.net/energy-natural-resources/epa-proposes-broader-rollback-of-methane-waste-safeguards",
   "title": "EPA Proposes Broader Rollback of Methane Waste Safeguards",
   "source": "Taxpayers for Common Sense",
   "source_id": "taxpayers-for-common-sense",
@@ -3617,7 +3617,7 @@
  },
  {
   "id": "55dc9b5508f1",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOER2bGdnWUpTY29JUVVlUjllcWZ5SDlRUEVhU0stcGNqNHh1eC0xQ3E1d3VneGRTOFprUkxLaVlTNXM2eVlEZVJkcXpiaC01RU1za1JpNTRqMzhJRm5mVEZTTDRWaW80cmtsYkY3NFFyeXRQZGVqWFJJQzVNa29lYmdEb2NFeUdESGtaOU9ZNW9hV3l6akt6bTZLSEl3MV80bjBFekVfRVFIVVJLYl9janR2MlRCcEg1SENNaDJwNERYZ0picVU3TA?oc=5",
+  "url": "https://turkmenistan.gov.tm/index.php/en/post/111545/european-union-fully-supports-turkmenistans-efforts-reduce-methane-emissions",
   "title": "The European Union fully supports Turkmenistan's efforts to reduce methane emissions",
   "source": "turkmenistan.gov.tm",
   "source_id": "turkmenistan-gov-tm",
@@ -3987,7 +3987,7 @@
  },
  {
   "id": "d9d0ddbb12b5",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQmRieVpyQUxSY0NKLUI0M3lhSUZZWTRfeHY1OFFELW92Rm94YnYtRjcya0dXU3RuQy1YZldTNTlGSURrTUxaMG1TT3M1RUEzdnB2NTN4bHdNUkJvbjJIU1dDM01RZC1QbFdmMkdvQU9lOWp4M0NUY0NiU2lsMUdnVWVFZ3FWWkpCaTFLanB5ZEdSNDBEc1FIUXU4c2tFclRSUExNcm5fWTBvSVJYN2xFeQ?oc=5",
+  "url": "https://environewsnigeria.com/ipcc-resumes-65th-session-invites-experts-to-review-draft-methodology-report",
   "title": "IPCC resumes 65th Session, invites experts to review Draft Methodology Report",
   "source": "EnviroNews Nigeria",
   "source_id": "environews-nigeria",
@@ -4007,7 +4007,7 @@
  },
  {
   "id": "af25a192d48e",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZk42Tm84MFQ3UzVzSk51WjYzNy1ERnVfYTFIWGVoenF6amRaZVRkdXU1OU9CSWRvTUZsbHJNZEpVNnZHMlhGMVlCSzl6TWlmaFdxek5mZkNrZDlibC1DLUNSdnN5cl9Gd19SQTVaenlxMXJPMHk2R2tQT1d4TmNuMEZYNzhOQkt5ckItc1pPWHhRUTNtRURGcWFtOFBpODhJNEVXNkt0bjBmVkxL0gGyAUFVX3lxTE5NSXp6RE5lNDluMXVQQlF3ajFfUHQ2OThCTV8zZjQwRWl3YnZBZ1RRV0tIeV9BU1dpRWxOYVBMVlh6aVpMOGRvbUtOaWJTWG5kc2Z4RUZrTmh2X2s5Skw0TENjbGh6N0t3RnloVEdPaHhvRnhZZ3RkT0RKM3B3NXM2ck1UcTF3NjZ1Qm41Y3g0d3FfTFU1dlczb0tVekcxVlZNRHVhZE03TGJNZXoxZDZBTEE?oc=5",
+  "url": "https://manilatimes.net/2026/10/31/business/green-industries/science-driven-pathways-to-net-zero/2458073",
   "title": "Science-driven pathways to net zero",
   "source": "The Manila Times",
   "source_id": "the-manila-times",
@@ -4107,7 +4107,7 @@
  },
  {
   "id": "a92fd8768ab2",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDJoWUpNVG1WY0lsVWxGbmVBRGdVQjVpWUx5RFc3X085NXo3bjBEUC1oVFhRQnJRX0NCTmR5YTJfVE1jWERDYWEzRlZGa0FuUWtmY0V0SUtGMHBjblZ0bGlMd0lRdWJjeTZaV3NTQ1dVV1l6WTdQNk03TWMtSHktVzdDZ2RHbFpEcHp5c0R5WmRCbVNUNjMzV2RMQ0szeFV5Y0NJZjMzUlpWNE52NzBn?oc=5",
+  "url": "https://katv.com/news/local/little-rock-completes-solar-energy-project-expected-to-save-city-1-million-anually",
   "title": "Little Rock completes solar energy project expected to save city $1 million annually",
   "source": "KATV",
   "source_id": "katv",
@@ -4147,7 +4147,7 @@
  },
  {
   "id": "ab76caf601a8",
-  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV0VaODN3Z3VVSFJXaWMzM3VtU1MwMk1XZVZ5cUZ3LTlPUDhRZV9PeFZFTzZ4TzFiRklLRlRVdEM1RU1sWTJuc2JkS2UzWjVzQWJkQ2NGLUxhRXdpSXJGal9VSnJHLTJlcGRvaDgwV3lSUWd2Uy1HbmFBQVRBSGlWWDZoN0hpcldhUV9TdDZpZFdYZzZ3OE5qQkNJRHRZNldzRl9uTXRn?oc=5",
+  "url": "https://townlift.com/2026/10/rocky-mountain-power-customers-to-receive-clean-energy-enrollment-notices",
   "title": "Rocky Mountain Power customers to receive clean-energy enrollment notices",
   "source": "TownLift, Park City News",
   "source_id": "townlift-park-city-news",
@@ -4167,7 +4167,7 @@
  },
  {
   "id": "afd43c10f66e",
-  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNFJVVkdlLS0wSURWRUFOMll2Szd2VEF3YVVWWlBnZi10ajQ1VXFaOW82QmxZQ1c2WUhlSEVNVTJuSmNlS2NWbmNDaHhrZXRFa0F5SzNUSU5ZNGtqSXpBNVZKR1JIcEhZeUhpMTVzMWd4NEVkVXFSZnR1Z245U1QwQ0p6UVl2cnNGRDhNcHplX1RISDhtbGE5WTNHRVJJZm9wOFVMVWJSVklQU19QdkRRdm5OaGN6d1ZtVGNlVF9nbk1aSDA?oc=5",
+  "url": "https://energyglobal.com/solar/30102026/neoen-secures-aus18-billion-debt-financing-to-support-renewable-energy-portfolio",
   "title": "Neoen secures AUS$1.8 billion debt financing to support renewable energy portfolio",
   "source": "Energy Global",
   "source_id": "energy-global",
@@ -4289,7 +4289,7 @@
  },
  {
   "id": "31ddf47062c9",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLTZfUXNOdXljYUVkS1FsdTdYSlpReU1lWVhia1FCcy1wMWJ4ZnVJWnQycjJxQ0d2T3hfbW9yeVV4aldNaV80N1NVWGd0UEtnVnhFNUt0TkdJWEJzb0NxaWxxQjFnZHpWbHlzMVlZRV8xeDhtS01hS0dSb2VxR04zTUJaM2FYd0ZZMEJTZlZuRVNwX09OZVVzZTlYNk5LWW94cHJ4M3NUUDBuMi1k?oc=5",
+  "url": "https://utilitydive.com/news/utilities-want-fossil-plants-more-expensive-clean-energy-regulators/833301",
   "title": "States must take a critical eye to gas plants proposed over clean energy",
   "source": "Utility Dive",
   "source_id": "utility-dive",
@@ -4309,7 +4309,7 @@
  },
  {
   "id": "e62fe3418520",
-  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVkVnN2RpMTlacEE2dlVNa3pqOEE1Wm44LWRiazBsQWxPVXlDd3RYZmhXaXB3ZkhwRW90OWxfLTNkaGZUMEdBeXRyRkZDZE9PMmZWOU5DdjgtUlF3OWRNOGowbEp3d0xldDBsUHoyUGFnakdoSGFNWVM5M2xfbzNrUWZVaVN3ZFJsR3RXVkhnTnU2a25KNkVZcVBzcXJkaGdrMXdBeVZ0cjctajI0d3NyQ0J3dmpDMWJCMUt5U1RJSkp0VHEwTUI1cVBR?oc=5",
+  "url": "https://energyglobal.com/energy-storage/30102026/bw-ess-enters-french-energy-storage-market-with-acquisition-of-two-projects-",
   "title": "BW ESS enters French energy storage market with acquisition of two projects",
   "source": "Energy Global",
   "source_id": "energy-global",
@@ -4329,7 +4329,7 @@
  },
  {
   "id": "c9f0d17802a4",
-  "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeFJoMF9jUnNlbkhDSDBMbUp2VXJXMWo3TXBLUEdrdUNrSVU4dDdHQTJjSlExcnRON25aelRCeGdod25MTk9vdjFlck9JdmI4bTJFODNLLVhfVGJuUkNuUFlKM2hDcE1iWFhwUURmTnVEYUZkYWFNRnE3a1EwU19xZUhfaUI4VzRsNy1LZ1hrRTVHZ2xJRWx2ZE0xdkZmTzdXRHVNRg?oc=5",
+  "url": "https://renewableenergymagazine.com/pv_solar/masdar-citaglobal-and-tiza-global-mark-start-20261030",
   "title": "Masdar, Citaglobal and TIZA Global Mark Start of Construction for one of Southeast Asia's largest Floating Solar Projects",
   "source": "Renewable Energy Magazine",
   "source_id": "renewable-energy-magazine",
@@ -4389,7 +4389,7 @@
  },
  {
   "id": "1200a03501da",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0ppd01zY29QS09VXzJMeEpRZy1ZeFFiOGlHUjdTOFhCRjhiVFcxWWMyLTRaaDJMbS11SkRDRVBhaHFqT2JsY2oxamNFU2NCNzhKblJNOHNwZ29QUUNJaDE4R0tmYnBCejFSbG9VVi1lc245T2lVcDFmZ2VSQV9IU1Zzby1YdDA0emtxbmp3X3VadElVVVY4cEtQRngxWFNOU1JMX2lzRUJyd0o3YmFVVg?oc=5",
+  "url": "https://energyglobal.com/other-renewables/30102026/eco-wave-power-announces-first-purchase-order-for-india",
   "title": "Eco Wave Power announces first purchase order for India",
   "source": "Energy Global",
   "source_id": "energy-global",
@@ -4411,7 +4411,7 @@
  },
  {
   "id": "69674300133c",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGJpelVrMnVCbF9OSXpOLUd3SWZwbkRQWFhta1VKbFR2M21fajVCYzVXazl1V0JPX3pJSUZMN2kwS3psMno3dmgtNEhnYXFXaUpQbGI1aVJWX2V1eGttcHpMYkZya19SZ21DUTZEUXF3N192MGpuLThRYndydXY3Vk42X0hqTERvS1BUazl5VFhRbjBuUVlBODREZExWRk4xdXVEOGRVem1YUWM?oc=5",
+  "url": "https://solarbuildermag.com/projects/rodan-energy-building-canadas-largest-behind-the-meter-battery-system",
   "title": "Rodan Energy building Canada’s largest behind-the-meter battery system",
   "source": "Solar Builder",
   "source_id": "solar-builder",
@@ -4515,7 +4515,7 @@
  },
  {
   "id": "724b73be90fd",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNa21YX3JhaGFrU1B2YWprLVY4bHdIUFRhV2lYR0tTbUFleHBxQVpmenZlakZYRWpLSFQyVm9sWFZXQVpwS0lKYU5wWXpsdEo2N05rTi1fb1VLSFlrakdUeldvaE9JM1ZDamp1c2lvR1ZzcVlqUU9rWVQ0aThGa1B0MkxrREtLOENSYkIyUlNCUm9JRGd3YWdyV3ZJY1Y4R0dNdEVGUWFxMA?oc=5",
+  "url": "https://abc27.com/video/pa-dairy-farm-turns-waste-into-renewable-energy-with-rise-pa-grant/12320764",
   "title": "PA Dairy Farm Turns Waste into Renewable Energy with RISE PA Grant",
   "source": "ABC27",
   "source_id": "abc27",
@@ -4717,7 +4717,7 @@
  },
  {
   "id": "fc41a3ccb0ea",
-  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTVhXZHo3alZTYUpuTWZlT3JualBRaTc1WVdEeVRib1VPNVBScWZoRUFLZTliNGYyTE1vd29qVHEwWS1wR0FxSXBKY1JNOWNMazY5SjgyYlpHQTJNVWdMMkhycmY3SWNMTTdSLWxHU012V0JRZW1qTVAwSWVnTzFnNXBVQnI0UERTSk0zb1pkNkdlVXpnTlF6UEJuX2pLRG1NSjVNdTYzU3B5WUdWM0dlMmZYWmNjWGUycVNxX3I3UF9yd1E?oc=5",
+  "url": "https://solarquarter.com/2026/10/30/vedanta-power-reports-record-q2-fy27-performance-with-122-ebitda-growth-to-inr-421-crore",
   "title": "Vedanta Power Reports Record Q2 FY27 Performance with 122% EBITDA Growth to INR 421 Crore",
   "source": "SolarQuarter",
   "source_id": "solarquarter",
@@ -4821,7 +4821,7 @@
  },
  {
   "id": "7760592b0294",
-  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORzMwTjJBcjNZUXQ0bTZxVlJwQUFIZVlWZ0R0a25jcWR6ek9WRE5yOVJtT1JRUjlNY3AyVXhqRVFLVXRXeldhbUlKUXdhRkJKSFlGM0VYRTVsb2xlcDAtWUwtdlhKekY5VHM0cU5janRwajJzVzVrT21pbGtjNGFFU2V1aWU5U2RGQmlJbGxwTEhBVzQ3REhld1JkM29YdktzOUdKSUhzQS1qc0FtckVJTnhGQkZmaTdadkFZaw?oc=5",
+  "url": "https://fleetpoint.org/electric-vehicles-2/company-cars/tax-relief-on-electric-company-cars-falling-to-12-next-year",
   "title": "Tax relief on electric company cars falling to 12% next year",
   "source": "FleetPoint",
   "source_id": "fleetpoint",
@@ -4841,7 +4841,7 @@
  },
  {
   "id": "a719eafcd942",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeUZjck5XeWtlRTZYM3dnOGNHbjNJSnhiOHlaelQwN083TTh5Z3FObk5WYklQRzJvRFhNWHM5V1BiR3FLNUpWYUJtUlVlQWVLMEUyaEVnNVpfa2pFUUlCZ1FYTS0tM2d2d1ZCaVJGOFdwRno4SzE2cGVpbGRJeUl3dUx1SXVfTmxtME9NMGZWRHVVZTRidTU0UDhjVFZWM0VsQnVJdmdiRQ?oc=5",
+  "url": "https://goauto.com.au/news/chery/chery-to-shift-from-phevs-to-range-extenders/2026-10-30/100871.html",
   "title": "Chery to shift from PHEVs to range extenders",
   "source": "GoAuto.com.au",
   "source_id": "goauto-com-au",
@@ -4903,7 +4903,7 @@
  },
  {
   "id": "944986e1ea61",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNkpuZ1ZhVkVkYlB3V2otTml4T1NDQ0VWalJ4U2dZZFBTdm1HVDZrak4tZGI4SkhmYUxaWDBmOGhjb0VHZXloNElNTXpuN3dYRHlWSGoxUHFaTzNoemp1M28tOFVlRTJfVHMzUUlqTDhVcS1YTVFpYXhncno1OVIwa3lPbG0xT0pYdkVjUGZaRk1RTVRzUzJXUXBvTjRUSnd2OGVEMUwtRVFiaXBic3lwZVBqbWlZQkRp?oc=5",
+  "url": "https://energy-storage.news/chinese-portable-battery-storage-players-report-rising-overseas-orders-in-q3-results",
   "title": "Chinese portable battery storage players report rising overseas orders in Q3 results",
   "source": "Energy-Storage.News",
   "source_id": "energy-storage-news",
@@ -5005,7 +5005,7 @@
  },
  {
   "id": "ee1c9cc61575",
-  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbElROUNzYk1nT1FfV3dNVU8yVjMtNXJGLUt5RDNna0QtWW9kSWlSTG1Rb0NuQ01kS2lQZThEai1sSnVHRm5DM3FjZkZOZ0VWbzhvR2NIR190eDhYYzdkVmR1LV9JZGhBSXJiOXpxeWJMVjg1cUhJZjNSVzNKa29hMFdIeW52ZzBiZkxwbU5rWHJGNDV1bFphcVVobERQTGFUVUtCbHZiUURXWHdERlFuV2JLdTE5Qk05MWpfaXVNWXBWWXNYeGVfcGJR?oc=5",
+  "url": "https://energy-storage.news/sma-launches-dc-coupled-grid-forming-solar-plus-storage-solution-for-germany-australia-and-the-uk",
   "title": "SMA launches DC-coupled grid-forming solar-plus-storage solution for Germany, Australia and the UK",
   "source": "Energy-Storage.News",
   "source_id": "energy-storage-news",
@@ -5085,7 +5085,7 @@
  },
  {
   "id": "12f876912474",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOREVnUTM3SXlxb19KWjZjVTJxNDFYZkV4dTZtNFk2cTJ2LU9LLW9RNWw3MHVvUmRrSlFhMVhrQmpYeGpCUmdNYUF6RHEwc0t6czJ6Uzctbk9LZ1k1NFFSbmpBLUhKQkw2eTRBRS1SREpTRGFhWk1EaU0yTGNhOFRrcm5wbHFYSV9LZFNDbVVma3Vnclg1bEVWSWo1Tnl5cmFQc1pyVGdrOUpZVHFD0gGyAUFVX3lxTE42LTZSbVA2SElxaXczeHF0aXdVc05ndVpVb1NQeHZZYl9YTzNhX3FyS1ZNZjVfd0R3cVI5dTlad3RHdmdjUEJmVFRpSDNsekU1NEFxVm9DMnZZV2JicEdOcERfSnREX1ZKMnFyeEI1bUtMb1AxdXdCeFNsSkJ4UklTNkNhQ0ZRNVhWWldmUzNrOVEtUVlDWnVabTJPWTc1UzJ3R0VmMC1DalVFeDNmM0VDNnc?oc=5",
+  "url": "https://visayandailystar.com/clean-energy-leaders-push-solar-battery-storage-as-180-grid-alerts-hit-visayas",
   "title": "Clean energy leaders push solar, battery storage as 180 grid alerts hit Visayas",
   "source": "Visayan Daily Star",
   "source_id": "visayan-daily-star",
@@ -5105,7 +5105,7 @@
  },
  {
   "id": "daaec26834b9",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS09aWnU2ZGJ6a0kyVklzLWVCV3M1RWRRd3pXRTJXampiVFk0eWZzSmhFSmN2Zzc5RmhrNjFvTmhtckNtMTNWRDdkcVBHSU83OHpvbjFaa1lJdW43N045VEpGTHRXeVBLOHhmbms3ZkhoTE5ieWxyZzJxeVJXQmtsMzFLNFZvd1V0ZVlFeEVOc1Z4X3pjTU95UkNobTRiNjBMZ1dFbXNZZTF5SzF6VE5uRGN4UnFnZFNBZ28zYmt4N3RMcXJWdHhlOQ?oc=5",
+  "url": "https://bignewsnetwork.com/news/279404599/longi-energy-storage-showcases-full-stack-capabilities-at-all-energy-australia-2026",
   "title": "LONGi Energy Storage Showcases Full-Stack Capabilities at All Energy Australia 2026",
   "source": "Big News Network.com",
   "source_id": "big-news-network-com",
@@ -5225,7 +5225,7 @@
  },
  {
   "id": "fb6dc3a33ff7",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObUg4SHVPUTRPZll2X3ZQUFVpNktydHlFaEZHR1lWUEZpMkFpbEdydktOMzVTZklvZEdFblowcGxoUURuRXNrSFNRNzdyb3hoTlQ0R0dsWUtlUGsxemtwY0NSWFVqN3o2RklhZmN3Z3pVOFBsdVQ4VXd5NmxUakVBWExlTmNxVVl3S2lkOTh0TEo2SHNGTnI0d2Nrc04tRnh5dXI0RTBBRTlqZnRCdEhR?oc=5",
+  "url": "https://thediplomat.com/2026/10/what-women-in-indonesia-and-malaysia-want-from-research-on-climate-and-health",
   "title": "What Women in Indonesia and Malaysia Want From Research on Climate and Health",
   "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
   "source_id": "the-diplomat-asia-pacific-current-affairs-magazine",
@@ -5245,7 +5245,7 @@
  },
  {
   "id": "90d9d90bbdad",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaFU0dXJWNHBsWnU4S2NBcXBiQTNPdUdNcWhyMFB5RGdCX2d2OWhneWlxODdyd3NVZzZlZ3l1azhUWnlsY3cwNjR5SWlZaUYzYmlubUJQTkV2M2o4Y00wckwtVFdGYVhYOU1RdG5ZZmdWZ2pjSDB0X1pUNjdnX1pMb1YyTkpjdmFRWUlhbTQxMW1qUktFS045RXVmZlo5MXFqSGlfbVZLRkl2YzhZWms4UEgzbw?oc=5",
+  "url": "https://indexbox.io/blog/minerals-council-launches-2026-climate-change-position-at-inaugural-day-of-learning",
   "title": "Minerals Council South Africa Launches 2026 Climate Change Position Ahead of COP31 - News and Statistics",
   "source": "IndexBox",
   "source_id": "indexbox",
@@ -5285,7 +5285,7 @@
  },
  {
   "id": "b03e735cd157",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMG5DdVd1MTQteHpRN29Odm80VWNrT0Y1OFI0MGNTMFBya1R2aUE4SXJnbnNaTS1IRi1OLWh5RHVyazJOV3g2aVJINVpGN1dWODlEUkoxNVZSTTE0dXNTZlhKZ2UyM3BNb3NIMzV2UjQ2ejh6NlpoNkF2eWlrbkVXYlF3RVVsU1ZiSHJSc2g4MlRBOXJhb1YtTE9naWpablVTNkdGanNibw?oc=5",
+  "url": "https://vietnamnews.vn/environment/1803277/asean-shapes-legal-framework-for-climate-change-response.html",
   "title": "ASEAN shapes legal framework for climate change response",
   "source": "vietnamnews.vn",
   "source_id": "vietnamnews-vn",
@@ -5305,7 +5305,7 @@
  },
  {
   "id": "706f2eca56c5",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPT3gtWFVqUi02bTZhU3BJQ3JBZzJ4ZEhMdm91U05seXJjekNWN25LaWhKOTRKc1hvdVlBbUpWMFF0TVh1SVJjTTAxSEVEOWdOcmtYRnY1NzZiTU52R2JKaFBOa3dBUlNTckFSdlBKTVB0b3BER2NKdlgwVFg0WXZIdlBqenkzcHYyaUVyei1TazlSZXNmRHNIRDVCSDJ2QzhEaGhRMXNlS2FqU2Fw?oc=5",
+  "url": "https://environewsnigeria.com/un-report-seeks-investment-in-ocean-technologies-to-tackle-climate-change",
   "title": "UN report seeks investment in ocean technologies to tackle climate change",
   "source": "EnviroNews Nigeria",
   "source_id": "environews-nigeria",
@@ -5367,7 +5367,7 @@
  },
  {
   "id": "d8d230f174b5",
-  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNVc1MU5lVXRvSEJmRjJyckhYOGFCOU5wVjFOQUhKUjNkQVBrYjAwQnZtQ1A2RUJPR1hqQXhHTk85RWsyODhsOWNIdnUyMzVINEo0eWxROVhXYm1nOTRrcm90bG5NRFJtX0I2YXU5OGVJdGFRdzlleVlIUEVQTEZsZ0dNd0hFVXctN0RLVV9xUVJqYUZoN2xUX0tSRWVHUFgyNjdaaHp2T0pDb19lSWtTTVdMNlJtMmNMWjdZazhuLURDcktkSVJV?oc=5",
+  "url": "https://newsfromthestates.com/article/trump-administrations-lawsuit-claiming-supremacy-over-our-water-gut-punch-all-idahoans",
   "title": "Trump administration’s lawsuit claiming ‘supremacy’ over our water is a gut punch to all Idahoans",
   "source": "News From The States",
   "source_id": "news-from-the-states",
@@ -5427,7 +5427,7 @@
  },
  {
   "id": "840c0785654e",
-  "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN1dfNFJfUnlsUFhPMzB2ZEttTC0waGxLWWxDcXlwTDdlME45YVNOaFlvTDBmMWlzeWNRU2I2R0hrSm04RjZNc1dkSThFZVdiR21vc1hNaFFBbW50bzJhX29mOTk1R3Rpd1Mtc0lnZHRqTEw0YXpJRGc3Mzh0czh4SkVGUFJ1cFdZTW95OVVSMHhSWEVEcTREdVo2UDQ4QXc2S0hucDV0RXRkNjcwcWNRNGFDeWRNMVlGRDlIck93alMxV01HUnZDZ2hUZjVrZ9IB2wFBVV95cUxObTBUdW9fbGNJS09zS2pJX1VtdnFEekdsYmN6WTRYSlNFNlRLY2ZoZGNBWWlTaWxHRWdFNG5XVXVCanA4VFVMZHFkZW1XQlRlcTVGVkxBWWtuZV9ydDJxUjRhMlJiT2JMZlZSbXRIemY3Z01iTWpRWGRwcVBXU0RIMmlfRGRXMkwzWXRiMUJCMXYwZTVZRkt0Q3VyQ2tKMTN1VkRIMXE4WWFzaXdUVXM5WHRTRGQ1ek9ZMTEwbUdOVGVTajgxVjVzN2l5UlJSaGxSeUVhZS1CaURqUU0?oc=5",
+  "url": "https://newindianexpress.com/lifestyle/environment/2026/Oct/30/85-gone-can-artificial-reefs-save-kariyachalli-island-from-the-sea",
   "title": "85% gone: Can artificial reefs save Kariyachalli Island from the sea?",
   "source": "The New Indian Express",
   "source_id": "the-new-indian-express",
@@ -5467,7 +5467,7 @@
  },
  {
   "id": "ebf4110e5dfa",
-  "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOVVPaVVCemFpTDRwTF9QTFhzSjJaTVFsNDVVcl80SnMxQ3VPQW1mdHhxMV9mNE4tYkxndEJqY1V3YXJlWWhwMURqTUhqWFVta2ZWb1c2T2lxVFJDb0tZSFVxanVrSVpSd01IWklDM2c2LW9kWXo5aU5NNjNfdXV6WEdMS1Q0ZmJMeC02RGFuVzc2XzFuZ0xmMnRQd2NLdWg5NzRvdGpFRFNEc2pGaVhfdlFqX191aHB5cVlQTjdEQzRtM2VyYVVGV1I5RjBvZw?oc=5",
+  "url": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/copernicus-sentinel-6b-enters-operational-service",
   "title": "Copernicus Sentinel-6B enters operational service",
   "source": "https://eu-space.europa.eu/",
   "source_id": "https-eu-space-europa-eu",
@@ -5527,7 +5527,7 @@
  },
  {
   "id": "497207e97a2d",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTS11R2R6d2U5UVd6cDFRZG9RdERnaFNJOWI0WXdzMTFzdUZEcEJYcWJtYVFZOWtLUmJhd1dDWVZwbEhneFZOMzVVeUlJQmRvbkJNcEtCQzVuOTZsbHZ5TzllSjNqR3p3V0NILTFRT2EzSEV4Xzh3MEpCRG1LODl1VWpwY2xDMkpYM3NXdC1iZ1VQd1BxQjE1bXFJZHcyczJ3aUxMVUFqSHJjSFkyVnVfSl90cw?oc=5",
+  "url": "https://seafoodnews.com/Story/1358734/Copernicus-Data-Supports-Aquaculture-Planning-as-Ocean-Conditions-Shift",
   "title": "Copernicus Data Supports Aquaculture Planning as Ocean Conditions Shift",
   "source": "Seafoodnews",
   "source_id": "seafoodnews",
@@ -5587,14 +5587,14 @@
  },
  {
   "id": "b564e15ecafa",
-  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUzBEYW4xVnJQdHBxWm5HYVJDX0tncFluOG9nUkZCeEFHczlkUFJMZEhnU0tBaGNURUFpczdUSl9fWjFwOTd6VGpkN19TbzYzVnRyUVA0TEdKYjBDVTJSYzVQZU92RkdjdDRlMm1IWV9VZGhWRGFYcFdZc2NtOXd2V1ZkSkVyc1pGaHR0TF9EZVcxRXF5OFJCWklRZENkdVNQMTNZWEQ0ZDdCdjVmd2xnbUhfME9IUQ?oc=5",
+  "url": "https://bloomberg.com/news/articles/2026-10-30/chevron-keeps-microsoft-data-center-timeline-despite-texas-pause",
   "title": "Chevron Keeps Microsoft Data Center Timeline Despite Texas Pause",
-  "source": "Bloomberg.com",
-  "source_id": "bloomberg-com",
+  "source": "Bloomberg",
+  "source_id": "bloomberg",
   "published": "2026-10-30",
   "blurb": "Chevron Keeps Microsoft Data Center Timeline Despite Texas Pause Bloomberg.com",
-  "paywall": false,
-  "weight": 5,
+  "paywall": true,
+  "weight": 8,
   "via": "google",
   "found": "2026-10-30",
   "status": "ok",
@@ -5607,14 +5607,14 @@
  },
  {
   "id": "0e331eafa9ce",
-  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMEc3b0tvaDhJSTQ1QkRGRkV2TkREMGhMSnk5Y2w1YUlLajFNdU1HMGR0YVRnbVhrNEkyTWdhWklyWXZCQVZSRU9xS3NnZng4cWZkZy1oUnhURFNxZ3RFcEkyR19kMlNuQWQ2OE51ZjVlb2VqSk5tY1NuQllZaXNmY054d3VfbUIwTHh6ZEtEWlJRN2RxSFdSOWhEbm9WYnNaakRWQmlfa0Zoemh2TTVQQ1JQajQ?oc=5",
+  "url": "https://bloomberg.com/news/articles/2026-10-30/india-funds-leave-investors-clueless-on-climate-risk-study-says",
   "title": "India Funds Leave Investors Clueless on Climate Risk, Study Says",
-  "source": "Bloomberg.com",
-  "source_id": "bloomberg-com",
+  "source": "Bloomberg",
+  "source_id": "bloomberg",
   "published": "2026-10-30",
   "blurb": "India Funds Leave Investors Clueless on Climate Risk, Study Says Bloomberg.com",
-  "paywall": false,
-  "weight": 5,
+  "paywall": true,
+  "weight": 8,
   "via": "google",
   "found": "2026-10-30",
   "status": "ok",
@@ -5687,14 +5687,14 @@
  },
  {
   "id": "adf5e0435e3c",
-  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQ0VhSXNQY0t6M1ZWR3JJT0k3ZEFmNDN0N2RnTVJFOWJrbElycmpiWnRRMEF5anJTWXVqUGJwNkpGcGhmQW1wQnVYZW5wUmV6NmVGbjNRT0liWlZ5VFlLd3BFRU4tdDNUVlNudHhuSXNWaEZsVXZPOVp3QmRhb2taZEcxVHRrajFpYU53a185d3BTSDQ0VExyV0JKeHg5d3ZpNnp5VjRxcGZ6Q1kwTFFQcmlLSDQxVFV0WHFPUzdBOWlCNGtRYUxV?oc=5",
+  "url": "https://cpo.noaa.gov/noaa-climate-program-office-funds-projects-to-leverage-uncrewed-systems-data-for-earth-system-applications",
   "title": "NOAA Climate Program Office Funds Projects to Leverage Uncrewed Systems Data for Earth System Applications",
-  "source": "Climate Program Office (.gov)",
-  "source_id": "climate-program-office-gov",
+  "source": "NOAA",
+  "source_id": "noaa",
   "published": "2026-10-30",
   "blurb": "NOAA Climate Program Office Funds Projects to Leverage Uncrewed Systems Data for Earth System Applications Climate Program Office (.gov)",
   "paywall": false,
-  "weight": 5,
+  "weight": 9,
   "via": "google",
   "found": "2026-10-30",
   "status": "ok",
@@ -6113,7 +6113,7 @@
  },
  {
   "id": "90b306588627",
-  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZk5fRWFrOXZkdklHOW4xNGxJRnRVeGZiaDA4b2VfMGUxc2NKYkhqOWN0VHJHTnhDVDBwWXVyZlhka1pnanhxREdnc2R5U3lSN0RjWFVGTkZ2SW9fR0xIbG1UUG5IcHpWanhhWjU4dVQwdnZkWmtmb3BCal9RV0RvdU9iMHktLThZcHc?oc=5",
+  "url": "https://attheu.utah.edu/students/how-anxiety-over-climate-change-affects-students",
   "title": "How anxiety over climate change affects students",
   "source": "The University of Utah",
   "source_id": "the-university-of-utah",
@@ -6133,7 +6133,7 @@
  },
  {
   "id": "d0a8043d74ce",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOXVHQXd2V0tRWlFaYWJ3ZERsamU5MlhKNkhLN0JjSzAxN3E4NGtjMWNSYzNKanh2M1Q0NjZLMzBGazJ0MmFMR2NuSzBVSFNCam02VmVMejBaYmh2WU5fcHhrYWNuZU5YbjNtd2RhZjFLV1JJSDQwd08wUUp4cVptNmtCNERKMEVCeHVwNnpSeUpDNVFZNUhIZWJnTzdVV2Zua19CbGZFWlo3VUtqOEY1c2NQcDhITkxNY3dWWU9B?oc=5",
+  "url": "https://blog.ucs.org/shana-udvardy/as-el-nino-and-climate-change-collide-on-california-coast-fema-says-youre-on-your-own",
   "title": "As El Niño and Climate Change Collide on California Coast, FEMA Says You're On Your Own",
   "source": "The Equation - Union of Concerned Scientists",
   "source_id": "the-equation-union-of-concerned-scientists",
@@ -6155,7 +6155,7 @@
  },
  {
   "id": "30e7d86e5997",
-  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONFJYOFQ5cTN3LWI4V3FVNVV6bG4xQUR0bVZFYjJhYXhsTjVBbUVFWm9COUhCSndNTzBpQnFfUzg3TEpBRnFlZW9iejdZX0RySGRDYlo0YTd0eVQyVnowbUdWa1prRTlmM3MydHRrRjFRNWF1dkgxSjNjcng0N0lCUUVMaUJxdWdBVFNwc1A1cmFleEU?oc=5",
+  "url": "https://upr.org/environment/2026-10-29/utah-moose-climate-change-parasites-recreation",
   "title": "Utah moose face growing pressures from climate change, parasites, and recreation",
   "source": "Utah Public Radio",
   "source_id": "utah-public-radio",
@@ -6175,7 +6175,7 @@
  },
  {
   "id": "1233ed0ce261",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTENPcWY4VHVXUEJMemhiOEhmTTdIN1BvbjRWX1ZManpsaGozSDBNTUFNdUtIXzNXb29IUVg3dzlGc2d5alliVmg5Q3V4VnhXdDhLX1BlcEl2ZEp1WlVUN2NQTE80Z0VaMmlXemRxSmsxSkRmV2c0bWtnQUZzUzhtV1U5R3VXSXY2bFFIME10ZVBOT3R2aF82eU1TOEctSzUzMGQ0WXpweEtuTFRhZUZJUW9fOUZ2UzFJRVEwc09zajVpcXY1eEUyVA?oc=5",
+  "url": "https://13newsnow.com/article/weather/knowledge/united-nations-climate-change-report/291-a919ce56-f5d1-4ea7-a269-6fd18fff0888",
   "title": "The world is falling further behind in the fight against climate change, United Nations report says",
   "source": "13newsnow.com",
   "source_id": "13newsnow-com",
@@ -6197,7 +6197,7 @@
  },
  {
   "id": "9901f49b4b21",
-  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOT20zU0VEd2dtbW56MVRhWi0teHU5dXBTcnpXYU1oTkttU015ZnExZGotZXBXdXBCYUhQMXBuYUQtTmpFd3Nua3Z2WFNHQl85cVNhS2ZLSjRvMUQyRW1sZXhvTnJtS1NaaEdQOTduMkVtUW1FQUFuc1Bzek9Ka2xUZnpKMlZzV1ZLaW1SUHBCYXdTaXFKZTFnZHh3?oc=5",
+  "url": "https://rochester.edu/newscenter/review-fall-2026-methane-emissions-climate-change-726842",
   "title": "The methane hunters",
   "source": "University of Rochester",
   "source_id": "university-of-rochester",
@@ -6217,7 +6217,7 @@
  },
  {
   "id": "dfea85e83b22",
-  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON2tleDN6aFhTZm9nVFQwc28xLThYcU5td1RNR0tXYVFmVEE4RkNGbTFxeGRtNFZZVEU0SlFGUzI5d0pfdXZBYkFuOU5kM1FHUXF3a1VwWWVrUC1WRTlZaGg0TXV3SUFfcGV0aFB3WDhRWWhlREdxa0JNZnFwOWJPeDZQdWxhSU93R2dhdlBIejgtZTA4T2pF?oc=5",
+  "url": "https://earth.com/climate/the-pacific-ocean-may-never-fully-recover-from-global-warming",
   "title": "The Pacific Ocean may never fully recover from global warming",
   "source": "Earth.com",
   "source_id": "earth-com",
@@ -6259,7 +6259,7 @@
  },
  {
   "id": "13c5e169ecd5",
-  "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0QWh1V1pZbko2SnQ3RHlCc3ZXNjZ0OUloX29aa2hfU01Sb2xUM0F0ajhuYmN1TEN0QUNnYlJWMm5naWZVZEM1ekt0bE1hZXlfb0pzVUhhT2xTMWRK?oc=5",
+  "url": "https://pulitzercenter.org/id/node/3738?page=662",
   "title": "Environment and Climate Change",
   "source": "Pulitzer Center",
   "source_id": "pulitzer-center",
@@ -6279,7 +6279,7 @@
  },
  {
   "id": "b667d2d90152",
-  "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUjdTaUtZQnN6UFByUlVsNHFGYkpxeHhGU2UzQ2gtTWJObHZVZ05VNUJaY3FUeS11WGx0Q3kzMDY3X0lQQWFDTUtwQjkwc2JIelpCZFJMRVlQTGhJMW9sQlhXSXctNDh1NW9OY0lXTFM4RDF2XzZzZ0JPWWxIbHRQRFdMa3BHOUlkVkZ5MHJHenNFTUxPR2pkeU9kY0ZjT2ItLVFqbTJ3Vmo4RnpKRzQ0cWpseFVMb2pZR1BxWE9fQkkteVFkU3JDc1ZGQ2dHcXdra01nQjBPYl9fako5UnI3X1FoTW5TdTR6T1JHRXRYVQ?oc=5",
+  "url": "https://wlos.com/news/local/october-nights-asheville-warmed-4-degrees-since-1970-north-carolina-wnc-temperatures-weather-forecast-average-city-climate-central",
   "title": "October nights in Asheville have warmed nearly 4 degrees since 1970",
   "source": "WLOS",
   "source_id": "wlos",
@@ -6321,7 +6321,7 @@
  },
  {
   "id": "2da6ca9d9781",
-  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbEV3UHRrU1UwN0xKam9LLWVoU1dRWU8yT0RiRWhySXlNdjFfbHFjT3pYUnBEalowMnFGbGlzdGtwOURuRzd3c0FZQkZEUTEyU2ZtWkx2SWVidFNXMEppSGdGVU41U0lwbFpGOVc0UmxSd1VLWGRWd3JZa0dyWmxXNGZqem5JODU2S29BM1ZDbWctR01HWS1XVjdWMXZ4V0tCdnk3dW1qY3BxTnJHRmNlbkJSTU9idWd5bDU5X0VLTDRfbmNi?oc=5",
+  "url": "https://ecomagazine.com/news/coastal/storm-boris-study-finds-climate-change-amplifies-flooding-beyond-precipitation-increases",
   "title": "Storm Boris Study Finds Climate Change Amplifies Flooding Beyond Precipitation Increases",
   "source": "environment coastal & offshore",
   "source_id": "environment-coastal-offshore",
@@ -6341,7 +6341,7 @@
  },
  {
   "id": "9e099d95f0ae",
-  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByZjY2RTFBNkpKbkg1WTdzNFhNbmVMeFBwWjhqeEhNbXhXWVc1NS1aeHhYSGZHMlJlVXZVNVNicENTUjZlWWRMWnFsc2l1UnhCRC1fNUo1VEZaak5fdlRnU2hLSWZUdmlP?oc=5",
+  "url": "https://britannica.com/science/greenhouse-gas/Methane",
   "title": "Greenhouse gas - Methane, Climate Change, Emissions",
   "source": "Britannica",
   "source_id": "britannica",
@@ -6361,7 +6361,7 @@
  },
  {
   "id": "43ce02cd4058",
-  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Db2pvNEFjcnViazJYUmNjS1UzR1FGUjBqWUFUUlNGM2N0M1JNTC1YSVhfcnJWWFF1MlktamNKVGxxSTJRbUtnVWFvNktEY19wcDlXSlVTc2FudWhTS0YtS2ZNTzhnYUg5ZHNnSWZjbm1CeENPMTBhaFQxRlB3UQ?oc=5",
+  "url": "https://wptz.com/article/ice-age-laurentian-ice-sheet-climate/74284886",
   "title": "Humans accidentally canceled the next ice age",
   "source": "WPTZ",
   "source_id": "wptz",
@@ -6383,7 +6383,7 @@
  },
  {
   "id": "0b63259afdc5",
-  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNazNFaFdXX3JISzRPejY2blh4U1YtZENBdnNMX3lkbzhVcUFwT3RmX0FnUVlCTzJHdnY2akl3OXhqRDFOQklCbU9Bd19MX05jQURUejNQREV4Vkw5ZFBGRXZNU3VVWlVGVGwyRWhhNWl2M2dNOHU3djR4YzFQWTBYU00zdXRHYzY5ZVlMRDQ5bEVWdUFjenow0gGXAUFVX3lxTE1rM0VoV1dfckhLNE96NjZuWHhTVi1kQ0F2c0xfeWRvOFVxQXBPdGZfQWdRWUJPMkd2djZqSXc5eGpEMU5CSUJtT0F3X0xfTmNBRFR6M1BERXhWTDlkUEZFdk1TdVVaVUZUbDJFaGE1aXYzZ004dTd2NHhjMVBZMFhTTTN1dEdjNjllWUxENDlsRVZ1QWN6ejA?oc=5",
+  "url": "https://countynewscenter.com/county-of-san-diegos-cool-zone-program-goes-year-round",
   "title": "County of San Diego’s Cool Zone Program Goes Year-Round",
   "source": "San Diego County News Center",
   "source_id": "san-diego-county-news-center",
@@ -6403,7 +6403,7 @@
  },
  {
   "id": "03ca17ed909c",
-  "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmJlMWxfcHZxNnAzNW03VkxwenFVeGVKclJCdGhuSnhzenBZZ3ZsdlpnWmtaSFNvTVZpS1djSHpoYWM4UDlZSlVybU1UR1lQSG55MlR6Y2d5XzA4dWpWdjFyWEdnWnp0YmJZSVI2ck9qR3M1ZjVORE05S3E2TFZzRzhBdllwemlnV0xreUVRY1lVc0lOcGVyMHRuTFVLUmtOc3RqbTkyUDJJbEZKR2NNbE9odktsUllxVTJYLUpIeUY?oc=5",
+  "url": "https://cityofboise.org/news/public-works/2026/october/city-of-boise-awarded-25-000-for-heat-planning-and-preparedness",
   "title": "City of Boise Awarded $25,000 for Heat Planning and Preparedness",
   "source": "City of Boise",
   "source_id": "city-of-boise",
@@ -6423,7 +6423,7 @@
  },
  {
   "id": "2b52d00acb6b",
-  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTmp2RGlQUkoyYm91VGFRYjNHbzk4amNubmVQRkhBTjF5Q0ZnckZJT3hUbFlvbHBOaXNna213RHJ3R0VSOHhDV0E3OEtsZTFBSnZNTTZwcUg4TGJBdldGU1o3dzNzOUllZWJwelFRYkhuT2RjZFhobWNveFBKZElmbW1obDVfRWlZMGotVnZFSDFIVE9iRUY5Y1ZtMng?oc=5",
+  "url": "https://peoplesworld.org/article/as-extreme-heat-worsens-renters-are-gaining-a-right-to-cooling",
   "title": "As extreme heat worsens, renters are gaining a ‘right to cooling’",
   "source": "People's World",
   "source_id": "people-s-world",
@@ -6487,7 +6487,7 @@
  },
  {
   "id": "67a832c27cce",
-  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFlMeWpJbG1wR0tfYk1Ncl9IQkFSV0tRbUM2MW4tRXk4S3d1WWpLeFhfOGNvRGgtcjVNeVFOWmxvZ19HNUtzczVhOGNmUFdNTzFYZHZsRHM0OERrT0QwaVhGQTBnZHM3amV5RXZHOExTM0FiNk1YemtzZnV4akUyWFh4OA?oc=5",
+  "url": "https://preventionweb.net/news/how-asia-and-pacific-can-take-heat-tourism",
   "title": "How Asia and the Pacific can take the heat off tourism",
   "source": "PreventionWeb.net",
   "source_id": "preventionweb-net",
@@ -6529,7 +6529,7 @@
  },
  {
   "id": "98019025ae6a",
-  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVlRPNHFodWk1MjNBcXNNOG5JbkZiS2gxTXpTSXlhaF9YTW1fZlMySm9UMDhHcW9GX0dwekNvWVpQaHFYdDlPaDBIMjJBWlFrVVJ6N3dTNDcxQTFxVXZ0VXB5eXROdzV6YzFUX3pPSnNRVElMcHRJeFAtZExFZVVBWmk3M2wtSkF1MjZBU2ZCY3B3dmtWcHBRUFA5WVZLVHRKcmxrLXhjU3BUbFlFVEJwV1Q5TEtoUQ?oc=5",
+  "url": "https://alxnow.com/2026/10/29/heat-island-mapping-project-identifies-alexandria-as-one-of-n-va-s-hottest-areas",
   "title": "Heat island mapping project identifies Alexandria as one of N. Va.’s hottest areas",
   "source": "ALXnow",
   "source_id": "alxnow",
@@ -6551,7 +6551,7 @@
  },
  {
   "id": "1b290144ad33",
-  "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUElma3ZrYUpEMVlhVzRTb2xTUWhTV3ZKRXpjbVJwcUhMTzVoNjZHdWZxdGViZUJPYmxfX0V4dFQtX183ZE0yWGpXdXA2R0Z0LWtVbGxwRG1IUkZmb2ZvTThmTnh3SGZjMVBWa2pPYU1QLTBPdnlNaWZJd1g0eHkydnRMVEE4UmpHOThKZXcwbURZeHlUVkNjcVUwTGdYVzd2RDk5OWpUV0o5SzlOLWNrLW5tdmJPT0FfMzlxS2hoNEZqTE15VkpvZ2tud01Cd19zS29ZSWctaWVuQUNlNWVKSzMxYWt4YXNqaXA4?oc=5",
+  "url": "https://calonews.com/arizona/utility-costs-extreme-heat-top-latino-concerns-ahead-of-arizona-midterms/article_a376af2e-81c7-4023-889f-76f81e47a185.html",
   "title": "Utility costs, extreme heat top Latino concerns ahead of Arizona midterms",
   "source": "CaloNews.com",
   "source_id": "calonews-com",
@@ -6571,7 +6571,7 @@
  },
  {
   "id": "5b482c9a4d13",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ1VKVk14WjFnOV81cGgwbGltV3VhcmJLUzN3a2g1RHJ6Vl9Gb19wcXl6TmVFX1FUWmd4NzBSQ3JQY3NHVUlKZzI4cjNMRG9NMHRXZDF6VjMySDVUX2MxNndHLWVzT2Y2MHVQNkFuNmc2R2tYUlExWGUwdTJqVXBwWEZ2T0h6akpnUEtwNnIxRm53cU9SWmVIUGxUdGRkbW9yNmppUDBPNVZQZVR4elE?oc=5",
+  "url": "https://schoolconstructionnews.com/2026/10/29/climate-change-isnt-just-a-subject-in-schools-its-a-disruption",
   "title": "Climate Change Isn’t Just a Subject in Schools — It’s a Disruption",
   "source": "School Construction News",
   "source_id": "school-construction-news",
@@ -6591,7 +6591,7 @@
  },
  {
   "id": "6ac63b9e0a7f",
-  "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lWmZ4cU93N1M1WE1CUW1VVmpidldwSjlZT243LUExdWsyTXVNWFZpN0ROU3dOMDdTb1FJR0JMRTBNQks0UGd5NmRiandCbnI0NVAybjktSi0xZFJHZ0pUUW54XzZpLVhLVFYtbGU0N2U4emdm?oc=5",
+  "url": "https://medicalxpress.com/news/2026-10-pollution-older-adults.html",
   "title": "Heat waves and pollution increase stroke risk in older adults, study finds",
   "source": "Medical Xpress",
   "source_id": "medical-xpress",
@@ -6613,7 +6613,7 @@
  },
  {
   "id": "dae4aeec925f",
-  "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWGt5Z01OMExrMl9CbUVpMDF5TnYtVXJjR2lFeEFya0VjSnd1S2ZmVnNmUFgwc1l2UEpRdmsxZVZlR2dJc2hxMlVXSWJrd0UtbC1kYURISDFTb2xVVUtWTlVIbk1KV01xeE1JMEhsY0xXeDY0RmZOUTFmNUF2N3FKVloxVl9Ecmw5Y2RRN3U2d3BvS0hqd2VOaFMzSDM2V2hDYm9mckU3dDdibU55VTdjc3pETDc0QWFBVVFYdVRJN09kbWREc0ZzTHIwekY1bHVleWFfN0tZaHc4UWJ2QlI3NUUzXzNPazdEOVFYZmhpYmJHc016ekE?oc=5",
+  "url": "https://heraldandnews.com/news/oregon-s-extreme-climate-hazard-days-have-quadrupled-over-2-decades-study-says/article_b5f92020-17d5-44bc-845f-dc89b702bc4c.html",
   "title": "Oregon’s extreme climate hazard days have quadrupled over 2 decades, study says",
   "source": "Herald and News",
   "source_id": "herald-and-news",
@@ -6635,7 +6635,7 @@
  },
  {
   "id": "d4d1534467ef",
-  "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcDlRNjZ1M056SUNzc3FRVU4yQkxCOENvc0FXNEZqVTdXYWR6RWE2bHNISEhLQi1iODN4cEJEX25hblpWOHljeG0yLUlXYmxaN0RhN1F3T3R0eS1INGlnU2I4Q2lzT2NmUHRTWTdORnpEcTRXQ0V4VnNKT01md1pTbGJuMC1oaHg4eHlMRXBmNFRndDNjLUlPTjNpUWo0bWpNSFlkZUFBY3AzSmlvaFNvY1VlNVpfSlJIRXBTZkFiZm1HUGhVX0lMQUVFOHhKaHo0dEpfN0NB?oc=5",
+  "url": "https://seafoodsource.com/news/alaska-fisheries-science-center-attributes-hybrid-crab-boom-to-marine-heatwave-competition-and-predation",
   "title": "Alaska Fisheries Science Center attributes hybrid snow-Tanner crab boom to marine heatwave, decreased competition and predation",
   "source": "SeafoodSource",
   "source_id": "seafoodsource",
@@ -6657,7 +6657,7 @@
  },
  {
   "id": "53ed8c2436dd",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON2FtRnN3OWc4QWFqUmREQ1AxQ19aRXYxN1lVQktIa1gwNTRqeVZmN1RhdzdOeUliWFJLc1Q5VlZFZUFuZ3V3eUFxdjU5bEFrNF9TbEJ0azlwUEFCMmlVVFhfVkdlaTFxYWhhTXlOYU9kdEtfWXZWMXBZNG9VUEZhbDlJMW4temYtVDFNU09LVDBaRjRENEttdTZSd010ZjEzdHdUS1dTbHBCOGM?oc=5",
+  "url": "https://oceanographicmagazine.com/news/marine-heatwaves-and-hungry-fish-decimate-japans-vital-kelp-forests",
   "title": "Marine heatwaves and hungry fish decimate Japan’s vital kelp forests",
   "source": "Oceanographic Magazine",
   "source_id": "oceanographic-magazine",
@@ -6677,7 +6677,7 @@
  },
  {
   "id": "04626cb7092d",
-  "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPbFZ3bnpxLTBIYmgycHBKS2dfRXJSQmZRZFFaWi1YTEFGT2JkWTdsZndrRndnb3RnZkVleElucEdhOXM3WWp4dDJkdS00bUluTmtWMGMtUzRqOHhPcHI1QVZmZ3RQUjFJSm1seWUwdjk2cV9uejR0VnhKVXVqeS1xUDZvUi05SVgtdVhQM2FndUlod0REWkk5dWFVdkNpdVA5a29nakRRaHpoMFhQeURGLVIwTmdaUUhmVUxxU0VGdkU4bUlVcDd1Nkl2WnhCNld6N2lZdHVTU241eVEzNHJEcVJ3UFlpU1JmbnA5cQ?oc=5",
+  "url": "https://interaksyon.philstar.com/politics-issues/2026/10/29/321193/giant-heat-storms-are-scorching-the-earth-this-is-the-story-of-the-biggest-one-on-record",
   "title": "Giant ‘heat storms’ are scorching the Earth. This is the story of the biggest one on record",
   "source": "Interaksyon",
   "source_id": "interaksyon",
@@ -6743,7 +6743,7 @@
  },
  {
   "id": "fdec0a03aff3",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRmx1S0lsUExrNEVKM0tVRVVpbXdQWkVLWElfLVNoc01ORFRIdGRLX3pCdnNNdVZEV0p1ejBqLTU3X1pfb0Z6S2lzTEU3T29nNWRVZnI5aEJyWWxVR21Kdnd1U3FNeTAyR0RiZVRkMUs3NTNSTFFlR0lSR2FMUmlxRE1LT2ctdi1VN0ZNY2hfd1cyZGdPcDk0MHBULXFkN1RYWVJrRVUxMGtoMVhYU0pfSF9LT3dVVGZT?oc=5",
+  "url": "https://nationalhealthexecutive.com/articles/government-urged-protect-people-severe-mental-illness-heatwave-risks",
   "title": "Government urged to protect people with severe mental illness from heatwave risks",
   "source": "National Health Executive",
   "source_id": "national-health-executive",
@@ -6763,7 +6763,7 @@
  },
  {
   "id": "46d4c4a7150c",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWGVTdGFLUHVQN1VqMU1MQ0pVT0tYUTctdGI1Sk5CdWd0U1NNYjlONXFybEhTVVEzS0RqQ084QnhsNU95dlNjVDBuQ3ROOFBxaENEYWtISXFPNlV6bnl0ZDN6TzRnXzkxZXEzaE56NEI4dkFCeGl6X21Za0d1OGtqZEZyNmhNM3hPQ2tZaFhrdUt1VFczeGduME85QWd5eEtSYmdiVzFDTEc?oc=5",
+  "url": "https://kunr.org/local-stories/2026-10-29/wildfire-protections-new-home-construction-costs-cu-boulder",
   "title": "Basic wildfire protections add less than 1% to new-home construction costs, CU Boulder study finds",
   "source": "KUNR",
   "source_id": "kunr",
@@ -6783,7 +6783,7 @@
  },
  {
   "id": "ede1b7ba5aed",
-  "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPT3VzX3p6Ylh6UUxjSlRTSm9lRUNWTlZuUUttRF9MaVVHeVpSd194emNFc0tJZmh0UTI3Z2RUeHh1WFNGV1B2T1BZYmozVE1zNHVCUHBUSFFBazNVR09Lb0p6XzZSZ3dWc1BudXBKS3lmRlJnb2NaMDI0SlBxNUU2QnBOMnljNGFQTUc4MkQ0X2tzVGZtQzN2dU5QeXIxc1FzUWpQRnB6dHdaQjZneDJ1WUxBMWNwcWtteUtNVHA0MHFRVE1UNTVXZDFSTDZCU0ViNVRzYkdNVlNHaVFfS0E?oc=5",
+  "url": "https://bernco.gov/district-5/blog/2026/10/29/residents-urged-to-decrease-wildfire-risks-by-participating-in-fall-green-waste-disposal-event",
   "title": "Residents Urged to Decrease Wildfire Risks by Participating in Fall Green Waste Disposal Event",
   "source": "www.bernco.gov",
   "source_id": "www-bernco-gov",
@@ -6803,7 +6803,7 @@
  },
  {
   "id": "8e098a21235e",
-  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTFYxYTB0bFlkdS13d0dkZS1oMHBZb0U4cXlVYjFPOWdwLXAtWkN2bU9HRXpSSG5VS0hJZ1dPRzNOMGJDNndOX1YwYlVaSG1zV0kzV2VKN09Hbnd4VTJVa2doQ3dBdF9KVzlHMmd0WGEtcW5UTEhtUWxDcTV5bzYtamJIVGRJSzd2QzRKSy1kNXZuREl0ZDR5ZdIBngFBVV95cUxPRDBndUhYUjZVRDVZS0ltTlAtQU0wYndMTlJIOTRqYnEtakhUMkE1N1Eta0xzRkhLa0lQOVl6MThiU3MzMTI4MWlBdmoxR0I2azhrVDJxaWVxSU9XT0lidFJudlZNdDlLb1I1QVViTURrMUN3WHZUV2tpMjBsa3Mycm1KOURYVVFaZFNGQzdiYUtuVmJRd3hINXd5Q21JZw?oc=5",
+  "url": "https://abc7news.com/post/climate-experts-map-potential-bay-area-flood-risks-el-nio/19987179",
   "title": "Climate experts map potential Bay Area flood risks from El Niño",
   "source": "ABC7 Bay Area",
   "source_id": "abc7-bay-area",
@@ -6847,7 +6847,7 @@
  },
  {
   "id": "4185ccecd3d7",
-  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa0VOMGN5czBWVkhzWUppbHpKWklEX19JQ0dTS0trRXl2VzRvOWNfQldRbVd3dWNjcHI3NXZJbVBfSVRwLWtqZ1lONU05QWFySzhVUmVrSkdIbTJhWnNmVGd5MjJkQ2ZtNW4wY0hxdF9zb1BIaFNZcUhnUWVZMlRjT2tPM3NxNktmd2lkWDdTelMyb20tWDJiQUJULUtkX3RtRlpjcV9TZmR3ck9mM25mWFZiYzdYVm9LMXl6Q3VuMFJZY1J4aUduZHY5QVM?oc=5",
+  "url": "https://mavensnotebook.com/2026/10/29/uc-davis-securing-californias-flood-resilient-future-amid-political-and-climate-driven-storms",
   "title": "UC DAVIS: Securing California’s flood-resilient future amid political and climate-driven storms",
   "source": "Maven's Notebook",
   "source_id": "maven-s-notebook",
@@ -6869,7 +6869,7 @@
  },
  {
   "id": "86f491f07447",
-  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQmdqU3o1MXNYNkFSMWZzUEowVFBaS1hvdXZXdldFVjc3UGZpLVdMOVRXeUs3T1A4MW5XRVVpNmUwU2FTZVN6SjR1R01lbWM5Skg3bV9OOTlDaU5BN21Tbk5veWthRXdaZE45bktLZFl3YXd4VXRYNU4tRTVUX0FuNVU2YWRwcG1rdlIwbzJvTFJPV25NeTZGQUprNA?oc=5",
+  "url": "https://commercial.allianz.com/news-and-insights/expert-risk-articles/parametric-insurance.html",
   "title": "Weathering what’s next: how parametric insurance can support climate resilience",
   "source": "Allianz Commercial",
   "source_id": "allianz-commercial",
@@ -6889,7 +6889,7 @@
  },
  {
   "id": "1e4b7c0f9465",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb19PN0xSZFk3TktLM1VJN3otc2hlcHN0MzZWODZPRG11Tm5UQ0xjUXNfaV9SRWVMTVljUDVlakdyYllVWE9ZSkZwakNRdF9IWmlYZkNiRmxUUjd6ZXQ4b3NnMGVTTEEtbTd2XzlMeHZOVEJYbXR4QlRPb0k0MWU3MXFLYzRRcmtrcmhVd3BJMFZMOU1ZdTNaNXZkQ09qOFZ0Z3JGVXZ5bEg4N0R5ZzVXT0sxMmJ1bDBCbk5jd05oNmY5cS15OEdtRg?oc=5",
+  "url": "https://audacy.com/kcbsradio/news/business/cyclone-arnab-climate-dhange-india-andhra-pradesh-04ffc941aa559a55d1774795cd63017d",
   "title": "The path of Cyclone Arnab went through India's plans for data centers and future growth",
   "source": "Audacy",
   "source_id": "audacy",
@@ -6911,7 +6911,7 @@
  },
  {
   "id": "714652c9b5c5",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQLVFlVmI2QlRqcVRuSy1GeFMtdDVRQ0drd3lING9WUWdZTjNRWUF2ZmZLTEM0NlVxbUdtdC1mUUNMUmM5cTQxX3psRy1JUWoyX0NJV3dySHZmdVU0VG1aWVZ5QmZBTVo4OWlkSkdRWEppN3JTYUp0aFpCSmdtLVJieGo0TUdRNWZ4UXFnaUd5N282QTIyWVNaRGZGNEsyRk1pNVpUWmlqc3BSVUJVSzJjRWdVT3RieHp1eDg2NUZB?oc=5",
+  "url": "https://table.media/en/climate/news/extreme-weather-in-october-toxic-fumes-over-indonesia-and-school-closures-in-malaysia",
   "title": "Extreme weather in October: Toxic fumes over Indonesia and school closures in Malaysia",
   "source": "Table.Briefings",
   "source_id": "table-briefings",
@@ -6977,7 +6977,7 @@
  },
  {
   "id": "a560a5e0fb77",
-  "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNQUdrMnlfSU9icVE4MHRIeFBJaTZQYTFNdlB4Sl90TnNwMVQ0aGl3Q09xQ25YUElpbjRKV0RBdDQwR2VUaXVSZ245ZWRUeWg5TE04VF9FTjR5MGFpMWxqeUdHREhsc2JidDdHZ2paRXphQnJkQmpUcGZSbHBQWGF4V0tZZFZwLVczRzVWRTJtNTZzQkxFdldCaWh0R1ctVDVpeGRhbkxEbGVyTkxna3l5ZEhLZEhzc0FBd2FMZXpJYTZGdlFMbkpPOHlqRnp6LTlQUEZIMG50UTBxTFlZYUdHZk8yZWdUS3M3dHFNUUFuaHhORWdsYVh1YTFqTjB1dWNWdFZHS1Rn0gGGAkFVX3lxTE1BR2syeV9JT2JxUTgwdEh4UElpNlBhMU12UHhKX3ROc3AxVDRoaXdDT3FDblhQSWluNEpXREF0NDBHZVRpdVJnbjllZFR5aDlMTThUX0VONHkwYWkxbGp5R0dESGxzYmJ0N0dnalpFemFCcmRCalRwZlJscFBYYXhXS1lkVnAtVzNHNVZFMm01NnNCTEV2V0JpaHRHVy1UNWl4ZGFuTERsZXJOTGdreXlkSEtkSHNzQUF3YUxleklhNkZ2UUxuSk84eWpGenotOVBQRkgwbnRRMHFMWVlhR0dmTzJlZ1RLczd0cU1RQW5oeE5FZ2xhWHVhMWpOMHV1Y1Z0VkdLVGc?oc=5",
+  "url": "https://ansa.it/amp/english/newswire/english_service/2026/10/29/med-iren-project-studies-floods-heat-stress-with-cyprus-a-climate_2d6ac5c7-1bbf-4bd9-b5bb-59a66f18b92a.html",
   "title": "Med-IREN project studies floods, heat stress with Cyprus a climate-resilience model",
   "source": "ANSA",
   "source_id": "ansa",
@@ -6999,7 +6999,7 @@
  },
  {
   "id": "7820cdab1ffd",
-  "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSU1zTHVqd3BKaHlobTdYVTZfczBnaHYyQmNvdzdMcWs1aDR3SF84WXozeEdQYXFYc3ZqVF9kZ2lYaGRUNG4tc1UyXzFSTGJyOVJnanE2UXRJTWVPbk5mbU1QVnBPRXFoV3B5SXVaM0xrSE5KQm96bUVvYVhtTERiZ2N6NkktUQ?oc=5",
+  "url": "https://usthadian.com/nepals-first-climate-loss-and-damage-fund-allocation",
   "title": "Nepal’s First Climate Loss and Damage Fund Allocation",
   "source": "https://www.usthadian.com/",
   "source_id": "https-www-usthadian-com",
@@ -7019,7 +7019,7 @@
  },
  {
   "id": "7c8d2c016826",
-  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdmJ2Q0xmeVFkUXNYalFZREsyc2NfLUdsbE5OTVNMVGJEQXJBYWFyS0hHSjFrVHhrWnJVTXBHcWdqSUo1NFpySWR4a0VSZUNwbGlELVhGeUQ4ZVo3bWhUVWxESmV5LURBQnFrc29aa0NJZ251cko4UEtiLTU5NVhjWWY2SkFKc2Q5T1pYM1A4a3Z0VVJxaHY0NjJjcTc5RlNCeEpqSHZVY0MtVUl4d0pqdExCMFNUZzc5MGlVSVM4aGtCSkhZeHdqQTdnOTU?oc=5",
+  "url": "https://kunc.org/news/2026-10-29/southwestern-colorado-flooding-by-the-numbers-540-damaged-homes-40-rescue-missions-and-counting",
   "title": "Southwestern Colorado flooding by the numbers: 540 damaged homes, 40 rescue missions and counting",
   "source": "KUNC",
   "source_id": "kunc",
@@ -7061,7 +7061,7 @@
  },
  {
   "id": "27779a0bf5d2",
-  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YMUktZVdjck9fQzE5b3NOdE5KM3k1MnVONDRFTlBjU1NUbXNxMVl4SXN5M1dlaWJXNkRMVmFzT2tMMEt3NG8tbXNsMzdrOEFndWdfYnpFWC1lOG8?oc=5",
+  "url": "https://vitalsigns.edf.org/costliest-hurricanes",
   "title": "El Niño disrupts hurricane patterns, but long-term trend of costlier storms continues",
   "source": "EDF Vital Signs",
   "source_id": "edf-vital-signs",
@@ -7103,7 +7103,7 @@
  },
  {
   "id": "7c956c36964e",
-  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV1lwODBNa0tLQmNQbno2R09nblo1WTIzeWJYMGRGZ3d6RkJQdEpMRV9jOENPZEhmM0ZVMXp0UzhKbDhiTjN5YmVDWWRHS1Q1UTNmUm5HOUo5MUF0RS1fM2J4MG1NR3ZFQ3haVjBBdEJRN0lGLWlFaEVnTWN5RUNJeEVvMTg3SGpoa1BhVWJUQnlxWmpNU3Iw?oc=5",
+  "url": "https://un.org/en/desa/higher-ground-how-new-york-is-raising-a-park-to-hold-back-the-sea",
   "title": "Higher Ground: How New York is raising a park to hold back the sea",
   "source": "Welcome to the United Nations",
   "source_id": "welcome-to-the-united-nations",
@@ -7125,7 +7125,7 @@
  },
  {
   "id": "52d0c7ba3920",
-  "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE04My1XaF9YSm1iaDFONFNNcGQ2OU93OHBzNks5N2x5c0RQYU1jakZaX19kQTNzUlcwRjRJVloyaTg0QWVIeHhqdlZ4YVBWRnpSSG1KMnlVdXBNOFRjVFRCajcxb09Fc24zd2pqQlN5ZTBnSWNNUkNnc3ptWQ?oc=5",
+  "url": "https://rogerpielkejr.substack.com/p/the-stern-reviews-28-trillion-miss",
   "title": "The Stern Review’s $2.8 Trillion Miss",
   "source": "Roger Pielke Jr. | Substack",
   "source_id": "roger-pielke-jr-substack",
@@ -7145,7 +7145,7 @@
  },
  {
   "id": "49559f13bc15",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcjc0RjR4NFFXdmZNdVZBblJRa3FPTmpUS1Qtc0Iwc2NYTHVqTmVMQjhkX3BHX0VzamJxcGpJSFM4ZVhHSTE4dmZQNFlBRVhHVElmLXU4TW53S0lEVjQ0eVltZ2FWYXpycElZNGVxMlNzeV9zenR6d1E2WXRPTEctRFMwVzNOa0FhUDNRN01WclhDdllBMV9hMFgzaHNGVGNteFd6WW5PMzg1UVdMMmg0N0p6MzNaN0U?oc=5",
+  "url": "https://floridaphoenix.com/2026/10/29/trump-oks-individual-fema-assistance-for-eight-florida-counties-hit-by-isaias",
   "title": "Trump OKs individual FEMA assistance for eight Florida counties hit by Isaias",
   "source": "Florida Phoenix",
   "source_id": "florida-phoenix",
@@ -7165,7 +7165,7 @@
  },
  {
   "id": "3369eb47115d",
-  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0JMS0JBZVY4dGxCQlpHbzlDTTlFenlnc01abWtaRjNSTjJRMmM2RjVMOHpQVkhuV194Um5pWFZkNGdKd0pFb2lsU1g5dEg3bmEycEJSSGVyQThwclVYX0w4VDhGN2dYVnBSZW1xVlM3RmllVFFfZEI2V2hGMmpoRmNhamUwN1hrRm9tS1B5c0ZhUVpDNVkzdnZYRmRKQQ?oc=5",
+  "url": "https://jamaica-gleaner.com/article/news/20261029/jamaica-commissions-modern-doppler-weather-radar",
   "title": "Jamaica commissions modern Doppler weather radar",
   "source": "Jamaica Gleaner",
   "source_id": "jamaica-gleaner",
@@ -7185,7 +7185,7 @@
  },
  {
   "id": "1eb9b914f614",
-  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44Nms5R0VKMTFSLTNiaXM1WU9ZYzE0V3k4UGplbmVaVlI2cHE0Y3RiLUZmRkladGNqVFZnQVdfdHZJNTFyMWc2bTNNOGdOMEhrVzVmLXhKUnhpSlhYSHBITFBpalQ5cjVxRUNxTlJ1UTFXdVkzUGlkQjBLaTM?oc=5",
+  "url": "https://wodnesprawy.pl/en/record-high-tides-inundate-both-coasts-of-usa",
   "title": "The ocean has flooded US streets. Record high tides inundate both coasts",
   "source": "Wodne Sprawy",
   "source_id": "wodne-sprawy",
@@ -7207,7 +7207,7 @@
  },
  {
   "id": "8a62d97a6e51",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYTY4dG94Vk8tTUdJaXBWbmlqcnpHaWhIX0ozZkZYRWd5OFFzT3UxSm1rdmZWbGt5ZG1GaGRhMGpPa1NsRW9Jbmg4WUQxQUlTZGptUXN2YUUwc1gxZVJ0U056eGZjSmZaNVFqOGgzYVdnZmNuYXhNRDJfSC1nNXBqY1FiSEhIWWlZaENucmlvM2gzb0xLQlFlcGtSUjJtNVFTVndaNkpmS2RzNFduNzM1Z0I2ZVFGQy1JbEE?oc=5",
+  "url": "https://rvasia.org/asian-news/70-indonesian-alumnus-swims-madura-strait-aid-women-fishers-displaced-sea-level-rise",
   "title": "At 70, Indonesian Alumnus Swims Madura Strait to Aid Women Fishers Displaced by Sea-Level Rise",
   "source": "Radio Veritas Asia",
   "source_id": "radio-veritas-asia",
@@ -7227,7 +7227,7 @@
  },
  {
   "id": "587fd31c436c",
-  "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPdkxWQWdkNFBTUFFCMEtPNy1Id2Q4dDZBeFh3TGtlMTZ4blluU0JDVGVLaGs3MDY2VFExS2ZSREx3WTZLQTJITFZCekZ6eXFNWXBidWtyTkhDLWdybWlEM1U1VjN5ZXV6cjR3bGlaVXI1cmtZa0tNT2x6Y0Q2NXJqdk9YMHY0S2pkV2JnenZXUV95aXFyNlQxeGdSSWc5TWdjUWVTbFZBX3k1NGNqZi1lUUZ4WGdzMEVOWjhQMzVIOXVCbUZYaHNSTldXNExFUXItOFZLLUk3RVNkNkxlRDNJNkMzVmhMUklra0k2cFBUWXdHVXd2WFNxcG51ZXFqWmIzQWFoTDFnc2dsOWJBWnVrbXRqdUFBRGR0b2ppZGIzcjMxZzlsbF9UWlRZMVh5QUVtQWxRV3VsMDNyTHd5bkFz?oc=5",
+  "url": "https://komonews.com/weather/weather-whys/high-king-tides-flood-south-florida-coastal-communities-water-levels-onshore-winds-rough-surf-flooded-homes-roads-businesses-destructive-weather-phenomena?teaserSource=trending",
   "title": "Exceptionally high king tides flood parts of Florida",
   "source": "KOMO",
   "source_id": "komo",
@@ -7247,7 +7247,7 @@
  },
  {
   "id": "e2c89e122ee8",
-  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ1RraS03RHJnMlB0VEd0bG81ZXRRWFZoVzY2Rjc4MWZDdnJZa0ZGTmNYWkRNWkVkZlFhbUE3ZnZaODZ1X0pMMmxkN092OUo2N2h0MXFqX0V0QUFoTk5mNjBjclpUWmwxU2cteUtLSTlPem1kdXZPTU8zaXZOejRlQ1BucGY1NmYzOTJ4OElNRG9VUWwtcTVEaTBYX1E1aFM1SEYxbUxn?oc=5",
+  "url": "https://europeansting.com/2026/10/29/higher-ground-how-new-york-is-raising-a-park-to-hold-back-the-sea",
   "title": "Higher Ground: How New York is raising a park to hold back the sea",
   "source": "The European Sting",
   "source_id": "the-european-sting",
@@ -7269,7 +7269,7 @@
  },
  {
   "id": "920c49772cbe",
-  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd1p3VzAtVENWSXBtalEtSXhLUFM0OFdWWnNBZ0xqM0JoX3hISUtmcHE3MWp0QWdLaFZhVTNORGhoVjJ2N0VtUE1EQVpQdmlMM0ZWWGwxeFlhdG1zb2hMbnpRUnFKSU5ITHY3UHBudTlsRU1fV2MxWkNUdHlUNXpndmx6WnlGeW1pNTlNMllJNHY4VzZObi1QU2xyd1JUMU9MRmRxQ2VqMFQ1OXRsbnlMemE3TWtFQTkwRzdtZ3EydXd4MWRo0gHKAUFVX3lxTE5aS2s3MWl4dW5DWFA1azRnUHJma25ZUEVNYWpYNEpoTHF6WnVFbWc5UXRja3Q2dXk1Mk84VUZpRl9oSEFJTmF2ZHQ2V0JkOUZ4anhneHh1c0ZiekRzV2F2TWxGU2Q1Y0ppWW1KMjZFektxd0lCLW5abnZRQWhXR0JDT0otWUYtRlZLUUJTS3ctWFRLcEZ2R2xfZlczb1BsYmsxS2dZNVdSS1hJaUFUbThTWHRXUEpJcDJTVEhKOHktWHRGaTd3RDVzU2c?oc=5",
+  "url": "https://gmanetwork.com/news/topstories/nation/1007603/philippine-island-fights-rising-seas-with-nature-not-concrete/story",
   "title": "Philippine island fights rising seas with nature, not concrete",
   "source": "GMA Network",
   "source_id": "gma-network",
@@ -7291,7 +7291,7 @@
  },
  {
   "id": "a25e88aa5d8f",
-  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWm9BUDFyTnNoS3FiNl9obnZPU29qeVlPdkpqYUZiTHAyNWlMa0lXM3Jqb2VxZWtuMDFVeVl0UXpKT1VyX2RPV1FZMm5zY1k2SXoyTlNWNm9rMHRkYnlhOHc1SXFzb1QtVlVJQXlnRUN2Rkczdnk2Q3FmUlF0a1dkejhQMnVqQzczcUtEQVR4em4yVmpob185ZFRjLU5zTjZhZllRTjJpS2NpQdIBrgFBVV95cUxPNFZOMFFNUjJuaU1XSUhWODdEZ0FBYkVZQzduajNMeFgwd09yRy0xSG5sSzBmSEM1UW16VURnWnFLT1lfcGtiSEpWWWlEazFETE1xem1WZ1hQZlFmeTE0eHhjc25CQmhYME1zZlFjZFNDYWhSZUhTN1kwZzRtZXNEWDVpMk9qa3RQeWxQR2tDSDVVbm84c1FPUHBtV1gzQ3kxU3dpTXpkajFkVlFoc0E?oc=5",
+  "url": "https://kuwaittimes.com/article/52608/world/philippine-island-fights-rising-seas-with-nature-not-concrete",
   "title": "Philippine island fights rising seas with nature, not concrete",
   "source": "Kuwait Times",
   "source_id": "kuwait-times",
@@ -7313,7 +7313,7 @@
  },
  {
   "id": "56f0cb70c1ec",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUC1sMjNTYVJuTFV4MUNOWTd3cC1TN3RIaG9TWGEwWGF4ZXhnRmRIOXdVT1A0VFk1Nk9mUkc2UDU2a3dsOW0ydjdWbnFodVRuOExSM3dCSVBTeGRRU2ZyYkRmakhMRlEyMHBhUnlVdWlCRHNMWDAtWXFBVm9KWU9qVE5lay04VDBKZFdTVmhTQ1B6bWlzRU9VWW15SXBQMTRwQk9MZkxSTWZqc0ljTkI0?oc=5",
+  "url": "https://un.org/en/desa/oceans-ability-to-absorb-carbon-is-weakening-as-climate-change-intensifies-un-warns",
   "title": "Ocean’s ability to absorb carbon is weakening as climate change intensifies, UN warns",
   "source": "Welcome to the United Nations",
   "source_id": "welcome-to-the-united-nations",
@@ -7335,7 +7335,7 @@
  },
  {
   "id": "f7c4f6a6b007",
-  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQlliTGt2Mmw1dlhfZHF0NEc2NTdBOUo4VVVuUWMyZUVpX29HYi1CZnMyMV94VVdzQ2dIbTlqMFlOOEhJRXVHM2pHd2ZSb3RvZDY1QXA3dHh5SnE4ZDNvMHVoRnpfeG5jVE5tTEhGVlpGWDRSMW9MWHY1c05jODhXeGlDZVNmMDBuaGZyNWp5b0lCSE5vZkFJbmNyb1FkV3lQSFdlR3dLR1RaamN1NnN3OFYtTG4zRFZyelV0QURNTzNIZ0E?oc=5",
+  "url": "https://erm.com/insights/benchmarking-methane-and-other-ghg-emissions-of-oil-natural-gas-production-in-the-united-states",
   "title": "Benchmarking Methane and Other GHG Emissions of Oil & Natural Gas Production in the United States",
   "source": "ERM",
   "source_id": "erm",
@@ -7375,7 +7375,7 @@
  },
  {
   "id": "fa3046a33169",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWmx4bG4wLTVKWkNRaU1CRE1VT2Y5MV9PcXU0aTlCTDRqMWxkU3BFZFBnUmJLNE9OblZ0NVJMRWRwVzVqeDVVUWtpcFFYN1RqOEYzdnBGQjdpYjFuTE9GR2VkTHFmUEh5a2tDVVA4Qkk3ckpFOWV6OExHSC1QdVNqUFNLRG1FQXJfWG1kZHJXZXVCcE9lRlIzMWpIeGlYalFKVElMV0hiVGw2djFGLWEtOHJqS1p6eHpl?oc=5",
+  "url": "https://bostonherald.com/2026/10/29/study-regional-climate-initiative-could-add-nearly-1-5b-in-electricity-costs",
   "title": "Study: Regional climate initiative could add nearly $1.5B in electricity costs",
   "source": "Boston Herald",
   "source_id": "boston-herald",
@@ -7417,7 +7417,7 @@
  },
  {
   "id": "9cbbdefeb76f",
-  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE50R3ZSc25zTFA0aGZDMUZrQ1ViTmJ4NG5NNXFpY1BockVEM3JGWlVuX01scGFPc19vVEw5dXc3eWt0cHJJNTQ3R1Y4NmFnM1NHcTdaT1BNMDRaYm16Yl90OElzZm5Od3lE?oc=5",
+  "url": "https://nautil.us/our-planets-lungs-are-suffering-1286196",
   "title": "Our Planet’s Lungs Are Suffering",
   "source": "Nautilus | Science Connected",
   "source_id": "nautilus-science-connected",
@@ -7481,7 +7481,7 @@
  },
  {
   "id": "5bd157fa03f0",
-  "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPc215NG9rc2tGTElJSkU1emR3TlJ0TFRfUkQ1SHlhR01iMWRUazBDU3lPSzBHMzdrdWVReHo3am96OTU5TnRuNVl4OHIwbkFrQ1c1MXM3LWpVSU9fbGN6WkxmanNSSmhhN2ZwcGo3YTdWM0YzTU5JVGVsWVMxc201b1Ftb0dJc0dObURuVXpQWktnaVpUVjhYQlJrbUo3N0x0RVRaSk1OLUVGVmdIbnN5MHFFZUV6RW93RC1xLUxDX3ktVHFsNGFoMF85bHNQOVlORVlEMDJ3OFBXSUxpUzhrNWVRUTNnV2J0QmVZTkdveXVpdw?oc=5",
+  "url": "https://forconstructionpros.com/rental/rental-business/press-release/22977308/american-rental-association-ara-provides-guidance-to-help-irc-carbon-reporting",
   "title": "ARA Provides Guidance To Help IRC Carbon Reporting",
   "source": "For Construction Pros",
   "source_id": "for-construction-pros",
@@ -7501,7 +7501,7 @@
  },
  {
   "id": "12c99a3e5c79",
-  "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeXRQWmY5SnRmdVFHRUZRZVE4a2NFSzJlcC04SjJTZTlMVDBGbnVpUTBJYmg4czUxU2lsN18wMUY4N29RYUl0eWg5ZERSM3k5YzMwS0hhMFltYmIxQWNUYl9wV1BPY29MU0JDeGk1eFVBTzNTSDdoSUNiVlJ0UFRQdzQ3U2hZX2twWEJ6bGlNRUtyYjBHX3pTdTRvVVRVdnZnb3pFUg?oc=5",
+  "url": "https://searchlightnm.org/retreat-on-methane-new-mexico-advocates-industry-leaders-react-to-rollbacks",
   "title": "‘Retreat on methane’: New Mexico advocates, industry leaders react to rollbacks",
   "source": "Searchlight New Mexico",
   "source_id": "searchlight-new-mexico",
@@ -7523,7 +7523,7 @@
  },
  {
   "id": "8c4c22513392",
-  "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZTRuTlJRT2lscmdGZHZYdUpuZkt3eVZ6S3c4ZUpOVU5jWWJIdElrR0VrdFZmUEhFX0V2VnhPRlBxSzBZT2dnemZidWhPNVFDVzRsbndsVEtYTXZZYXh1Z2x0RmxGMkhRNzhmVEhRWjBNazE4RXM3c2lrdmFCZ0XSAYQBQVVfeXFMUEdKOVNMY2ZFYWdCQ3VGckpoQkdjX3lkX2tvWnBjV2RRamM1N1R4SnVxUVZ2WWdEZXN4bVZkU3lZa0xWMzVpTU9oT2lYeUgzNGxZR3U2Ymd0RGFuVGJOQmRES2VSUXhnT2dOUm5hS2R1S2UzX0s5d3F5RGNjaXZHd3hWVXp1?oc=5",
+  "url": "https://cnbc.com/2026/10/29/trump-methane-rollback-oil-prices-epa.html",
   "title": "Trump methane policy rollback may have minimal impact on crude prices, EPA says",
   "source": "CNBC",
   "source_id": "cnbc",
@@ -7545,7 +7545,7 @@
  },
  {
   "id": "881630539a40",
-  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaWZvMHpjZ0RaUm9fNzB5T3pUTUwwRE9ZUlNEQXNVYUpnQ1FCMkVpMWgzNHNQYnlLZDNWSTk0S0cxTzROT0ZNNnJSaWxoeTktOFNJODZweGRpSUl1V3hMdXBCbWJ5c1ZHTC05b21PVVAtLTRQV1NpTXI4MnREVzY4YmJaTnFrMkNRN003TVVOd0Rubno3V2g4?oc=5",
+  "url": "https://finance.yahoo.com/energy/articles/mitti-labs-salesforce-partner-scale-033000347.html",
   "title": "MITTI LABS & SALESFORCE PARTNER TO SCALE WATER-SAVING RICE FARMING PRACTICES THAT REDUCE METHANE EMISSIONS",
   "source": "Yahoo Finance",
   "source_id": "yahoo-finance",
@@ -7589,7 +7589,7 @@
  },
  {
   "id": "2e92f0035dc1",
-  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeFJ4aGV0bC1TVGtZNWxUdzVTZEZUMEJVQXhfVE54ZUJlN2t1ajJPR3NJOTRRU3pDZXZabEZCVzlwZDNkdGZNcjJwanhfa3h3QWRLQmV0eHctN01RQTRzTlhWcTZ3U1lkM1h6V1VHVi1EUHhRZVlPRWhtbVJKQXdBY2FveUs2YmlQenN1Y2Ytekd4VjDSAZgBQVVfeXFMUFI0a0ZNQkNnTmVVdDdmUTJWSVhROHJFcUNlUGlSb291bHNjMHYwTVo4M3pOYkQ5N3lGX3lhcHNVZ25yd1duTEZSbkV3clNFVnJBeG1ieHBvNjJyS0JZMTBKd3B0ZEY5dGRWNTlXQzc2ekNtanJibFpKQlJ6VlZSbmhrZUFhTmdIU2RXU0wydWRzYXRTZUZFYWM?oc=5",
+  "url": "https://nationalreview.com/2026/10/trumps-rollback-of-methane-regulations-is-welcome",
   "title": "Trump’s Rollback of Methane Regulations Is Welcome",
   "source": "National Review",
   "source_id": "national-review",
@@ -7611,7 +7611,7 @@
  },
  {
   "id": "cada269c9a30",
-  "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQWlHb0ItekdqQXdRbHVLN0M3djdiTy1OcDBjYkMyRnRWM3JMUjVnSzhHaDVzNTF5bkhVMmszMnNCUEdKMWxLNHhrZ2lTNjFTWGU2WGFacjdsS0tmSy1yeDNyVjVUdEdoMjloQlV4YlB4RUhrb3kyVmVFNVlzNjVuQlE4X2QwZzJjYy1HcFNRZjJpTWRZZDhidDJtSG8zUUZTcEtTa3pVeTYzZlhyWUk4SDJnbkMxQTRRTUZBSFUtaVZKQTNocHc?oc=5",
+  "url": "https://fox17online.com/videos/news/national-news/trump-plans-to-loosen-restrictions-on-methane-emissions-from-oil-drilling",
   "title": "Trump plans to loosen restrictions on methane emissions from oil drilling",
   "source": "FOX 17 West Michigan News",
   "source_id": "fox-17-west-michigan-news",
@@ -7633,7 +7633,7 @@
  },
  {
   "id": "e20cb5835ce1",
-  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmNRVThETEozVDVZQWJjWDgwTWd5dVAtYktVZ2U3WG1DR2cxVkpoRjZSR0ZRaTROLXdoTWFpYWlqcHNTYUFLWVRtWWxOWU8wOFRSYW93UVRJdmN1Yi1hVWluZ0NrS04yekZMSnNhUzI5bVR0XzEyeGZDQ1JLN2s0SWhzQUM5WHRS?oc=5",
+  "url": "https://semafor.com/article/10/29/2026/trumps-methane-rollback-could-backfire",
   "title": "View / Trump’s methane rollback could backfire",
   "source": "Semafor",
   "source_id": "semafor",
@@ -7677,7 +7677,7 @@
  },
  {
   "id": "fb738335139b",
-  "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41QkN5QjczN0Frb1F1X2tBRUxBVV9GM3NfaFRJNENDcE1IVTN6SGVrVmVET1R6SXY4bFFfZ0JvV3RFaFRjS2pGVjZWZTNPZXFDSHFvZUxQblpvdzNSMkE5U2prS19tTTFtSXU5M25SSnlxRktIa1hTVWZXOFl6WDQ?oc=5",
+  "url": "https://newscord.org/watchdog/article/ce3b6764-2f34-4e49-81f8-b3374db2a42f",
   "title": "Trump rolls back methane rules for US oil and gas industry",
   "source": "NewsCord",
   "source_id": "newscord",
@@ -7699,7 +7699,7 @@
  },
  {
   "id": "9335fe40fcbf",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9HdC1RWTRaSEJDNzV0a1RYYmlpdDd4OWlhOUk5eFFVRjlfbk1rS3YzWllqbFNabFFSY0RTZF80UjZfdVZ2R2t3VXBaQVlSeUZnQzBGdDRwVDl0NjMyaDhUNkNJRWdaQ3EyN3dCTnU0UkhaRDh3b3NrRlNR?oc=5",
+  "url": "https://energynow.com/2026/04/how-to-make-drilling-for-oil-woke-again",
   "title": "How to Make Drilling for Oil Woke Again",
   "source": "EnergyNow.com",
   "source_id": "energynow-com",
@@ -7807,7 +7807,7 @@
  },
  {
   "id": "3e8c8a1e86fc",
-  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LSzR1c2NjS3lLald3ZzRGb0ZGQnI3aHdRWHp2QTdVTXhjLTh0VWdEU3E4dmEwQ0FZRzdEcUtaU19DREJzaVNROFhZQW0zY0J1c3FUSjA4V3RRUFBCS0Y4SkxiWVNUUVpjUE5URWhNX0ppb3BwRmZPSmJXeUJldw?oc=5",
+  "url": "https://politico.eu/article/mark-carney-canada-climate-change-europe",
   "title": "Mark Carney isn’t the climate hero Europeans think",
   "source": "POLITICO.eu",
   "source_id": "politico-eu",
@@ -7829,7 +7829,7 @@
  },
  {
   "id": "f1872f9432e2",
-  "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTlZCSDhobU82alpKMWtRdFpWbkd0VFhiZEtKVm5xUjFhbW40dWx2czUwWG5YSmFDbGtYRkstNWFzVTVaTENTa2poY3BHeUxuR2ZuYWdFMWVpU0xRS3hLWWkxeDlydlFtLU0ta3Bia2NfcTlhMkpPQzVyM2kzdUNOU2NlQU8yY1J0ZlpWeXk4S0ZUUQ?oc=5",
+  "url": "https://cbc.ca/news/canada/british-columbia/youth-climate-trial-renewables-9.7401811",
   "title": "Canada can 'definitely' transition to renewables by 2050, expert tells youth climate trial",
   "source": "CBC",
   "source_id": "cbc",
@@ -7851,7 +7851,7 @@
  },
  {
   "id": "e2c003a4cfb5",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONVBIODgxS08yQm9POHVDZmZLQ3hvZ25hRU5DUTR3WFlYQXFCSVY0YTlOQW92R2RybWJzcDJqOXVIQmNIenhsZE1pSi1MZXZSQzRwWFpfZ0otOGY4bnY3c3J5WVlKZ0RiMENCdEVWM2U0eGhYR1A2eFU1dzhsdmltZ2MwQnVvU2dBclI4NG1CUGNCaEM4djJlV3BMWTBlQkJ5MWRNUFI5R1dENEE?oc=5",
+  "url": "https://rfi.fr/en/international-news/20261029-nations-accused-of-undermining-science-at-un-nature-talks",
   "title": "Nations accused of undermining science at UN nature talks",
   "source": "RFI",
   "source_id": "rfi",
@@ -7917,7 +7917,7 @@
  },
  {
   "id": "1c6cd7117b81",
-  "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WTkNPMWR6c1M0OTViYTlNOURtNjhzNFN5c0NxbUJwVFdXVmVId0VfNEFQeXloUlVXNXRHeGlPZFJOMjNyWVlnN0JtRkRwZXhrcldxX1oxbS0?oc=5",
+  "url": "https://tokenpost.com/news/business/43918",
   "title": "China’s Clean-Tech Exports Could Avoid 450 Million Metric Tons of CO2 a Year",
   "source": "www.tokenpost.com",
   "source_id": "www-tokenpost-com",
@@ -8005,7 +8005,7 @@
  },
  {
   "id": "62abc4b71fc1",
-  "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZTdRZmN1dWRpYnJGUzlvUGRZY3JScmM3YlFYb2V2Z3hpM1h4VGZ2VDRfV0p3MHg5R3Zza2hvbVRMMXIyeWFMUE1aQmtmd2J0T0ptaEc1U0RxaDV3RE9tRldLNlctWHBIUkVJVmVyV1NlZ0Rnb2hCbUpwS0I4YjB4S3pVcXhBUlV5M3dENGVwY1p1cU5wYURRMTZQZjNod1EzTVRQSGNxQkdKSnJaeC1fWEtDOGNHOUYzZElFeThiZDJkRnBGLVRaMy1PM0wxU1FabG9EVmpZcjhpOWFxTWhGUTVhc9IB6AFBVV95cUxPeGVFVEpIdkRDVi05ejItNDI5VnlGak53Rm9VZHAtWHNCM1VISURmeXBTUWdpZjFIdzh0TEVLZWRTcUhJbkxfbDQwb19halh1bU1iX1kteVRhT1JodDNZQXBvdjJqY21vWWtOeFZqdURtQXNlUGFFQWVGUTdtN1FzX0RTZWxfczNRTE9vR2ZSaHFsbUIzd0ZLSjBWQVdHQUdSemZfQkgweDlTdFlndG5vdUF4Wk1nT3N0aUJRVHNEUHFUZEpfaXJhVUFSYXdwZXcyYWtTVEVpZUJTbWxLTlBWU1ozLVdhRXZp?oc=5",
+  "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/state-gets-singapore-partners-for-clean-energy-storage-smart-grid-tech/articleshow/135322906.cms",
   "title": "State gets Singapore partners for clean energy storage, smart grid tech",
   "source": "The Times of India",
   "source_id": "the-times-of-india",
@@ -8027,7 +8027,7 @@
  },
  {
   "id": "cdc6dbad0f79",
-  "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONGFZeVh4UDhadFBSemRSUTE0SkQxQzVmb3QtWEktekFPVHJnc2tfb3RwQTd2NlVMNXBReE1Tak1HZWJ6YVNYTElGa0NzeUI4OG9qQ2tZdjhTdHpObmoyc1p1cGQ2Z0NEb21mNE1DRTcweEpXczFZcUUyZ2x6LUk3Qy1rMW5Ocmx5bWRMWXVkT2V6M1ZYaVFWaE9oUkxrT2FsVzh6dDRGczljeGQ5LTdiMVYxM0hXSjRfa1cwbExGdVcwSzhrWEd6WlJ6ZWItNnI4ZVJyRWl3NmNIRGxNbWdvX0JYUE5DaXN0cXBTU01fenhQU3drR2tHT2k1bVZMeXNp?oc=5",
+  "url": "https://themalaysianreserve.com/2026/10/29/catl-globally-launches-ultra-high-capacity-energy-storage-system-at-all-energy-2026-and-signs-three-australian-partnership-mous",
   "title": "CATL globally launches ultra-high capacity energy storage system at All Energy 2026 and signs three Australian partnership MoUs",
   "source": "The Malaysian Reserve",
   "source_id": "the-malaysian-reserve",
@@ -8049,7 +8049,7 @@
  },
  {
   "id": "ffada11a65e8",
-  "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT0EyT2J1d2hRcGNjVUgtQXdiUG5GUm1TU3dDeGF0QXc3SERGLUtNLVBXNG9lbkdkalJyXzR5T2NKLTd2N1FQLWkwejRzUFdxZEVYMHlRQzJDUE1KLWE0cGpYaFlKM3RLUG1pWWV0SFJ4czdsdFYwSHNpT2JFTWhrenJB?oc=5",
+  "url": "https://energymatters.com.au/renewable-news/home-batteries-vs-snowy-2-0",
   "title": "Home Batteries vs Snowy 2.0: Who Stores Australia's Energy?",
   "source": "Energy Matters",
   "source_id": "energy-matters",
@@ -8069,7 +8069,7 @@
  },
  {
   "id": "6e62b520b0cc",
-  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZkJ1YUQ5eE1DZ28tYXdkbXl6Zk42TERrcnRXaHMxSmd0RDQ2ZXBEUS1NVlFhZ0ZqeGVnNS1FNlJCLTA1MDd0X3RCMlhLXzFRTHlPYkNpMHh6UnpWeFA2NkYzdVlUZVM3Z0c1TG53QUYxTXhzb3JLME5nejVhX3RHaThBdlNzbUZLbUtxY2ZtZVl1cW1rdDBuajh0Tk5fbWs?oc=5",
+  "url": "https://openpr.com/news/4676849/xingwei-technology-highlights-the-best-off-grid-energy-storage",
   "title": "Xingwei Technology Highlights the Best Off-Grid Energy Storage Systems for 2026",
   "source": "openPR.com",
   "source_id": "openpr-com",
@@ -8111,7 +8111,7 @@
  },
  {
   "id": "e28a07fa7ffe",
-  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORDJadnFsSzN1MVh1bjZJMnVaVU0yQkJBUDlsc0p0N0FIeFdQSmx4Uzd5ZVZUTXRVaC1XNUZMZ1FSTVdfclpobm1UM0hIMmt0X0pWSnEzcGtHVUxwZW1aSVFVbXhyazMyQXpVN1lvaWZ2Q3ZoZklJc3BUc0toVmstMjVqTldMTHdkdkpXeVF2NzdqY0FmX1FCTA?oc=5",
+  "url": "https://history.com/this-day-in-history/october-29/1980-federal-climate-change-conference",
   "title": "Experts convene for 1980 federal climate change conference",
   "source": "History.com",
   "source_id": "history-com",
@@ -8131,7 +8131,7 @@
  },
  {
   "id": "06eaf5bfbe91",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV0g0Z3VyRWtCd3R0dExTOWhTdnp1TlhlY1ZNUDRWX2pIaDduWFNCc0dRR2Z0VjFmU3gtZGNwOHQyMl9tdXRLb2IwdUhrcnc0encweEZwWmZ2aHR4QTRWN3h4ZnhHTzhpWTQwNUtwQ2RLTFJTRkdlcm9ibHVrN09Bdk12dmcxSFhJZ2F1ek41YkJNNy1wYU4zeGU0QWI2U2l4RURqaGtpUGNoM1hNVXdR?oc=5",
+  "url": "https://nextcity.org/urbanist-news/climate-change-can-cause-small-business-displacement-beyond-major-disasters",
   "title": "Climate Change Can Cause Small Business Displacement Beyond Major Disasters",
   "source": "Next City",
   "source_id": "next-city",
@@ -8193,7 +8193,7 @@
  },
  {
   "id": "2206225dbfc2",
-  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUUpZZDlEQ1NIVGFZZlJodHcyV1NBeFd6WUYwb3lBU0RDZ0pmVzBEOGJNZWJfbFI3ODAwTUd5MjZsc2RJbE1kVFZPSzFYbHp2WTJETFF0OEhrQkY2MzdCa0NYb2dFaGhBdlNsMk04WDcyYlZFajVQd0lWXzljQVhJWVN0NUUxY0JRRW9oUm9uZWFJNWc?oc=5",
+  "url": "https://aol.com/articles/judge-blocks-mccuskey-subpoenas-environmental-201600000.html",
   "title": "Judge blocks McCuskey subpoenas of environmental groups",
   "source": "AOL.com",
   "source_id": "aol-com",
@@ -8237,7 +8237,7 @@
  },
  {
   "id": "0758c0d6b904",
-  "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQXE4cmgtcmN0TnYzUDhCWWpWa0M3bFVGMU1JTWJvLVFBXzFGY1duV25HS0NUdzhad2NGTGRlMHZtcGNLaXNhdTJNX0VUbDF5d3lPbGxSNEljWERNTGZ2Mmh3azdZcVEyME14NEd1dkpPel9scUxaX1g5ZTNnUmJxNlBCNkhhTi1sQ09nY3VHX25GU1RaNUFtNEs2YVcyX3g0RVlZZXpJSlJpczZtQk40RHRLeUZnNzZjc1NCS21TSDNTMlNteWE1dk1sWjZxYmQyVzlJ?oc=5",
+  "url": "https://facebook.com/gmanews/posts/the-department-of-environment-and-natural-resources-denr-launched-a-nationwide-p/1760624052775911",
   "title": "The Department of Environment and Natural Resources (DENR) launched a nationwide program to restore critical wetlands, rivers, and coral reefs to mitigate the impact of drought brought by the strong El Niño. State weather bureau PAGASA said the upcomin",
   "source": "Facebook",
   "source_id": "facebook",
@@ -15273,7 +15273,7 @@
  },
  {
   "id": "77e7275e65fc",
-  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeGlNNGthQ3U0b2g0Q3ZWY2RqTk5VejV5Q2poeHJFUUN0Ql9IelhScTRPTW9UTWVvRDFmbTBCbkVrMVNTbjAzaHZEQzN6eS1rTUgtWVpkazhIMzE1YkJlTGt4ZmlibGpDYnpxXzVtcGRTYnotcENhZUVRZlowS3FBeU5tcmRudlg2bThKLU4zajZHRzlmRkFoS2hpYUVnTkMwcF9rc3YzbFZ6U0psaHVSd0pSZlVma0dja0JmWWFBaHNabnNGcmt30gHHAUFVX3lxTFB4aU00a2FDdTRvaDRDdlZjZGpOTlV6NXlDamh4ckVRQ3RCX0h6WFJxNE9Nb1RNZW9EMWZtMEJuRWsxU1NuMDNodkRDM3p5LWtNSC1ZWmRrOEgzMTViQmVMa3hmaWJsakNienFfNW1wZFNiei1wQ2FlRVFmWjBLcUF5Tm1yZG52WDZtOEotTjNqNkdHOWZGQWhLaGlhRWdOQzBwX2tzdjNsVnpTSmxodVJ3SlJmVWZrR2NrQmZZYUFoc1puc0Zya3c?oc=5",
+  "url": "https://news.cuanschutz.edu/dental/dentistry-on-a-changing-planet-why-oral-health-may-matter-more-in-a-warming-world?hs_amp=true",
   "title": "Dentistry on a Changing Planet: Why Oral Health May Matter More in a Warming World",
   "source": "University of Colorado Anschutz",
   "source_id": "university-of-colorado-anschutz",
@@ -15315,7 +15315,7 @@
  },
  {
   "id": "020be2828a68",
-  "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ZOVdnSDIwYnQ0Z244NEVhZjJickZGQ2Z6eE9LSE5FekJsN2wxS0cycFpvZ0V0UkRsYnhTQ3h0WE9GYU0yRi1SY09rTW5ORmRIVFRtanl1aFF3VVB3ZElF0gFkQVVfeXFMTTlYcGxPSXYzb3cxcVpjU3F0Z3JYM2NpNnBqMDRMb1pZY3BSZ1hkenpkSFZPb3lEZHJPaS1KYy1jZTd5MXd6dEhla29zSGMzUUxiVGQxZnVuZk9NNzRRZmdHMzVVXw?oc=5",
+  "url": "https://globalissues.org/news/2026/10/28/44454",
   "title": "Record heat-related deaths in 2023, WHO-partnered report finds",
   "source": "Global Issues.Org",
   "source_id": "global-issues-org",
@@ -15379,7 +15379,7 @@
  },
  {
   "id": "fd84109d72cd",
-  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYS1Pb2NuYnpBcE5IOWhndzJTTkRqSUtDOF9uQ3BUX0hjMDlaNHlMN1hKUWVSXy16eGotWlVWNDhUSTh1a1NIN3FfdUlJRjdJaWY1U3ktV0EzWm9RSE9NaW5rbFpzT0lXa05kS2RfWkdGeF9xcmJPUkZ4aGVzNEE0OXA2U3FvZ2pCdGVwNWNmRnMzcmc3NDBPUFo2dkNzUQ?oc=5",
+  "url": "https://healthtechmagazine.net/article/2026/10/sustainability-in-healthcare-age-of-ai-perfcon",
   "title": "Sustainability in Healthcare in the Age of AI",
   "source": "HealthTech Magazine",
   "source_id": "healthtech-magazine",
@@ -15399,7 +15399,7 @@
  },
  {
   "id": "634229faf957",
-  "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tY1drejIycGctSVI5U2NlVzZhakIzNWFUa3M1ZnVQeTZXUUFlbzFGZmtEWGdXclBfRDh3Y1k3TWp3ZlpLRmd1WjlKQkJQYWlfZDYxWU51VHkwSnM5?oc=5",
+  "url": "https://eurekalert.org/news-releases/1149236",
   "title": "Climate change amplifies flooding more than extreme precipitation",
   "source": "EurekAlert!",
   "source_id": "eurekalert",
@@ -15573,7 +15573,7 @@
  },
  {
   "id": "0dbaacc3d24b",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONmp4TWVWbE9PV3BDcXNVWXRsYXRqY0FxOUxWdlhDR2RSOFUteW9BUy1rTnNhUUhXc1o1V2lMZDVOeW8xNHIyU2ZwQUdlNUxHWmloOWNhVy00cHJnRFVfcS1qaXNTRUVjSnhDcmdSbGU1MEk5Z051Z1dKN1cxNl8xZTFXcGYtWVlEem95bkhuZWlhUThFU2tqUHVnRTlpS3Ixa0hmSXdfRUpPTnNmYlR4ZnBRbHhEWXfSAbcBQVVfeXFMTjZqeE1lVmxPT1dwQ3FzVVl0bGF0amNBcTlMVnZYQ0dkUjhVLXlvQVMta05zYVFIV3NaNVdpTGQ1TnlvMTRyMlNmcEFHZTVMR1ppaDljYVctNHByZ0RVX3EtamlzU0VFY0p4Q3JnUmxlNTBJOWdOdWdXSjdXMTZfMWUxV3BmLVlZRHpveW5IbmVpYVE4RVNralB1Z0U5aUtyMWtIZkl3X0VKT05zZmJUeGZwUWx4RFl3?oc=5",
+  "url": "https://hawaiinewsnow.com/2026/10/28/covering-cost-cost-hurricanes-investing-disaster-resilience?outputType=amp",
   "title": "Covering the Cost: The cost of hurricanes and investing in disaster resilience",
   "source": "Hawaii News Now",
   "source_id": "hawaii-news-now",
@@ -15639,7 +15639,7 @@
  },
  {
   "id": "080f3b98a765",
-  "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QYUhmSGVnU3J0RGhoY29UQ0RCTTU2VmpKSnREM3VGWGlrMlRjU2VFRUFvaXRIUWpHYnlyVzZYaE1XNmM4TnB5VHpRNlN5YjJuY0xiZmVwN1ZSQlBsUHJ1dTln?oc=5",
+  "url": "https://bradenton.com/news/article317819569.html",
   "title": "No hurricane needed as South Florida king tides smash water-level records",
   "source": "Bradenton Herald",
   "source_id": "bradenton-herald",
@@ -15679,7 +15679,7 @@
  },
  {
   "id": "d39b5128fa74",
-  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOczZRNDFkNjRzaU9Gei1sRnlCRGlRVllZRzdZaFdXZ3d2aTY1Zi1MaURSYkRZMzY1MHhSbEFBUlVWZ0FoS3hfdDgtbVlEMVQ4UEdsaWF4Rk1LQ0ZMMVZoeFRUVjdMZG8tRVF5U0ZiYTA0SnNSeGpvemM2UmgtR1Y5VWN0Q1ppYmRVWlE?oc=5",
+  "url": "https://tampabay.com/news/weather/2026/10/28/king-tide-lunar-flooding-beaches",
   "title": "King tides bring floodwaters to South Florida. What that means for Tampa Bay",
   "source": "Tampa Bay Times",
   "source_id": "tampa-bay-times",
@@ -15781,7 +15781,7 @@
  },
  {
   "id": "da30d78d3b2c",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVE9fTzZMQzIyRnFrd3VhUlA2b3M3NTJaa1dnUTdVUlF2bkxDVWY0NlJPd2RnOWlIYzZxMHpnRm4yb19JTThyb1FDZ1lIdGF6STlCX0g0ZzB1eDZOYnNFeU56X3lJam1WWjRRNFI2ZHBKOFJmUGVmTGhoLUtFTmlVYmpzUnJYQU82aU5LNFl5WmxnMHFFVXNsYmJ5NVJnQTdNazl0Z3VWeUt2QWtWMWtaY05XVmcxeGVHclE?oc=5",
+  "url": "https://wptv.com/science-and-tech/energy/trump-plans-to-loosen-restrictions-on-methane-emissions-from-oil-drilling",
   "title": "Trump plans to loosen restrictions on methane emissions from oil drilling",
   "source": "WPTV",
   "source_id": "wptv",
@@ -15957,7 +15957,7 @@
  },
  {
   "id": "50b740b49ec7",
-  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQllLOFhXX2FkYTM1SkJ3Ml9SdXpndjBULUJHUmxMOE9NNEVMX042ODB4eVk3akROWExjaVRhSnhQMnRzS1ZXQ1lRLURTbnZhTmxwdlh0QmlpbWhKRjhWQWwyZktLeEdOeDZmZ2tncDVWR0JTajUycjVxdE5lX3JFTHNBSjU3Z24xcnZiYUlCWDluaDhyclczUWFWTU9lUQ?oc=5",
+  "url": "https://vaildaily.com/news/colorado-western-slope-ski-industry-governments-u-s-supreme-court",
   "title": "Why ranchers, the ski industry and Western Slope governments are paying close attention to Boulder’s climate lawsuit before the U.S. Supreme Court",
   "source": "VailDaily.com",
   "source_id": "vaildaily-com",
@@ -15979,7 +15979,7 @@
  },
  {
   "id": "2f533eafc6df",
-  "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd0V2b01QS3R0NXc1YlZNZTNiMjhXLU50eGVZVDFyRDlxQ3hBSV9qYW9TQnBjTWFlQzVrYjU0OGp5aFpGT0Y2WHcyNmxjWDNjcTFKR21xQ1NsVXg2Y0hLN2MyZXpaN1lCTjM1R3VJU3pvT19LZDg2SjJ6OC1uaXBUTjBQQzMzNUl2VmlJZHVmLW9NUkc0dnotMU5ZU3phem8zQWpkbUg2bXBXVmNROWxlWnpUMlh1R0FTb1dyLW9uV2lxdUJJQUdHYkc5aFRWX0toV2ZF?oc=5",
+  "url": "https://table.media/en/climate/professional-briefing/430-ai-vs-climate-policy-eu-framework-for-climate-resilience-grimm-sues-successfully",
   "title": "AI vs. Climate policy + EU framework for climate resilience + Grimm sues successfully",
   "source": "Table.Briefings",
   "source_id": "table-briefings",
