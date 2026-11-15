@@ -1191,7 +1191,7 @@
   "summary": "Weather authorities issued a high heat index warning for Western Visayas, advising residents to take precautions.",
   "same_as": "3c83d1b062df",
   "match_confidence": 8,
-  "group": "3c83d1b062df"
+  "group": "53c1d8962b56"
  },
  {
   "id": "341d32306049",
@@ -1903,7 +1903,7 @@
   "type": "reprint",
   "score": 6,
   "summary": "The UN Secretary-General has issued a call for urgent and significant reductions in global greenhouse gas emissions.",
-  "group": "a7c6c0701ed6"
+  "group": "f9e392b9f70b"
  },
  {
   "id": "5b9788920f07",
@@ -2087,7 +2087,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "The Nigerian National Petroleum Company presented its progress on methane reduction initiatives at COP31.",
-  "group": "8909742afe9b"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "2219cdc69668",
@@ -2733,7 +2733,7 @@
   "summary": "Market analysis predicts growth in the insulation tester industry driven by global renewable energy expansion and electrical grid upgrades.",
   "same_as": "6a6ea2f1d6df",
   "match_confidence": 10,
-  "group": "9371007b2aee"
+  "group": "d03f9d2005bb"
  },
  {
   "id": "0cee5d6681b9",
@@ -3672,6 +3672,226 @@
   "group": "7634f008f08f"
  },
  {
+  "id": "639ff074837f",
+  "url": "https://aol.com/articles/climate-change-unfolding-very-differently-190635000.html",
+  "title": "Climate change is unfolding very differently just inches above the ground",
+  "source": "AOL.com",
+  "source_id": "aol-com",
+  "published": "2026-11-15",
+  "blurb": "Climate change is unfolding very differently just inches above the ground AOL.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Research indicates that climate change impacts on microclimates near the ground differ significantly from broader atmospheric temperature trends.",
+  "group": "639ff074837f"
+ },
+ {
+  "id": "b5fc6ad948e9",
+  "url": "https://myfox28columbus.com/news/nation-world/gallery/record-setting-temperatures-forecast-in-texas-as-scorching-heat-wave-continues-to-bake-us-blistering-heat-climate-change-dallas-phoenix-portland-waco?photo=2",
+  "title": "Record-setting temperatures forecast in Texas as scorching heat wave continues to bake US",
+  "source": "myfox28columbus.com",
+  "source_id": "myfox28columbus-com",
+  "published": "2026-11-15",
+  "blurb": "Record-setting temperatures forecast in Texas as scorching heat wave continues to bake US myfox28columbus.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Texas is experiencing record-setting temperatures as a persistent heat wave continues across the United States.",
+  "group": "b5fc6ad948e9"
+ },
+ {
+  "id": "e86616841e86",
+  "url": "https://abc.net.au/news/2026-11-16/severe-storms-south-east-qld-heatwave-north/107387434",
+  "title": "Giant hail, heavy rain and damaging winds possible for south-east Qld",
+  "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+  "source_id": "abc-news-headlines-australian-broadcasting-corporation",
+  "published": "2026-11-15",
+  "blurb": "Giant hail, heavy rain and damaging winds possible for south-east Qld ABC News & Headlines – Australian Broadcasting Corporation",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "effects",
+  "type": "substantive",
+  "score": 4,
+  "summary": "Severe weather, including giant hail and damaging winds, is forecast for south-east Queensland.",
+  "group": "e86616841e86"
+ },
+ {
+  "id": "a8c49c92e0d1",
+  "url": "https://kvoe.com/2026/11/15/hartford-neosho-rapids-fire-using-recent-wildfire-incident-as-a-reminder-for-caution-as-wildfire-season-is-underway",
+  "title": "Hartford Neosho Rapids Fire using recent wildfire incident as a reminder for caution as wildfire season is underway",
+  "source": "KVOE",
+  "source_id": "kvoe",
+  "published": "2026-11-15",
+  "blurb": "Hartford Neosho Rapids Fire using recent wildfire incident as a reminder for caution as wildfire season is underway KVOE",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "effects",
+  "type": "substantive",
+  "score": 3,
+  "summary": "Local fire departments are urging caution as the wildfire season begins following a recent incident.",
+  "group": "a8c49c92e0d1"
+ },
+ {
+  "id": "c653fece280e",
+  "url": "https://ksby.com/paso-robles/lets-talk-central-coast-prepares-for-el-nino",
+  "title": "'Let's Talk': Central Coast prepares for El Niño",
+  "source": "KSBY News",
+  "source_id": "ksby-news",
+  "published": "2026-11-15",
+  "blurb": "'Let's Talk': Central Coast prepares for El Niño KSBY News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "effects",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Local authorities are preparing for potential impacts from the current El Niño event.",
+  "group": "c653fece280e"
+ },
+ {
+  "id": "d4b7ccbbab37",
+  "url": "https://1news.co.nz/2026/11/16/record-el-nino-could-bring-summer-of-extremes-heres-how-to-prepare",
+  "title": "Record El Niño could bring summer of extremes – here’s how to prepare",
+  "source": "1News",
+  "source_id": "1news",
+  "published": "2026-11-15",
+  "blurb": "Record El Niño could bring summer of extremes – here’s how to prepare 1News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Authorities advise on how to prepare for extreme weather conditions expected during the current El Niño.",
+  "group": "d4b7ccbbab37"
+ },
+ {
+  "id": "7220a4ec6f7a",
+  "url": "https://wvnews.com/newsfeed/world/climate-cop31-fossil-fuels/image_3fe3ea00-d6d1-503c-a784-434eeccfe8a1.html",
+  "title": "Climate COP31 Fossil Fuels",
+  "source": "WV News",
+  "source_id": "wv-news",
+  "published": "2026-11-15",
+  "blurb": "Climate COP31 Fossil Fuels WV News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "causes",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Discussions regarding the role of fossil fuels continue to be a central focus at the COP31 climate summit.",
+  "group": "2a058bbb994f"
+ },
+ {
+  "id": "83c6aedeb447",
+  "url": "https://theaustralian.com.au/business/media/albaneses-reckless-climate-spend-leaves-us-all-poorer/news-story/be8eda525266f18d88d1d20decc8b7ac",
+  "title": "PM’s climate spend leaves us all poorer",
+  "source": "The Australian",
+  "source_id": "the-australian",
+  "published": "2026-11-15",
+  "blurb": "PM’s climate spend leaves us all poorer The Australian",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "other",
+  "type": "substantive",
+  "score": 6,
+  "summary": "An opinion piece argues that government climate spending is negatively impacting the national economy.",
+  "group": "83c6aedeb447"
+ },
+ {
+  "id": "344650b4a159",
+  "url": "https://m.economictimes.com/news/india/indias-climate-stance-in-focus-as-yadav-set-to-steer-mitigation-talks/articleshow/135864971.cms",
+  "title": "India's climate stance in focus as Yadav set to steer mitigation talks",
+  "source": "The Economic Times",
+  "source_id": "the-economic-times",
+  "published": "2026-11-15",
+  "blurb": "India's climate stance in focus as Yadav set to steer mitigation talks The Economic Times",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "India's climate strategy is under scrutiny as Minister Bhupender Yadav leads the country's mitigation negotiations at COP31.",
+  "group": "344650b4a159"
+ },
+ {
+  "id": "47fe927ddb7f",
+  "url": "https://texasenergyandpower.com/p/nuclear-comes-to-texas-reading-and",
+  "title": "Nuclear comes to Texas | Reading and Podcast Picks - November 15th, 2026",
+  "source": "The Texas Energy and Power Newsletter",
+  "source_id": "the-texas-energy-and-power-newsletter",
+  "published": "2026-11-15",
+  "blurb": "Nuclear comes to Texas | Reading and Podcast Picks - November 15th, 2026 The Texas Energy and Power Newsletter",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "A newsletter highlights the expansion of nuclear energy projects and provides resources regarding power developments in Texas.",
+  "group": "47fe927ddb7f"
+ },
+ {
+  "id": "eb50c06c4695",
+  "url": "https://finance.biggo.com/news/fa9e4b47713d8ca7",
+  "title": "Bloomberg's Craig Trudell: Chinese EVs Took the Iran War Window While Detroit Kept Its Walls",
+  "source": "BigGo Finance",
+  "source_id": "biggo-finance",
+  "published": "2026-11-15",
+  "blurb": "Bloomberg's Craig Trudell: Chinese EVs Took the Iran War Window While Detroit Kept Its Walls BigGo Finance",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "solutions",
+  "type": "reprint",
+  "score": 5,
+  "summary": "Chinese electric vehicle manufacturers are expanding market share while domestic competitors in the U.S. struggle to adapt.",
+  "group": "eb50c06c4695"
+ },
+ {
   "id": "9f0b0ed7c424",
   "url": "https://cleantechnica.com/2026/11/14/fabric-molds-could-bring-material-saving-concrete-beams-within-reach",
   "title": "Fabric Molds Could Bring Material-Saving Concrete Beams Within Reach",
@@ -3879,7 +4099,7 @@
   "summary": "Local authorities implemented shade breaks and rotation schedules for traffic enforcers to mitigate heat exposure.",
   "same_as": "3c83d1b062df",
   "match_confidence": 10,
-  "group": "3c83d1b062df"
+  "group": "53c1d8962b56"
  },
  {
   "id": "60ea8d4e06c0",
@@ -3971,7 +4191,7 @@
  },
  {
   "id": "bf9998dd747e",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcWJiTi1odG8yc3JYTzcwcVZpRjNlLVhEUlFfazhOd0JFWUsydVhfS2JYblJUZjdKTkIwRDE5aThqU3RxSlRpQ2xCbG1GNTVpMDc1OFNLNDluM2dpQTNCVm1NbkpxekNhREl0U3JDdmJNbUtyVjFUMGdCWmZxVWdSVXNUOHg4bjV3MmtpelVMa3l1M3ZPNXJIQXV1Mk1kaE1EdW1ubGpqRlc1RDg?oc=5",
+  "url": "https://nxsmediawire.com/news/bigger-and-more-frequent-wildfires-threaten-water-supplies-across-the-us",
   "title": "Bigger and more-frequent wildfires threaten water supplies across the US",
   "source": "https://www.nxsmediawire.com/",
   "source_id": "https-www-nxsmediawire-com",
@@ -4009,7 +4229,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "The Roaring Fork Valley is adapting its water management strategies to address unprecedented drought.",
-  "group": "ef8cc1a70906"
+  "group": "f7ac9bb002dc"
  },
  {
   "id": "c563884c4911",
@@ -4071,7 +4291,7 @@
   "type": "reprint",
   "score": 6,
   "summary": "Severe flooding in Nepal is being linked to climate change impacts discussed at the COP31 summit.",
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "9c2f46cb280e",
@@ -4091,7 +4311,7 @@
   "type": "reprint",
   "score": 6,
   "summary": "Severe flooding in Nepal is being linked to climate change impacts discussed at the COP31 summit.",
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "5c19a72fb27d",
@@ -4131,7 +4351,7 @@
   "type": "reprint",
   "score": 6,
   "summary": "Severe flooding in Nepal is being linked to climate change impacts discussed at the COP31 summit.",
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "070830d07d06",
@@ -4151,7 +4371,7 @@
   "type": "reprint",
   "score": 6,
   "summary": "Severe flooding in Nepal is being linked to climate change impacts discussed at the COP31 summit.",
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "83bd009108f6",
@@ -4173,7 +4393,7 @@
   "summary": "New research suggests that current flood maps underestimate the speed at which rising seas threaten coastal properties.",
   "same_as": "9c88b3695dfe",
   "match_confidence": 8,
-  "group": "83bd009108f6"
+  "group": "7bc0477f7567"
  },
  {
   "id": "72e92468d90c",
@@ -4273,7 +4493,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "Advocacy groups are calling for increased climate finance and local decision-making power at COP31.",
-  "group": "cc812e953c42"
+  "group": "05586026110f"
  },
  {
   "id": "ce959273b033",
@@ -4353,7 +4573,7 @@
   "type": "technical",
   "score": 4,
   "summary": "Researchers discovered how water layer ordering affects copper catalysts used in carbon dioxide reduction processes.",
-  "group": "6e7d3c71f0bf"
+  "group": "7bae1eb4f503"
  },
  {
   "id": "1443df188b5b",
@@ -4493,7 +4713,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "Abu Dhabi is implementing initiatives to transition toward more sustainable transportation systems.",
-  "group": "7b9a60238d41"
+  "group": "d339a2c178fe"
  },
  {
   "id": "32df2cf5f9c1",
@@ -4553,7 +4773,7 @@
   "type": "technical",
   "score": 5,
   "summary": "Researchers identified new tropical microbes that could improve methane mitigation strategies.",
-  "group": "785f3778072d"
+  "group": "60d24786f6fc"
  },
  {
   "id": "20f06f40e545",
@@ -4575,7 +4795,7 @@
   "summary": "This analysis explores the growing distrust between Global South nations and wealthy countries regarding climate justice and financial commitments.",
   "same_as": "a0e1537d6f6a",
   "match_confidence": 8,
-  "group": "a0e1537d6f6a"
+  "group": "3199aa05b3c9"
  },
  {
   "id": "3d8048f50b07",
@@ -4681,7 +4901,7 @@
   "summary": "This piece argues that current carbon credit markets and extractivist practices are failing to protect indigenous communities.",
   "same_as": "66f293332804",
   "match_confidence": 10,
-  "group": "66f293332804"
+  "group": "4874e606377c"
  },
  {
   "id": "0eea59ec9cc5",
@@ -4851,7 +5071,7 @@
   "summary": "An opinion piece argues that China should increase its efforts to share renewable energy expertise with other nations.",
   "same_as": "7c18dd21638c",
   "match_confidence": 10,
-  "group": "7c18dd21638c"
+  "group": "e3a22a2d514c"
  },
  {
   "id": "aafb465a2387",
@@ -4997,11 +5217,11 @@
   "type": "substantive",
   "score": 4,
   "summary": "This analysis explores the economic potential of decoupling industrial growth from carbon emissions.",
-  "group": "d2a3c47cad3b"
+  "group": "b9e9a3c9b1b5"
  },
  {
   "id": "0d4cff8dc9d8",
-  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV3dNeE9MTlZUTTc0VlBXeFNldWZLeFVIbV9UV1BSb05Ya2hVMDlNN2NqSm9ESmlTS205bFNURnkzOXNpdWMzeUtsd0FYbWZxTjRHOHVYUW9iMHJYa0dtWTVyNUxSU0JkUFl6OVo4N1dSSlcwUUxlY2ltcDBlTDgzUDR3UXhHMlJEcE82dFRGaG9lVGVUbFB2UmlLV3Y0WFJyMHUwT1cwVXNaLXFCTFVhUU1UNFAyRmg0RGtETA?oc=5",
+  "url": "https://profit.pakistantoday.com.pk/2026/11/14/sindh-plans-gradual-shift-to-electric-vehicles-for-government-departments",
   "title": "Sindh plans EV transition for government departments",
   "source": "Profit by Pakistan Today",
   "source_id": "profit-by-pakistan-today",
@@ -5019,7 +5239,7 @@
   "summary": "The Sindh provincial government in Pakistan is developing a plan to transition its official vehicle fleet to electric power.",
   "same_as": "bf58932b794b",
   "match_confidence": 10,
-  "group": "bf58932b794b"
+  "group": "0d4cff8dc9d8"
  },
  {
   "id": "9c22945299ea",
@@ -5101,7 +5321,7 @@
   "type": "substantive",
   "score": 3,
   "summary": "The University of St. Thomas is expanding its microgrid to improve energy resilience and support renewable energy integration.",
-  "group": "443d717260ef"
+  "group": "420c2f999522"
  },
  {
   "id": "835829793604",
@@ -5161,7 +5381,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "Jordan will present its 450 MW Mujib pumped-storage hydroelectric project to potential investors at an upcoming conference.",
-  "group": "c2445f049b14"
+  "group": "8772d1b9f2ed"
  },
  {
   "id": "07aaee45f41c",
@@ -5201,7 +5421,7 @@
   "type": "substantive",
   "score": 3,
   "summary": "Schneider Electric is focusing its growth strategy on grid infrastructure and climate-related initiatives following COP31.",
-  "group": "9e8f5c0c6d53"
+  "group": "978be1276829"
  },
  {
   "id": "f69354b0ff35",
@@ -5305,7 +5525,7 @@
   "summary": "Philippine fisheries authorities are urging stakeholders to implement mitigation strategies to handle the impacts of a strong El Niño.",
   "same_as": "35a45bd482b2",
   "match_confidence": 10,
-  "group": "7782943037ae"
+  "group": "e471e69ba89b"
  },
  {
   "id": "ff15d5bb9e61",
@@ -5385,7 +5605,7 @@
   "type": "technical",
   "score": 7,
   "summary": "The IEA released a roadmap for transitioning to clean household energy consumption in Kazakhstan.",
-  "group": "31489fe608fe"
+  "group": "170926f36483"
  },
  {
   "id": "aff752873015",
@@ -5426,6 +5646,946 @@
   "score": 3,
   "summary": "NOAA provides a searchable database of paleoclimate data used to understand historical climate trends.",
   "group": "bba546907175"
+ },
+ {
+  "id": "bc1d3a39611a",
+  "url": "https://qazinform.com/amp/all-world-regions-are-nearing-their-15c-warming-limits-study-finds-a09363",
+  "title": "All world regions are nearing their 1.5°C warming limits, study finds",
+  "source": "Qazinform",
+  "source_id": "qazinform",
+  "published": "2026-11-14",
+  "blurb": "All world regions are nearing their 1.5°C warming limits, study finds Qazinform",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "effects",
+  "type": "technical",
+  "score": 9,
+  "summary": "A new study finds that all global regions are approaching the 1.5°C warming threshold.",
+  "group": "a11decca3138"
+ },
+ {
+  "id": "3166fc18d96e",
+  "url": "https://timesnownews.com/health/el-nino-could-pose-serious-health-risks-india-among-countries-flagged-by-who-article-156508625",
+  "title": "El Nino Could Pose Serious Health Risks; India Among Countries Flagged By WHO",
+  "source": "Times Now",
+  "source_id": "times-now",
+  "published": "2026-11-14",
+  "blurb": "El Nino Could Pose Serious Health Risks; India Among Countries Flagged By WHO Times Now",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "reprint",
+  "score": 6,
+  "summary": "The WHO has identified India and other nations as being at significant health risk due to El Niño-driven climate patterns.",
+  "group": "ab729d640122"
+ },
+ {
+  "id": "2008cd6490c1",
+  "url": "https://k24.digital/news/western-kenya-to-face-5-days-of-severe-afternoon-thunderstorms-as-northern-kenya-braces-for-extreme-heat",
+  "title": "Western Kenya to face 5 days of severe afternoon thunderstorms as northern Kenya braces for extreme heat",
+  "source": "K24 Digital",
+  "source_id": "k24-digital",
+  "published": "2026-11-14",
+  "blurb": "Western Kenya to face 5 days of severe afternoon thunderstorms as northern Kenya braces for extreme heat K24 Digital",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "effects",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Kenya faces a split weather pattern with severe thunderstorms in the west and extreme heat in the north.",
+  "group": "2008cd6490c1"
+ },
+ {
+  "id": "7eb7e403f4ac",
+  "url": "https://bakersfieldnow.com/weather/storm-brings-sharp-cooldown-after-record-near-heat-huge-waves-raise-beach-danger",
+  "title": "Storm brings sharp cooldown after record-near heat; huge waves raise beach danger",
+  "source": "KBAK",
+  "source_id": "kbak",
+  "published": "2026-11-14",
+  "blurb": "Storm brings sharp cooldown after record-near heat; huge waves raise beach danger KBAK",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "effects",
+  "type": "substantive",
+  "score": 4,
+  "summary": "A storm has brought a cooldown to a region following record-near heat, while creating dangerous beach conditions.",
+  "group": "7eb7e403f4ac"
+ },
+ {
+  "id": "73d7ce5682b9",
+  "url": "https://mynews4.com/news/local/washoe-county-to-host-wildfire-recovery-resources-fair-in-cold-springs",
+  "title": "Washoe County to host wildfire recovery resources fair in Cold Springs",
+  "source": "KRXI2",
+  "source_id": "krxi2",
+  "published": "2026-11-14",
+  "blurb": "Washoe County to host wildfire recovery resources fair in Cold Springs KRXI2",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 3,
+  "summary": "Washoe County is hosting a resource fair to assist residents with recovery efforts following wildfires.",
+  "group": "73d7ce5682b9"
+ },
+ {
+  "id": "f7ac9bb002dc",
+  "url": "https://aspenpublicradio.org/environment/2026-11-14/how-the-rfv-navigated-unprecedented-drought",
+  "title": "How the RFV navigated ‘unprecedented’ drought",
+  "source": "Aspen Public Radio",
+  "source_id": "aspen-public-radio",
+  "published": "2026-11-14",
+  "blurb": "How the RFV navigated ‘unprecedented’ drought Aspen Public Radio",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "The Roaring Fork Valley is documenting its strategies for managing and adapting to unprecedented drought conditions.",
+  "group": "f7ac9bb002dc"
+ },
+ {
+  "id": "19dbbbaf1f8a",
+  "url": "https://wvnews.com/newsfeed/world/climate-cop31-nepal-flooding/image_18bad460-35e3-5fbf-86f8-eee2e0e747d1.html",
+  "title": "Climate COP31 Nepal Flooding",
+  "source": "WV News",
+  "source_id": "wv-news",
+  "published": "2026-11-14",
+  "blurb": "Climate COP31 Nepal Flooding WV News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Severe flooding in Nepal is being discussed in the context of COP31 climate negotiations.",
+  "same_as": "415df4ef6edd",
+  "match_confidence": 10,
+  "group": "415df4ef6edd"
+ },
+ {
+  "id": "b64e20453e5e",
+  "url": "https://scmp.com/opinion/asia-opinion/article/3374115/bangladesh-and-others-climate-disasters-should-not-add-debt-burdens",
+  "title": "Opinion | For Bangladesh and others, climate disasters should not add to debt burdens",
+  "source": "South China Morning Post",
+  "source_id": "south-china-morning-post",
+  "published": "2026-11-14",
+  "blurb": "Opinion | For Bangladesh and others, climate disasters should not add to debt burdens South China Morning Post",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "other",
+  "type": "substantive",
+  "score": 6,
+  "summary": "An opinion piece argues that climate-vulnerable nations should not face increased debt burdens due to climate-driven disasters.",
+  "same_as": "5c19a72fb27d",
+  "match_confidence": 10,
+  "group": "5c19a72fb27d"
+ },
+ {
+  "id": "06b170ec6749",
+  "url": "https://postregister.com/news/world/aptopix-climate-cop31-nepal-flooding/image_fa2a24c6-96d1-540d-a52a-8fc8e949813f.html",
+  "title": "APTOPIX Climate COP31 Nepal Flooding",
+  "source": "Post Register",
+  "source_id": "post-register",
+  "published": "2026-11-14",
+  "blurb": "APTOPIX Climate COP31 Nepal Flooding Post Register",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Severe flooding in Nepal is being discussed in the context of COP31 climate negotiations.",
+  "same_as": "415df4ef6edd",
+  "match_confidence": 10,
+  "group": "415df4ef6edd"
+ },
+ {
+  "id": "36bd424b6ca0",
+  "url": "https://chronicleonline.com/news/world/climate-cop31-nepal-flooding/image_2d46712c-769d-57ab-8880-d1d6e0a4aa49.html",
+  "title": "Climate COP31 Nepal Flooding",
+  "source": "chronicleonline.com",
+  "source_id": "chronicleonline-com",
+  "published": "2026-11-14",
+  "blurb": "Climate COP31 Nepal Flooding chronicleonline.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Severe flooding in Nepal is being discussed in the context of COP31 climate negotiations.",
+  "same_as": "415df4ef6edd",
+  "match_confidence": 10,
+  "group": "415df4ef6edd"
+ },
+ {
+  "id": "27b08ea52808",
+  "url": "https://guardonline.com/news/world/climate-cop31-nepal-flooding/image_ed94fcef-709d-5956-9e9a-c0e6fcdf3786.html",
+  "title": "Climate COP31 Nepal Flooding",
+  "source": "The Batesville Daily Guard",
+  "source_id": "the-batesville-daily-guard",
+  "published": "2026-11-14",
+  "blurb": "Climate COP31 Nepal Flooding The Batesville Daily Guard",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Severe flooding in Nepal is being discussed in the context of COP31 climate negotiations.",
+  "same_as": "415df4ef6edd",
+  "match_confidence": 10,
+  "group": "415df4ef6edd"
+ },
+ {
+  "id": "7bc0477f7567",
+  "url": "https://earth.com/earth-science/rising-seas-could-threaten-coastal-homes-sooner-than-flood-maps-suggest",
+  "title": "Rising seas could threaten coastal homes sooner than flood maps suggest",
+  "source": "Earth.com",
+  "source_id": "earth-com",
+  "published": "2026-11-14",
+  "blurb": "Rising seas could threaten coastal homes sooner than flood maps suggest Earth.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "technical",
+  "score": 8,
+  "summary": "New research suggests coastal homes face higher flood risks from rising sea levels than current maps indicate.",
+  "same_as": "83bd009108f6",
+  "match_confidence": 10,
+  "group": "7bc0477f7567"
+ },
+ {
+  "id": "164518c49936",
+  "url": "https://times-standard.com/2026/11/14/lori-dengler-atmospheric-rivers-arrive-with-higher-sea-levels",
+  "title": "Lori Dengler | Atmospheric rivers arrive with higher sea levels",
+  "source": "Times-Standard",
+  "source_id": "times-standard",
+  "published": "2026-11-14",
+  "blurb": "Lori Dengler | Atmospheric rivers arrive with higher sea levels Times-Standard",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "other",
+  "type": "substantive",
+  "score": 5,
+  "summary": "A columnist discusses the compounding risks of atmospheric rivers and rising sea levels.",
+  "same_as": "72e92468d90c",
+  "match_confidence": 10,
+  "group": "72e92468d90c"
+ },
+ {
+  "id": "b6edcfed174c",
+  "url": "https://stardem.com/opinion/coastal-resilience-the-good-the-bad-and-the-ugly/article_cbdb45bd-89bd-4024-9ceb-acf1707a3dd2.html",
+  "title": "Coastal resilience: The good, the bad and the ugly",
+  "source": "The Star Democrat",
+  "source_id": "the-star-democrat",
+  "published": "2026-11-14",
+  "blurb": "Coastal resilience: The good, the bad and the ugly The Star Democrat",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "other",
+  "type": "substantive",
+  "score": 5,
+  "summary": "An overview of the challenges and strategies involved in coastal resilience efforts.",
+  "same_as": "464655b7adc3",
+  "match_confidence": 10,
+  "group": "464655b7adc3"
+ },
+ {
+  "id": "05586026110f",
+  "url": "https://environewsnigeria.com/cop31-connected-advocacy-calls-for-climate-finance-decision-making-power-to-reach-local-communities",
+  "title": "COP31: Connected Advocacy calls for climate finance, decision-making power to reach local communities",
+  "source": "EnviroNews Nigeria",
+  "source_id": "environews-nigeria",
+  "published": "2026-11-14",
+  "blurb": "COP31: Connected Advocacy calls for climate finance, decision-making power to reach local communities EnviroNews Nigeria",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Advocacy groups at COP31 are calling for increased climate finance and decision-making power for local communities.",
+  "same_as": "cc812e953c42",
+  "match_confidence": 10,
+  "group": "05586026110f"
+ },
+ {
+  "id": "2443c93a3aaa",
+  "url": "https://timesfreepress.com/news/2026/nov/14/a-monstrous-el-nino-has-arrived-heres-what-it-means-for-where-you-live",
+  "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
+  "source": "Chattanooga Times Free Press",
+  "source_id": "chattanooga-times-free-press",
+  "published": "2026-11-14",
+  "blurb": "A monstrous El Niño has arrived. Here’s what it means for where you live. Chattanooga Times Free Press",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 6,
+  "summary": "An overview of how the current El Niño event may influence weather patterns across different regions.",
+  "group": "2443c93a3aaa"
+ },
+ {
+  "id": "1aebf64337ba",
+  "url": "https://nbcsandiego.com/news/local/chula-vista-volunteers-clean-up-neighborhood-ahead-of-potential-el-nino-rains/4102103",
+  "title": "Chula Vista volunteers clean up neighborhood ahead of potential El Niño rains",
+  "source": "NBC 7 San Diego",
+  "source_id": "nbc-7-san-diego",
+  "published": "2026-11-14",
+  "blurb": "Chula Vista volunteers clean up neighborhood ahead of potential El Niño rains NBC 7 San Diego",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 4,
+  "summary": "Community volunteers in Chula Vista are cleaning neighborhoods to mitigate potential flood damage from El Niño rains.",
+  "group": "1aebf64337ba"
+ },
+ {
+  "id": "d03f9d2005bb",
+  "url": "https://indexbox.io/blog/algae-based-building-materials-market-forecast-to-2035-driven-by-carbon-negative-construction-mandates",
+  "title": "Algae Based Building Materials Market Forecast to 2035, Driven by Carbon-Negative Construction Mandates",
+  "source": "IndexBox",
+  "source_id": "indexbox",
+  "published": "2026-11-14",
+  "blurb": "Algae Based Building Materials Market Forecast to 2035, Driven by Carbon-Negative Construction Mandates IndexBox",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "technical",
+  "score": 7,
+  "summary": "A market forecast predicts growth in algae-based building materials driven by carbon-negative construction mandates.",
+  "same_as": "9371007b2aee",
+  "match_confidence": 8,
+  "group": "d03f9d2005bb"
+ },
+ {
+  "id": "7bae1eb4f503",
+  "url": "https://bioengineer.org/water-layer-ordering-alters-copper-catalyst-energy-barriers-in-carbon-dioxide-reduction",
+  "title": "Water Layer Ordering Alters Copper Catalyst Energy Barriers in Carbon Dioxide Reduction",
+  "source": "Bioengineer.org",
+  "source_id": "bioengineer-org",
+  "published": "2026-11-14",
+  "blurb": "Water Layer Ordering Alters Copper Catalyst Energy Barriers in Carbon Dioxide Reduction Bioengineer.org",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "technical",
+  "score": 6,
+  "summary": "Researchers identified how water layer ordering influences copper catalysts used in carbon dioxide reduction processes.",
+  "same_as": "6e7d3c71f0bf",
+  "match_confidence": 10,
+  "group": "7bae1eb4f503"
+ },
+ {
+  "id": "d339a2c178fe",
+  "url": "https://gulfnews.com/uae/abu-dhabi/abu-dhabi-leads-transition-towards-sustainable-transport-1.500747166",
+  "title": "Abu Dhabi leads transition towards sustainable transport",
+  "source": "Gulf News",
+  "source_id": "gulf-news",
+  "published": "2026-11-14",
+  "blurb": "Abu Dhabi leads transition towards sustainable transport Gulf News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Abu Dhabi is implementing new initiatives to transition toward more sustainable transportation systems.",
+  "same_as": "7b9a60238d41",
+  "match_confidence": 10,
+  "group": "d339a2c178fe"
+ },
+ {
+  "id": "6575e8860342",
+  "url": "https://ccacoalition.org/news/cop31-day-6-negotiations-gather-pace-countries-prepare-final-week",
+  "title": "COP31 Day 6: Negotiations Gather Pace as Countries Prepare for Final Week",
+  "source": "Climate and Clean Air Coalition (CCAC)",
+  "source_id": "climate-and-clean-air-coalition-ccac",
+  "published": "2026-11-14",
+  "blurb": "COP31 Day 6: Negotiations Gather Pace as Countries Prepare for Final Week Climate and Clean Air Coalition (CCAC)",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "reprint",
+  "score": 8,
+  "summary": "Negotiations at COP31 are accelerating as delegates prepare for the final week of climate talks.",
+  "same_as": "e887dbbce46b",
+  "match_confidence": 10,
+  "group": "e887dbbce46b"
+ },
+ {
+  "id": "60d24786f6fc",
+  "url": "https://bioengineer.org/novel-tropical-methanotrophs-expand-microbial-diversity-and-methane-mitigation-strategies",
+  "title": "Novel Tropical Methanotrophs Expand Microbial Diversity and Methane Mitigation Strategies",
+  "source": "Bioengineer.org",
+  "source_id": "bioengineer-org",
+  "published": "2026-11-14",
+  "blurb": "Novel Tropical Methanotrophs Expand Microbial Diversity and Methane Mitigation Strategies Bioengineer.org",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "technical",
+  "score": 6,
+  "summary": "Discovery of novel tropical methanotrophs provides new insights into microbial methane mitigation strategies.",
+  "same_as": "785f3778072d",
+  "match_confidence": 10,
+  "group": "60d24786f6fc"
+ },
+ {
+  "id": "8db628fbd2f3",
+  "url": "https://suaragarut.id/en/gates-republic-services-landfill-investment",
+  "title": "Bill Gates Holds $29 Billion Stake in Major US Landfill Operator",
+  "source": "SuaraGarut.ID",
+  "source_id": "suaragarut-id",
+  "published": "2026-11-14",
+  "blurb": "Bill Gates Holds $29 Billion Stake in Major US Landfill Operator SuaraGarut.ID",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "causes",
+  "type": "substantive",
+  "score": 4,
+  "summary": "Bill Gates holds a significant financial stake in a major U.S. landfill operator, a source of methane emissions.",
+  "same_as": "49775147db1c",
+  "match_confidence": 10,
+  "group": "49775147db1c"
+ },
+ {
+  "id": "346b317ea9e6",
+  "url": "https://eldoradonews.com/news/2026/nov/14/un-chief-says-immediate-and-drastic-emissions",
+  "title": "UN chief says 'immediate and drastic' emissions cuts needed to avert climate change catastrophe",
+  "source": "El Dorado News-Times",
+  "source_id": "el-dorado-news-times",
+  "published": "2026-11-14",
+  "blurb": "UN chief says 'immediate and drastic' emissions cuts needed to avert climate change catastrophe El Dorado News-Times",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "reprint",
+  "score": 9,
+  "summary": "The UN Secretary-General called for immediate and drastic emissions reductions to prevent climate catastrophe.",
+  "same_as": "f69354b0ff35",
+  "match_confidence": 10,
+  "group": "f69354b0ff35"
+ },
+ {
+  "id": "ff7b834e076c",
+  "url": "https://deccanherald.com/environment/climate-justice-why-the-global-south-is-losing-faith-in-rich-nations-4218758",
+  "title": "Climate justice: Why the Global South is losing faith in rich nations",
+  "source": "Deccan Herald",
+  "source_id": "deccan-herald",
+  "published": "2026-11-14",
+  "blurb": "Climate justice: Why the Global South is losing faith in rich nations Deccan Herald",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "other",
+  "type": "substantive",
+  "score": 7,
+  "summary": "An analysis of why Global South nations are losing confidence in the climate commitments of wealthy countries.",
+  "group": "3199aa05b3c9"
+ },
+ {
+  "id": "3fa49b25c6de",
+  "url": "https://the-star.co.ke/news/2026-11-14-climate-activists-use-giant-trojan-horse-to-protest-plastics-usage",
+  "title": "Climate activists unveil giant Trojan Horse to protest fossil fuel industry's plastics push",
+  "source": "The Star, Kenya",
+  "source_id": "the-star-kenya",
+  "published": "2026-11-14",
+  "blurb": "Climate activists unveil giant Trojan Horse to protest fossil fuel industry's plastics push The Star, Kenya",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Activists used a giant Trojan Horse installation to protest the fossil fuel industry's expansion into plastics production.",
+  "same_as": "8bb10835b0fb",
+  "match_confidence": 10,
+  "group": "8bb10835b0fb"
+ },
+ {
+  "id": "5697949580c4",
+  "url": "https://freemalaysiatoday.com/category/highlight/2026/11/15/thousands-rally-against-cop31-as-climate-talks-hit-midpoint",
+  "title": "Thousands rally against COP31 as climate talks hit midpoint",
+  "source": "Free Malaysia Today",
+  "source_id": "free-malaysia-today",
+  "published": "2026-11-14",
+  "blurb": "Thousands rally against COP31 as climate talks hit midpoint Free Malaysia Today",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Thousands of protesters rallied against COP31 as the climate summit reached its midpoint.",
+  "group": "76d2fb6085c3"
+ },
+ {
+  "id": "4874e606377c",
+  "url": "https://environewsnigeria.com/melania-chiponda-how-carbon-credits-extractivism-fossil-fuels-are-betraying-indigenous-communities",
+  "title": "Melania Chiponda: How carbon credits, extractivism, fossil fuels are betraying indigenous communities",
+  "source": "EnviroNews Nigeria",
+  "source_id": "environews-nigeria",
+  "published": "2026-11-14",
+  "blurb": "Melania Chiponda: How carbon credits, extractivism, fossil fuels are betraying indigenous communities EnviroNews Nigeria",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "other",
+  "type": "substantive",
+  "score": 7,
+  "summary": "An advocacy piece critiques the impact of carbon credits and fossil fuel extractivism on indigenous communities.",
+  "same_as": "66f293332804",
+  "match_confidence": 10,
+  "group": "4874e606377c"
+ },
+ {
+  "id": "49d47e27179c",
+  "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/83450-california-governor-gavin-newsom-declares-to-the-world-that-america-s-climate-fight-is-far-from-over-as-he-spoke-at-the-united-nations-climate-summit",
+  "title": "California Governor Gavin Newsom Declares to the World That America’s Climate Fight Is Far From Over As He Spoke at the United Nations Climate Summit",
+  "source": "Sierra Sun Times",
+  "source_id": "sierra-sun-times",
+  "published": "2026-11-14",
+  "blurb": "California Governor Gavin Newsom Declares to the World That America’s Climate Fight Is Far From Over As He Spoke at the United Nations Climate Summit Sierra Sun Times",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "other",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Governor Gavin Newsom affirmed California's commitment to climate action during his address at the UN climate summit.",
+  "same_as": "0eea59ec9cc5",
+  "match_confidence": 10,
+  "group": "0eea59ec9cc5"
+ },
+ {
+  "id": "7c59a06fc1c1",
+  "url": "https://environewsnigeria.com/ipcc-invites-experts-to-review-first-draft-of-report-on-mitigation-of-climate-change",
+  "title": "IPCC invites experts to review first draft of report on mitigation of climate change",
+  "source": "EnviroNews Nigeria",
+  "source_id": "environews-nigeria",
+  "published": "2026-11-14",
+  "blurb": "IPCC invites experts to review first draft of report on mitigation of climate change EnviroNews Nigeria",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 8,
+  "summary": "The IPCC has invited experts to participate in the review process for the first draft of its upcoming report on climate change mitigation.",
+  "same_as": "0c5cf7820db0",
+  "match_confidence": 10,
+  "group": "0c5cf7820db0"
+ },
+ {
+  "id": "5a2bafb719b7",
+  "url": "https://oilprice.com/Energy/Energy-General/Iran-War-Accelerates-Southeast-Asias-Renewable-Energy-Push.html",
+  "title": "Iran War Accelerates Southeast Asia's Renewable Energy Push",
+  "source": "Crude Oil Prices Today | OilPrice.com",
+  "source_id": "crude-oil-prices-today-oilprice-com",
+  "published": "2026-11-14",
+  "blurb": "Iran War Accelerates Southeast Asia's Renewable Energy Push Crude Oil Prices Today | OilPrice.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Geopolitical instability in the Middle East is accelerating the transition toward renewable energy sources across Southeast Asian nations.",
+  "same_as": "dde502bfff1d",
+  "match_confidence": 10,
+  "group": "dde502bfff1d"
+ },
+ {
+  "id": "1b40a509df6d",
+  "url": "https://scmp.com/opinion/china-opinion/article/3374104/china-should-share-its-renewable-energy-expertise?pgtype=live",
+  "title": "Opinion | China should share its renewable energy expertise",
+  "source": "South China Morning Post",
+  "source_id": "south-china-morning-post",
+  "published": "2026-11-14",
+  "blurb": "Opinion | China should share its renewable energy expertise South China Morning Post",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "other",
+  "type": "substantive",
+  "score": 4,
+  "summary": "An opinion piece argues that China should increase international cooperation by sharing its expertise in renewable energy technology.",
+  "same_as": "7c18dd21638c",
+  "match_confidence": 10,
+  "group": "e3a22a2d514c"
+ },
+ {
+  "id": "d684c6f7b905",
+  "url": "https://theopenpress.in/article/cop31-brazil-roadmap-35-by-35-electrification-pledge-india-seeks-clean-energy-financing",
+  "title": "COP31: Brazil Roadmap, 35-by-35 Pledge, India Cautious",
+  "source": "theopenpress.in",
+  "source_id": "theopenpress-in",
+  "published": "2026-11-14",
+  "blurb": "COP31: Brazil Roadmap, 35-by-35 Pledge, India Cautious theopenpress.in",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 8,
+  "summary": "International climate negotiations at COP31 feature new pledges from Brazil and cautious participation from India regarding emissions targets.",
+  "group": "d684c6f7b905"
+ },
+ {
+  "id": "be4adf23f490",
+  "url": "https://electrive.com/2026/11/14/canada-invests-billions-in-charging-infrastructure-and-grid-upgrades",
+  "title": "Canada invests billions in charging infrastructure and grid upgrades",
+  "source": "electrive.com",
+  "source_id": "electrive-com",
+  "published": "2026-11-14",
+  "blurb": "Canada invests billions in charging infrastructure and grid upgrades electrive.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 7,
+  "summary": "The Canadian government is investing billions of dollars into national charging infrastructure and electrical grid modernization projects.",
+  "same_as": "94575ab67f55",
+  "match_confidence": 10,
+  "group": "94575ab67f55"
+ },
+ {
+  "id": "183d0cb7a031",
+  "url": "https://doingitlocal.com/2026/11/2026-greenergov-award-recipients",
+  "title": "2026 GREENERGOV AWARD RECIPIENTS",
+  "source": "DoingItLocal",
+  "source_id": "doingitlocal",
+  "published": "2026-11-14",
+  "blurb": "2026 GREENERGOV AWARD RECIPIENTS DoingItLocal",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 4,
+  "summary": "Government agencies have been recognized with awards for their efforts in implementing sustainable and green operational practices.",
+  "group": "183d0cb7a031"
+ },
+ {
+  "id": "b9e9a3c9b1b5",
+  "url": "https://financialexpress.com/policy/economy/growing-the-economy-shrinking-the-carbon-footprint/4384631",
+  "title": "Growing the economy, shrinking the carbon footprint",
+  "source": "The Financial Express",
+  "source_id": "the-financial-express",
+  "published": "2026-11-14",
+  "blurb": "Growing the economy, shrinking the carbon footprint The Financial Express",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "An analysis explores strategies for achieving economic growth while simultaneously reducing national carbon footprints.",
+  "same_as": "d2a3c47cad3b",
+  "match_confidence": 10,
+  "group": "b9e9a3c9b1b5"
+ },
+ {
+  "id": "4b92283be2a9",
+  "url": "https://fallriverreporter.com/national-grid-launches-fall-river-area-no-cost-home-battery-pilot",
+  "title": "National Grid launches Fall River area no cost home battery pilot",
+  "source": "Fall River Reporter",
+  "source_id": "fall-river-reporter",
+  "published": "2026-11-14",
+  "blurb": "National Grid launches Fall River area no cost home battery pilot Fall River Reporter",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "National Grid has launched a pilot program in Fall River providing residential battery storage systems at no cost to participants.",
+  "group": "4b92283be2a9"
+ },
+ {
+  "id": "420c2f999522",
+  "url": "https://news.stthomas.edu/publication-article/st-thomas-microgrid-expansion-advances-energy-resilience",
+  "title": "St. Thomas Microgrid Expansion Advances Energy Resilience",
+  "source": "Newsroom | University of St. Thomas",
+  "source_id": "newsroom-university-of-st-thomas",
+  "published": "2026-11-14",
+  "blurb": "St. Thomas Microgrid Expansion Advances Energy Resilience Newsroom | University of St. Thomas",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "The University of St. Thomas is expanding its microgrid to improve energy resilience and sustainability on campus.",
+  "same_as": "443d717260ef",
+  "match_confidence": 10,
+  "group": "420c2f999522"
+ },
+ {
+  "id": "9b3df401d79c",
+  "url": "https://indexbox.io/blog/zinc-air-battery-market-forecast-to-2035-long-duration-storage-demand-drives-growth",
+  "title": "Zinc Air Battery Market To 2035: Long-Duration Storage Demand Drives Growth - News and Statistics",
+  "source": "IndexBox",
+  "source_id": "indexbox",
+  "published": "2026-11-14",
+  "blurb": "Zinc Air Battery Market To 2035: Long-Duration Storage Demand Drives Growth - News and Statistics IndexBox",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "technical",
+  "score": 4,
+  "summary": "A market forecast predicts significant growth for the zinc-air battery sector due to increasing demand for long-duration energy storage.",
+  "same_as": "9c22945299ea",
+  "match_confidence": 10,
+  "group": "9c22945299ea"
+ },
+ {
+  "id": "8772d1b9f2ed",
+  "url": "https://petra.gov.jo/en/news/jordan-to-showcase-450-mw-mujib-pumped-storage-project-at-jordan-eu-investment-conference",
+  "title": "Jordan to Showcase 450 MW Mujib Pumped-Storage Project at Jordan-EU Investment Conference",
+  "source": "وكالة الانباء الاردنية",
+  "source_id": "",
+  "published": "2026-11-14",
+  "blurb": "Jordan to Showcase 450 MW Mujib Pumped-Storage Project at Jordan-EU Investment Conference وكالة الانباء الاردنية",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Jordan plans to present its 450 MW Mujib pumped-storage hydropower project to international investors at an upcoming conference.",
+  "same_as": "c2445f049b14",
+  "match_confidence": 10,
+  "group": "8772d1b9f2ed"
+ },
+ {
+  "id": "978be1276829",
+  "url": "https://ad-hoc-news.de/boerse/news/corporate-news/schneider-electric-stock-cop31-and-grid-plans-sharpen-growth-focus/70510756",
+  "title": "Schneider Electric stock: COP31 and grid plans sharpen growth focus",
+  "source": "ad-hoc-news.de",
+  "source_id": "ad-hoc-news-de",
+  "published": "2026-11-14",
+  "blurb": "Schneider Electric stock: COP31 and grid plans sharpen growth focus ad-hoc-news.de",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 4,
+  "summary": "Schneider Electric is focusing its growth strategy on grid infrastructure and climate-related initiatives following COP31.",
+  "same_as": "9e8f5c0c6d53",
+  "match_confidence": 10,
+  "group": "978be1276829"
+ },
+ {
+  "id": "e471e69ba89b",
+  "url": "https://manilatimes.net/2026/11/15/tmt-newswire/da-bfar-urges-fisheries-stakeholders-to-mitigate-super-el-nio/2470011",
+  "title": "DA-BFAR urges fisheries stakeholders to mitigate 'Super' El Niño",
+  "source": "The Manila Times",
+  "source_id": "the-manila-times",
+  "published": "2026-11-14",
+  "blurb": "DA-BFAR urges fisheries stakeholders to mitigate 'Super' El Niño The Manila Times",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Philippine fisheries authorities are urging stakeholders to implement mitigation strategies in response to the current El Niño event.",
+  "same_as": "7782943037ae",
+  "match_confidence": 10,
+  "group": "e471e69ba89b"
+ },
+ {
+  "id": "170926f36483",
+  "url": "https://iea.org/files/30ef0c59-c497-4428-b0ab-092969228984/Clean_Household_Energy_Consumption_in_Kazakhstan_-_Brochure.pdf",
+  "title": "Clean Household Energy Consumption in Kazakhstan: A Roadmap",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-11-14",
+  "blurb": "Clean Household Energy Consumption in Kazakhstan: A Roadmap IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 6,
+  "summary": "The IEA presents a roadmap for transitioning Kazakhstan toward cleaner household energy consumption.",
+  "same_as": "31489fe608fe",
+  "match_confidence": 10,
+  "group": "170926f36483"
+ },
+ {
+  "id": "634f3b0f0134",
+  "url": "https://coast.noaa.gov/states/massachusetts.html/funding/fellowship/gallery/funding/gallery/newsletter.html",
+  "title": "Massachusetts",
+  "source": "NOAA",
+  "source_id": "noaa",
+  "published": "2026-11-14",
+  "blurb": "Massachusetts NOAA Office for Coastal Management (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "effects",
+  "type": "technical",
+  "score": 4,
+  "summary": "NOAA provides coastal management data and resources for the state of Massachusetts.",
+  "group": "634f3b0f0134"
  },
  {
   "id": "4c8a0b274844",
@@ -6209,7 +7369,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "This report examines how carbon credits and fossil fuel extraction negatively impact Indigenous communities.",
-  "group": "66f293332804"
+  "group": "4874e606377c"
  },
  {
   "id": "c51b85b610db",
@@ -6273,7 +7433,7 @@
   "type": "substantive",
   "score": 3,
   "summary": "Local authorities in the Philippines are implementing shade breaks and rotation schedules to protect enforcers during extreme heat.",
-  "group": "3c83d1b062df"
+  "group": "53c1d8962b56"
  },
  {
   "id": "a22b85e36520",
@@ -6563,7 +7723,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "69d81fb76612",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "c93e53e6ead4",
@@ -6585,7 +7745,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "1f77c6240515",
@@ -6607,7 +7767,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "a4edc8b7da88",
@@ -6629,7 +7789,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "c9c8409cd93a",
@@ -6651,7 +7811,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "9291a9a97f2a",
@@ -6673,7 +7833,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "3be426e0439c",
@@ -6695,7 +7855,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "50f9fd02bf4a",
@@ -6717,7 +7877,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "8b5ac2f5eb71",
@@ -6739,7 +7899,7 @@
   "summary": "Severe flooding in Nepal highlights climate risks ahead of the COP31 climate summit.",
   "same_as": "37f13228961f",
   "match_confidence": 10,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "d4e2b6d5c390",
@@ -6845,7 +8005,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "New analysis indicates that even two degrees of global warming will put significant portions of the Flemish coastline at risk.",
-  "group": "83bd009108f6"
+  "group": "7bc0477f7567"
  },
  {
   "id": "e07b6cbada51",
@@ -7571,7 +8731,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "An opinion piece argues that China should share its expertise in renewable energy technology globally.",
-  "group": "7c18dd21638c"
+  "group": "e3a22a2d514c"
  },
  {
   "id": "82e89b792c8b",
@@ -7611,7 +8771,7 @@
   "type": "technical",
   "score": 3,
   "summary": "Market analysis projects growth in the overcurrent protection sector driven by renewable energy and grid modernization.",
-  "group": "9371007b2aee"
+  "group": "d03f9d2005bb"
  },
  {
   "id": "faa40dfeff52",
@@ -8179,7 +9339,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "The Sindh government in Pakistan plans to transition its official vehicle fleet to electric models to reduce fuel expenditures.",
-  "group": "bf58932b794b"
+  "group": "0d4cff8dc9d8"
  },
  {
   "id": "476a508d369b",
@@ -8755,7 +9915,7 @@
   "summary": "An activist is working to protect a Bolivian lake from the environmental damage caused by toxic waste.",
   "same_as": "4e50200febe5",
   "match_confidence": 10,
-  "group": "4e50200febe5"
+  "group": "ddcd562d608e"
  },
  {
   "id": "79b72edf00e6",
@@ -8901,7 +10061,7 @@
   "summary": "New research from Arizona State University suggests that prolonged exposure to extreme heat may negatively impact cognitive health.",
   "same_as": "9c714d7fd73b",
   "match_confidence": 10,
-  "group": "9c714d7fd73b"
+  "group": "6a9bcdd63d08"
  },
  {
   "id": "9501da5d063d",
@@ -9053,7 +10213,7 @@
   "summary": "Northern Minnesota continues to experience drought conditions despite recent record-breaking rainfall events.",
   "same_as": "2dc4f4b696d5",
   "match_confidence": 10,
-  "group": "2dc4f4b696d5"
+  "group": "492ec1abae7e"
  },
  {
   "id": "9b2c2098ecf9",
@@ -9161,7 +10321,7 @@
   "summary": "Climate-vulnerable nations are advocating for improved access to climate finance at the COP31 summit.",
   "same_as": "a0e1537d6f6a",
   "match_confidence": 10,
-  "group": "a0e1537d6f6a"
+  "group": "3199aa05b3c9"
  },
  {
   "id": "efb521f1de10",
@@ -9183,7 +10343,7 @@
   "summary": "Experts report that funding for national climate adaptation measures was excluded from the latest government budget.",
   "same_as": "4c26d125b27d",
   "match_confidence": 10,
-  "group": "4c26d125b27d"
+  "group": "efb521f1de10"
  },
  {
   "id": "6de56edbfca2",
@@ -9249,7 +10409,7 @@
   "summary": "Research shows that melting glaciers are causing measurable changes to Earth's shape and gravitational field.",
   "same_as": "b642486502f9",
   "match_confidence": 10,
-  "group": "b642486502f9"
+  "group": "15428a08c5ac"
  },
  {
   "id": "b1f7e12bc96f",
@@ -9395,7 +10555,7 @@
   "type": "reprint",
   "score": 5,
   "summary": "Canada launched an initiative to export methane-reduction technologies through international partnerships.",
-  "group": "94502d50f55a"
+  "group": "f82b52c65a20"
  },
  {
   "id": "4d58b9dd0d0e",
@@ -9459,7 +10619,7 @@
   "type": "reprint",
   "score": 4,
   "summary": "A Queensland startup is moving toward commercializing a feed supplement designed to reduce cattle methane emissions.",
-  "group": "1a3c87bbfc8b"
+  "group": "0149f30dc031"
  },
  {
   "id": "f0c8142fe1b6",
@@ -9479,7 +10639,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "Moh Jumhur Hidayat presented strategies for managing and reducing methane emissions from waste management systems at the COP31 summit.",
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "717084872a6f",
@@ -9571,7 +10731,7 @@
  },
  {
   "id": "eaa728fcd8eb",
-  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS3FwZkJQWDdNQTJFQ2ZIZWdqZE5yWU5DXzU4LWdxVmc3UEZkZ2hrdDFsc3hTZVdVMEs3cWdscnpnZ2J1WDBFTXRJZVNNdGFVN09uRlQxNkZKbTFQVXNBQ0trMlNhR2o5MUwyZFVscS0xRGNXYWFTZVB6dkp2X19ZWnNCY3RscmduVXhuLXJmb05QLUU?oc=5",
+  "url": "https://denkstrom.org/en/goodnews/fossil-co2-emissions-expected-to-fall-slightly-in-2026",
   "title": "Fossil CO2 emissions expected to fall slightly in 2026",
   "source": "Denkstrom",
   "source_id": "denkstrom",
@@ -9607,7 +10767,7 @@
   "type": "substantive",
   "score": 5,
   "summary": "A Baltimore nonprofit is retrofitting low-income homes with energy-efficient electric appliances to reduce emissions and energy costs.",
-  "group": "fc8710f0185f"
+  "group": "2683d697db7c"
  },
  {
   "id": "cd672db2d34f",
@@ -9649,7 +10809,7 @@
   "type": "substantive",
   "score": 3,
   "summary": "An op-ed argues that combining solar and wind energy with battery storage provides a reliable and effective power solution.",
-  "group": "3f6386713cd0"
+  "group": "3d0d9b2edaf1"
  },
  {
   "id": "07f56b000223",
@@ -9671,7 +10831,7 @@
   "summary": "New York state has announced a 2026 solicitation for bulk energy storage projects to meet its clean energy roadmap goals.",
   "same_as": "79ce010921eb",
   "match_confidence": 10,
-  "group": "07f56b000223"
+  "group": "bb8a6f5f1f4c"
  },
  {
   "id": "790ae408a666",
@@ -9693,7 +10853,7 @@
   "summary": "Mexico's state utility CFE is investing 35.9 billion pesos to upgrade the national power grid to meet rising electricity demand.",
   "same_as": "7c39ebb18099",
   "match_confidence": 8,
-  "group": "7c39ebb18099"
+  "group": "e9c34280635b"
  },
  {
   "id": "aa5b10728469",
@@ -9715,7 +10875,7 @@
   "summary": "California Governor Newsom announced $81 million in funding for climate-smart agriculture projects across the state.",
   "same_as": "0a1592c915ee",
   "match_confidence": 10,
-  "group": "0a1592c915ee"
+  "group": "aa5b10728469"
  },
  {
   "id": "524fecf24df2",
@@ -9737,7 +10897,7 @@
   "summary": "An opinion piece explores the potential climate policy impact of Ken Salazar.",
   "same_as": "2133affaff1a",
   "match_confidence": 10,
-  "group": "2133affaff1a"
+  "group": "524fecf24df2"
  },
  {
   "id": "2c611f914423",
@@ -9757,7 +10917,7 @@
   "type": "substantive",
   "score": 3,
   "summary": "Charlottesville is soliciting public feedback on its climate adaptation and urban forestry plans.",
-  "group": "2c611f914423"
+  "group": "92c5fd4624f8"
  },
  {
   "id": "41fb1d1ac89d",
@@ -9777,7 +10937,7 @@
   "type": "clickbait",
   "score": 1,
   "summary": "The Town of Lincoln provides a general information page regarding climate change.",
-  "group": "41fb1d1ac89d"
+  "group": "de257f8e60d9"
  },
  {
   "id": "b096ac5082eb",
@@ -9799,7 +10959,7 @@
   "summary": "An appeals court split decision creates uncertainty regarding the future of California's climate change regulations and legal authority.",
   "same_as": "9b4f37701d7a",
   "match_confidence": 10,
-  "group": "9b4f37701d7a"
+  "group": "b096ac5082eb"
  },
  {
   "id": "6586b022696d",
@@ -9949,7 +11109,7 @@
   "summary": "A Bolivian woman is using native plants to restore a dying lake ecosystem.",
   "same_as": "4e50200febe5",
   "match_confidence": 10,
-  "group": "4e50200febe5"
+  "group": "ddcd562d608e"
  },
  {
   "id": "c6c5466fdfd9",
@@ -10013,7 +11173,7 @@
   "summary": "The IEA's Latin America Energy Outlook analyzes regional energy trends and transition pathways.",
   "same_as": "319da49bded6",
   "match_confidence": 10,
-  "group": "319da49bded6"
+  "group": "68a9d31f2360"
  },
  {
   "id": "131ccb5e714a",
@@ -10035,7 +11195,7 @@
   "summary": "The IEA report examines gender disparities in clean energy employment across different global economies.",
   "same_as": "718d59796fe7",
   "match_confidence": 10,
-  "group": "718d59796fe7"
+  "group": "131ccb5e714a"
  },
  {
   "id": "f4c535ea0ce3",
@@ -10115,7 +11275,7 @@
   "type": "technical",
   "score": 4,
   "summary": "NASA research highlights the use of synthetic aperture radar to monitor sea ice motion.",
-  "group": "93d1f43c8b57"
+  "group": "b736fb07e2ef"
  },
  {
   "id": "fa0b98dde0e8",
@@ -10135,7 +11295,7 @@
   "type": "technical",
   "score": 5,
   "summary": "NASA provides data and analysis regarding atmospheric river events affecting the Pacific Northwest.",
-  "group": "fa0b98dde0e8"
+  "group": "ffa69556ee2d"
  },
  {
   "id": "9c3d458a6d50",
@@ -10155,7 +11315,7 @@
   "type": "technical",
   "score": 5,
   "summary": "NASA provides tools and data access for monitoring and analyzing natural hazards.",
-  "group": "9c3d458a6d50"
+  "group": "f935d0b01d1d"
  },
  {
   "id": "c7ee029a32c0",
@@ -10175,7 +11335,687 @@
   "type": "technical",
   "score": 5,
   "summary": "NASA offers near real-time global flood monitoring products to track hydrological events.",
-  "group": "c7ee029a32c0"
+  "group": "a6002ff431aa"
+ },
+ {
+  "id": "3c877287d832",
+  "url": "https://headlines.ametsoc.org/2026/11/13/how-local-news-can-address-climate-change",
+  "title": "How Local News Can Address Climate Change",
+  "source": "AMS Headlines",
+  "source_id": "ams-headlines",
+  "published": "2026-11-13",
+  "blurb": "How Local News Can Address Climate Change AMS Headlines",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "other",
+  "type": "substantive",
+  "score": 5,
+  "summary": "An analysis of how local media outlets can improve their coverage of climate change issues.",
+  "group": "3c877287d832"
+ },
+ {
+  "id": "120c3bc9e29a",
+  "url": "https://eurasiareview.com/13112026-heatwaves-are-threatening-europes-power-supplies",
+  "title": "Heatwaves Are Threatening Europe’s Power Supplies",
+  "source": "Eurasia Review",
+  "source_id": "eurasia-review",
+  "published": "2026-11-13",
+  "blurb": "Heatwaves Are Threatening Europe’s Power Supplies Eurasia Review",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Increasingly frequent heatwaves are threatening the stability and reliability of power supplies across Europe.",
+  "group": "796eccb47c0a"
+ },
+ {
+  "id": "d29c5c8657c7",
+  "url": "https://steamboatpilot.com/news/colorado-fatal-fire-federal-investigation-details",
+  "title": "Federal investigation details how ‘unfathomable’ wildfire behavior and region-wide ‘chaos’ contributed to fatal burnover incident in western Colorado",
+  "source": "SteamboatToday.com",
+  "source_id": "steamboattoday-com",
+  "published": "2026-11-13",
+  "blurb": "Federal investigation details how ‘unfathomable’ wildfire behavior and region-wide ‘chaos’ contributed to fatal burnover incident in western Colorado SteamboatToday.com",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "technical",
+  "score": 7,
+  "summary": "A federal investigation details how extreme wildfire behavior contributed to a fatal incident in western Colorado.",
+  "group": "d29c5c8657c7"
+ },
+ {
+  "id": "488788925cf1",
+  "url": "https://ww2.kqed.org/news/2026/11/13/bay-area-floods-foreshadow-extreme-king-tides-around-thanksgiving",
+  "title": "Bay Area Floods Foreshadow Extreme King Tides Around Thanksgiving",
+  "source": "KQED",
+  "source_id": "kqed",
+  "published": "2026-11-13",
+  "blurb": "Bay Area Floods Foreshadow Extreme King Tides Around Thanksgiving KQED",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Recent flooding in the Bay Area highlights the potential for extreme king tides later this year.",
+  "same_as": "6de56edbfca2",
+  "match_confidence": 10,
+  "group": "6de56edbfca2"
+ },
+ {
+  "id": "46649a783855",
+  "url": "https://astrobiology.com/2026/11/13/cop31-ice-planet-update-earths-cryosphere-decline-is-beyond-safe-planetary-limits",
+  "title": "COP31 Ice Planet Update: Earth’s Cryosphere Decline Is Beyond Safe Planetary Limits",
+  "source": "Astrobiology Web",
+  "source_id": "astrobiology-web",
+  "published": "2026-11-13",
+  "blurb": "COP31 Ice Planet Update: Earth’s Cryosphere Decline Is Beyond Safe Planetary Limits Astrobiology Web",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "technical",
+  "score": 8,
+  "summary": "A report indicates that the decline of Earth's cryosphere has surpassed safe planetary boundaries.",
+  "same_as": "301e5df0dc6c",
+  "match_confidence": 10,
+  "group": "301e5df0dc6c"
+ },
+ {
+  "id": "27caf1999f8f",
+  "url": "https://ladbible.com/global-warming",
+  "title": "Global Warming | Latest News, Features & Photos",
+  "source": "LADbible",
+  "source_id": "ladbible",
+  "published": "2026-11-13",
+  "blurb": "Global Warming | Latest News, Features & Photos LADbible",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 6,
+  "section": "other",
+  "type": "clickbait",
+  "score": 2,
+  "summary": "A general collection of news and photos related to global warming.",
+  "group": "27caf1999f8f"
+ },
+ {
+  "id": "2eb558171fbd",
+  "url": "https://mx.usembassy.gov/weather-alert-el-nino-and-the-potential-for-heavy-rainfall-this-winter",
+  "title": "Weather Alert: El Niño and the Potential for Heavy Rainfall this Winter",
+  "source": "U.S. Embassy & Consulates in Mexico (.gov)",
+  "source_id": "u-s-embassy-consulates-in-mexico-gov",
+  "published": "2026-11-13",
+  "blurb": "Weather Alert: El Niño and the Potential for Heavy Rainfall this Winter U.S. Embassy & Consulates in Mexico (.gov)",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "effects",
+  "type": "substantive",
+  "score": 5,
+  "summary": "A government weather alert warns of potential heavy rainfall in Mexico due to El Niño.",
+  "group": "2eb558171fbd"
+ },
+ {
+  "id": "0d6a0f2ecea7",
+  "url": "https://sfchronicle.com/weather/article/el-nino-beach-coast-california-22498730.php",
+  "title": "The historic El Niño is bringing huge waves — and could reshape California beaches",
+  "source": "San Francisco Chronicle",
+  "source_id": "san-francisco-chronicle",
+  "published": "2026-11-13",
+  "blurb": "The historic El Niño is bringing huge waves — and could reshape California beaches San Francisco Chronicle",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "substantive",
+  "score": 6,
+  "summary": "The current El Niño is expected to bring large waves and potential coastal erosion to California beaches.",
+  "group": "0d6a0f2ecea7"
+ },
+ {
+  "id": "ad27b56e6c16",
+  "url": "https://energynow.ca/2026/05/canadas-oil-firms-look-to-scrap-carbon-tax-tied-to-new-pipeline",
+  "title": "PUSHING BACK: Canada’s Oil Firms Look to Scrap Carbon Tax Tied to New Pipeline",
+  "source": "EnergyNow",
+  "source_id": "energynow",
+  "published": "2026-11-13",
+  "blurb": "PUSHING BACK: Canada’s Oil Firms Look to Scrap Carbon Tax Tied to New Pipeline EnergyNow",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "causes",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Canadian oil firms are lobbying to remove carbon tax requirements associated with a new pipeline project.",
+  "same_as": "699264f47aa3",
+  "match_confidence": 10,
+  "group": "699264f47aa3"
+ },
+ {
+  "id": "c4df0ea51726",
+  "url": "https://energynow.ca/2026/11/canada-invests-to-diversify-trade-create-jobs-and-lower-global-emissions-by-expanding-low-carbon-lng-exports",
+  "title": "Canada Invests to Diversify Trade, Create Jobs and Lower Global Emissions by Expanding Low-Carbon LNG Exports",
+  "source": "EnergyNow",
+  "source_id": "energynow",
+  "published": "2026-11-13",
+  "blurb": "Canada Invests to Diversify Trade, Create Jobs and Lower Global Emissions by Expanding Low-Carbon LNG Exports EnergyNow",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "causes",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Canada is expanding LNG exports, framing the investment as a low-carbon strategy despite the increase in fossil fuel infrastructure.",
+  "same_as": "93b3ae6c0d98",
+  "match_confidence": 10,
+  "group": "93b3ae6c0d98"
+ },
+ {
+  "id": "f82b52c65a20",
+  "url": "https://tradersunion.com/news/companies/show/4239358-canada-methane-export-clean-tech",
+  "title": "Canada launches methane export initiative to expand clean technology partnerships",
+  "source": "Traders Union",
+  "source_id": "traders-union",
+  "published": "2026-11-13",
+  "blurb": "Canada launches methane export initiative to expand clean technology partnerships Traders Union",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Canada has launched an initiative to export methane-related clean technologies through international partnerships.",
+  "same_as": "94502d50f55a",
+  "match_confidence": 10,
+  "group": "f82b52c65a20"
+ },
+ {
+  "id": "0149f30dc031",
+  "url": "https://tradersunion.com/news/companies/show/4239935-queensland-cattle-methane-supplement",
+  "title": "Queensland startup advances cattle methane supplement commercialisation",
+  "source": "Traders Union",
+  "source_id": "traders-union",
+  "published": "2026-11-13",
+  "blurb": "Queensland startup advances cattle methane supplement commercialisation Traders Union",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "A Queensland startup is moving toward commercializing a methane-reducing feed supplement for cattle.",
+  "same_as": "1a3c87bbfc8b",
+  "match_confidence": 10,
+  "group": "0149f30dc031"
+ },
+ {
+  "id": "d3d9b9ddcaeb",
+  "url": "https://voi.id/en/amp/602432",
+  "title": "Moh Jumhur Hidayat Presents the Implementation of Methane Emissions from Waste at COP31",
+  "source": "VOI.ID",
+  "source_id": "voi-id",
+  "published": "2026-11-13",
+  "blurb": "Moh Jumhur Hidayat Presents the Implementation of Methane Emissions from Waste at COP31 VOI.ID",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 5,
+  "summary": "Moh Jumhur Hidayat presented strategies for managing methane emissions from waste management at the COP31 summit.",
+  "same_as": "8909742afe9b",
+  "match_confidence": 8,
+  "group": "f0c8142fe1b6"
+ },
+ {
+  "id": "f9e392b9f70b",
+  "url": "https://news.rthk.hk/rthk/en/component/k2/1877765-20261114.htm",
+  "title": "UN head urges climate summit to act now",
+  "source": "RTHK News",
+  "source_id": "rthk-news",
+  "published": "2026-11-13",
+  "blurb": "UN head urges climate summit to act now RTHK News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "reprint",
+  "score": 8,
+  "summary": "The UN Secretary-General urged delegates at the climate summit to take immediate action on emissions.",
+  "same_as": "a7c6c0701ed6",
+  "match_confidence": 9,
+  "group": "f9e392b9f70b"
+ },
+ {
+  "id": "22d92814d6c6",
+  "url": "https://seattletimes.com/nation-world/timing-of-climate-science-reports-ignites-a-hot-fight-at-u-n-talks",
+  "title": "Timing of climate science reports ignites a hot fight at U.N. talks",
+  "source": "The Seattle Times",
+  "source_id": "the-seattle-times",
+  "published": "2026-11-13",
+  "blurb": "Timing of climate science reports ignites a hot fight at U.N. talks The Seattle Times",
+  "paywall": true,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "causes",
+  "type": "substantive",
+  "score": 8,
+  "summary": "Disputes over the timing and release of climate science reports have created tension at the UN summit.",
+  "group": "2a058bbb994f"
+ },
+ {
+  "id": "6bcf4cd02cb1",
+  "url": "https://newagebd.net/post/middle-east/322354/fight-over-climate-science-intensifies-at-cop31",
+  "title": "Fight over climate science intensifies at COP31",
+  "source": "New Age BD",
+  "source_id": "new-age-bd",
+  "published": "2026-11-13",
+  "blurb": "Fight over climate science intensifies at COP31 New Age BD",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "causes",
+  "type": "reprint",
+  "score": 7,
+  "summary": "Conflict regarding the integration of climate science into negotiations has intensified at COP31.",
+  "group": "2a058bbb994f"
+ },
+ {
+  "id": "2683d697db7c",
+  "url": "https://thecooldown.com/green-home/baltimore-nonprofit-free-home-repairs-appliances",
+  "title": "Baltimore nonprofit repairs homes and replaces gas appliances at no cost to low-income owners",
+  "source": "The Cool Down",
+  "source_id": "the-cool-down",
+  "published": "2026-11-13",
+  "blurb": "Baltimore nonprofit repairs homes and replaces gas appliances at no cost to low-income owners The Cool Down",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "A Baltimore nonprofit is providing free home energy efficiency upgrades and replacing gas appliances for low-income residents.",
+  "same_as": "fc8710f0185f",
+  "match_confidence": 10,
+  "group": "2683d697db7c"
+ },
+ {
+  "id": "3d0d9b2edaf1",
+  "url": "https://gainesville.com/story/special/contributor-content/2026/11/13/david-hastings-makes-the-case-that-solar-and-wind-plus-batteries-are-the-perfect-match/92764404007",
+  "title": "David Hastings Makes the Case That Solar and Wind Plus Batteries Are the Perfect Match",
+  "source": "Gainesville Sun",
+  "source_id": "gainesville-sun",
+  "published": "2026-11-13",
+  "blurb": "David Hastings Makes the Case That Solar and Wind Plus Batteries Are the Perfect Match Gainesville Sun",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "other",
+  "type": "substantive",
+  "score": 4,
+  "summary": "An op-ed argues that the combination of solar, wind, and battery storage technologies provides an optimal solution for energy needs.",
+  "same_as": "3f6386713cd0",
+  "match_confidence": 10,
+  "group": "3d0d9b2edaf1"
+ },
+ {
+  "id": "bb8a6f5f1f4c",
+  "url": "https://megaproject.com/news/powerplant/nyserda-announces-2026-bulk-energy-storage-solicitation-as-part-of-new-yorks-energy-storage-roadmap",
+  "title": "NYSERDA announces 2026 bulk energy storage solicitation as part of New York’s energy storage roadmap",
+  "source": "https://megaproject.com/",
+  "source_id": "https-megaproject-com",
+  "published": "2026-11-13",
+  "blurb": "NYSERDA announces 2026 bulk energy storage solicitation as part of New York’s energy storage roadmap https://megaproject.com/",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "NYSERDA has announced a new solicitation for bulk energy storage projects to support New York's energy storage roadmap.",
+  "same_as": "07f56b000223",
+  "match_confidence": 10,
+  "group": "bb8a6f5f1f4c"
+ },
+ {
+  "id": "e9c34280635b",
+  "url": "https://mexicobusiness.news/energy/news/cfe-advances-mx359b-grid-plan-meet-54-gw-peak-demand",
+  "title": "CFE Advances MX$35.9B Grid Plan to Meet 54 GW Peak Demand",
+  "source": "Mexico Business News",
+  "source_id": "mexico-business-news",
+  "published": "2026-11-13",
+  "blurb": "CFE Advances MX$35.9B Grid Plan to Meet 54 GW Peak Demand Mexico Business News",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "Mexico's CFE is advancing a multi-billion peso grid expansion plan to accommodate rising peak electricity demand.",
+  "group": "e9c34280635b"
+ },
+ {
+  "id": "92c5fd4624f8",
+  "url": "https://29news.com/2026/11/13/charlottesville-seeks-public-input-plans-prepare-climate-change-protect-urban-trees",
+  "title": "Charlottesville seeks public input on plans to prepare for climate change, protect urban trees",
+  "source": "WVIR",
+  "source_id": "wvir",
+  "published": "2026-11-13",
+  "blurb": "Charlottesville seeks public input on plans to prepare for climate change, protect urban trees WVIR",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 6,
+  "summary": "The city of Charlottesville is soliciting public feedback on its climate adaptation and urban forestry protection plans.",
+  "same_as": "2c611f914423",
+  "match_confidence": 10,
+  "group": "92c5fd4624f8"
+ },
+ {
+  "id": "de257f8e60d9",
+  "url": "https://lincoln.ca/services/environment-sustainability/climate-change",
+  "title": "Climate Change",
+  "source": "Town of Lincoln",
+  "source_id": "town-of-lincoln",
+  "published": "2026-11-13",
+  "blurb": "Climate Change Town of Lincoln",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "other",
+  "type": "clickbait",
+  "score": 2,
+  "summary": "A municipal webpage provides general information regarding climate change initiatives within the Town of Lincoln.",
+  "same_as": "41fb1d1ac89d",
+  "match_confidence": 10,
+  "group": "de257f8e60d9"
+ },
+ {
+  "id": "3e779e93e57d",
+  "url": "https://motherjones.com/politics/2026/11/amendment-82-colorado-natural-gas-constitutional-right-defeated-utilities-lawsuit-dte-free-speech",
+  "title": "Industry Groups Touted Gas as a “Constitutional Right.” These Voters Weren’t Having It.",
+  "source": "Mother Jones",
+  "source_id": "mother-jones",
+  "published": "2026-11-13",
+  "blurb": "Industry Groups Touted Gas as a “Constitutional Right.” These Voters Weren’t Having It. Mother Jones",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "solutions",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Voters have successfully resisted industry-led efforts to classify natural gas as a constitutional right in local policy debates.",
+  "same_as": "6586b022696d",
+  "match_confidence": 10,
+  "group": "6586b022696d"
+ },
+ {
+  "id": "b3c49be11e3b",
+  "url": "https://wuwm.com/2026-11-13/why-even-a-fraction-of-a-degree-can-escalate-climate-change-impacts",
+  "title": "Why even a fraction of a degree can escalate climate change impacts",
+  "source": "WUWM",
+  "source_id": "wuwm",
+  "published": "2026-11-13",
+  "blurb": "Why even a fraction of a degree can escalate climate change impacts WUWM",
+  "paywall": false,
+  "weight": 5,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "effects",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Small increases in global temperature significantly escalate the severity and frequency of climate change impacts.",
+  "same_as": "9f660f8a1c52",
+  "match_confidence": 10,
+  "group": "9f660f8a1c52"
+ },
+ {
+  "id": "1796fd428057",
+  "url": "https://bloomberg.com/news/newsletters/2026-11-13/canada-backs-woodfibre-lng-expansion-with-c-200-million-grant?srnd=homepage-middle-east",
+  "title": "Canada Puts C$200 Million Behind Woodfibre LNG’s Net-Zero Bet",
+  "source": "Bloomberg",
+  "source_id": "bloomberg",
+  "published": "2026-11-13",
+  "blurb": "Canada Puts C$200 Million Behind Woodfibre LNG’s Net-Zero Bet Bloomberg.com",
+  "paywall": true,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "causes",
+  "type": "substantive",
+  "score": 7,
+  "summary": "Canada is providing C$200 million in funding to support a liquefied natural gas project's net-zero emissions claims.",
+  "same_as": "6ac7fdc5e2aa",
+  "match_confidence": 10,
+  "group": "6ac7fdc5e2aa"
+ },
+ {
+  "id": "259dc73b3d62",
+  "url": "https://iea.org/reports/pledges-to-progress-2026/recommendations",
+  "title": "Recommendations",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-11-13",
+  "blurb": "Recommendations IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 5,
+  "summary": "A collection of policy recommendations from the IEA regarding energy systems.",
+  "group": "259dc73b3d62"
+ },
+ {
+  "id": "c1d37599e675",
+  "url": "https://iea.org/files/5696a544-c6aa-4575-a2ad-8d8377727236/Slides_DirectorofHazardousandNon-HazardousWaste.pdf",
+  "title": "Potential and Prospects of Tailings Waste Utilization",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-11-13",
+  "blurb": "Potential and Prospects of Tailings Waste Utilization IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "technical",
+  "score": 5,
+  "summary": "The IEA evaluates the potential for utilizing industrial tailings waste to support sustainable energy and resource management.",
+  "group": "c1d37599e675"
+ },
+ {
+  "id": "7b62dab7b242",
+  "url": "https://earthdata.nasa.gov/topics/climate-indicators",
+  "title": "Climate Indicators",
+  "source": "NASA",
+  "source_id": "nasa",
+  "published": "2026-11-13",
+  "blurb": "Climate Indicators NASA Earthdata (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "effects",
+  "type": "technical",
+  "score": 5,
+  "summary": "NASA provides a dashboard tracking key climate change indicators including sea level, ice mass, and greenhouse gases.",
+  "group": "7b62dab7b242"
+ },
+ {
+  "id": "b736fb07e2ef",
+  "url": "https://earthdata.nasa.gov/news/sea-ice-motion-science-driving-u.s.-sar-research",
+  "title": "Sea Ice Motion: Science Driving U.S. SAR Research",
+  "source": "NASA",
+  "source_id": "nasa",
+  "published": "2026-11-13",
+  "blurb": "Sea Ice Motion: Science Driving U.S. SAR Research NASA Earthdata (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "technical",
+  "score": 5,
+  "summary": "NASA researchers utilize Synthetic Aperture Radar data to track sea ice motion and monitor changes in polar environments.",
+  "same_as": "93d1f43c8b57",
+  "match_confidence": 10,
+  "group": "b736fb07e2ef"
+ },
+ {
+  "id": "ffa69556ee2d",
+  "url": "https://earthdata.nasa.gov/news/worldview-image-archive/atmospheric-river-season-pacific-northwest",
+  "title": "Atmospheric River Season for the Pacific Northwest",
+  "source": "NASA",
+  "source_id": "nasa",
+  "published": "2026-11-13",
+  "blurb": "Atmospheric River Season for the Pacific Northwest NASA Earthdata (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "technical",
+  "score": 7,
+  "summary": "NASA provides data and monitoring tools for atmospheric rivers impacting the Pacific Northwest.",
+  "same_as": "fa0b98dde0e8",
+  "match_confidence": 10,
+  "group": "ffa69556ee2d"
+ },
+ {
+  "id": "f935d0b01d1d",
+  "url": "https://earthdata.nasa.gov/topics/human-dimensions/natural-hazards/data-access-tools",
+  "title": "Natural Hazards Data Access and Tools",
+  "source": "NASA",
+  "source_id": "nasa",
+  "published": "2026-11-13",
+  "blurb": "Natural Hazards Data Access and Tools NASA Earthdata (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "effects",
+  "type": "technical",
+  "score": 6,
+  "summary": "NASA offers a portal for accessing data and tools related to monitoring natural hazards like fires, floods, and storms.",
+  "same_as": "9c3d458a6d50",
+  "match_confidence": 10,
+  "group": "f935d0b01d1d"
+ },
+ {
+  "id": "a6002ff431aa",
+  "url": "https://earthdata.nasa.gov/data/instruments/viirs/near-real-time-data/nrt-global-flood-products",
+  "title": "NRT Global Flood Products",
+  "source": "NASA",
+  "source_id": "nasa",
+  "published": "2026-11-13",
+  "blurb": "NRT Global Flood Products NASA Earthdata (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 9,
+  "section": "effects",
+  "type": "technical",
+  "score": 7,
+  "summary": "NASA provides near real-time global flood monitoring products to assist in disaster response and analysis.",
+  "same_as": "c7ee029a32c0",
+  "match_confidence": 10,
+  "group": "a6002ff431aa"
  },
  {
   "id": "90d59ff6005d",
@@ -10483,7 +12323,7 @@
   "type": "substantive",
   "score": 7,
   "summary": "Governor Newsom announced $81 million in funding for climate-smart agriculture projects to assist California farmers.",
-  "group": "0a1592c915ee"
+  "group": "aa5b10728469"
  },
  {
   "id": "6756fd7e6a40",
@@ -10543,7 +12383,7 @@
   "type": "clickbait",
   "score": 2,
   "summary": "This opinion piece speculates on the potential climate impact of Ken Salazar's political career.",
-  "group": "2133affaff1a"
+  "group": "524fecf24df2"
  },
  {
   "id": "14eb5c165165",
@@ -10879,7 +12719,7 @@
   "type": "technical",
   "score": 7,
   "summary": "New research from Arizona State University suggests that extreme heat exposure may negatively impact cognitive health.",
-  "group": "9c714d7fd73b"
+  "group": "6a9bcdd63d08"
  },
  {
   "id": "3e790bf6d58c",
@@ -11685,7 +13525,7 @@
   "summary": "Drought conditions persist in northern Minnesota despite recent record-breaking rainfall events.",
   "same_as": "67c9bf81333e",
   "match_confidence": 9,
-  "group": "2dc4f4b696d5"
+  "group": "492ec1abae7e"
  },
  {
   "id": "19566f74edab",
@@ -11955,7 +13795,7 @@
   "summary": "Vulnerable nations are advocating for improved access to climate finance during COP31 negotiations.",
   "same_as": "aff52cd8bb5b",
   "match_confidence": 9,
-  "group": "a0e1537d6f6a"
+  "group": "3199aa05b3c9"
  },
  {
   "id": "297e9504b9d8",
@@ -11995,7 +13835,7 @@
   "type": "substantive",
   "score": 7,
   "summary": "Experts criticize the absence of national climate adaptation funding in the latest government budget.",
-  "group": "4c26d125b27d"
+  "group": "efb521f1de10"
  },
  {
   "id": "e16499d0d3b5",
@@ -12039,7 +13879,7 @@
   "summary": "The UN climate chief cites Himalayan flash floods as a critical reason for nations to accelerate fair climate action at COP31.",
   "same_as": "37f13228961f",
   "match_confidence": 8,
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "a5d657bf0f3a",
@@ -12449,7 +14289,7 @@
   "type": "technical",
   "score": 7,
   "summary": "Research indicates that melting glaciers are altering the Earth's mass distribution, thereby affecting the planet's shape and gravitational field.",
-  "group": "b642486502f9"
+  "group": "15428a08c5ac"
  },
  {
   "id": "9892806f9b46",
@@ -13273,7 +15113,7 @@
   "summary": "Advocates at COP31 argued that Africa must avoid waste-to-energy incineration as a solution to its waste crisis.",
   "same_as": "0725a1db0cd5",
   "match_confidence": 8,
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "f392b02d2990",
@@ -13487,7 +15327,7 @@
   "summary": "Indonesia presented its national strategy for mitigating methane emissions from the waste sector during COP31.",
   "same_as": "0725a1db0cd5",
   "match_confidence": 8,
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "f384fe019f1d",
@@ -13573,7 +15413,7 @@
   "summary": "Indonesian representative Moh Jumhur Hidayat presented the country's progress on methane emissions from waste management at COP31.",
   "same_as": "0725a1db0cd5",
   "match_confidence": 8,
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "dd475e72f5e0",
@@ -14065,7 +15905,7 @@
   "type": "technical",
   "score": 4,
   "summary": "NYSERDA has announced a 2026 bulk energy storage solicitation as part of New York's ongoing energy storage roadmap.",
-  "group": "07f56b000223"
+  "group": "bb8a6f5f1f4c"
  },
  {
   "id": "b34ce06ea846",
@@ -14863,7 +16703,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "Following a split appeals court decision, the future of California's climate legislation remains uncertain.",
-  "group": "9b4f37701d7a"
+  "group": "b096ac5082eb"
  },
  {
   "id": "ad565dd94a9b",
@@ -15601,7 +17441,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "A Bolivian woman is using native plants to restore a lake suffering from environmental degradation.",
-  "group": "4e50200febe5"
+  "group": "ddcd562d608e"
  },
  {
   "id": "c737cab86689",
@@ -15927,7 +17767,7 @@
   "type": "technical",
   "score": 7,
   "summary": "The IEA releases an outlook report detailing energy trends and transition pathways for the Latin American region.",
-  "group": "319da49bded6"
+  "group": "68a9d31f2360"
  },
  {
   "id": "47569e6fdc9a",
@@ -15967,7 +17807,7 @@
   "type": "technical",
   "score": 6,
   "summary": "The IEA reports on gender disparities in clean energy employment across various global economies.",
-  "group": "718d59796fe7"
+  "group": "131ccb5e714a"
  },
  {
   "id": "f25c03d58e20",
@@ -17413,14 +19253,14 @@
  },
  {
   "id": "25c21f07052e",
-  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbHJQYzU1bWtRanVhRG1GVjFoamZpNEhrZFRwbG80N084Uno1WE1qTkJEWWd0dlFBdmQ4ajlOTld5anR3endPMmtHakZZQk9uS2xfMFFYbHY1c0F5YUt3ZF9ORVZYeGpkSU1hS1hPVTFNQVdoQ1lHUFZSVlpLMGh6SE5hVW5nUjhkM3huWjc3ODZ5UXhYanhIVF95REdpQQ?oc=5",
+  "url": "https://iea.org/data-and-statistics/data-product/world-energy-outlook-2026-extended-dataset-2",
   "title": "World Energy Outlook 2026 Extended Dataset",
-  "source": "IEA - International Energy Agency",
-  "source_id": "iea-international-energy-agency",
+  "source": "International Energy Agency",
+  "source_id": "iea",
   "published": "2026-11-12",
   "blurb": "World Energy Outlook 2026 Extended Dataset IEA - International Energy Agency",
   "paywall": false,
-  "weight": 5,
+  "weight": 8,
   "via": "google",
   "found": "2026-11-15",
   "status": "ok",
@@ -17699,7 +19539,7 @@
   "summary": "Pacific island nations are demanding increased climate financing at COP31 to address the existential threat of rising seas.",
   "same_as": "aff52cd8bb5b",
   "match_confidence": 10,
-  "group": "a0e1537d6f6a"
+  "group": "3199aa05b3c9"
  },
  {
   "id": "c611fa60edab",
@@ -17951,7 +19791,7 @@
   "summary": "The UNEP has identified waste management emissions as a primary priority for methane reduction efforts at COP31.",
   "same_as": "0725a1db0cd5",
   "match_confidence": 10,
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "0c5d7b666e34",
@@ -21265,7 +23105,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "The federal government has expanded drought disaster loan eligibility for farmers in Northern Minnesota.",
-  "group": "2dc4f4b696d5"
+  "group": "492ec1abae7e"
  },
  {
   "id": "6983b7bc9abe",
@@ -21569,7 +23409,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "Nepal is calling for faster access to climate disaster funding and greater international recognition of its specific climate vulnerabilities.",
-  "group": "f997dbc9203c"
+  "group": "415df4ef6edd"
  },
  {
   "id": "18bcb58fc8ee",
@@ -21993,7 +23833,7 @@
   "type": "reprint",
   "score": 8,
   "summary": "Pacific island nations are demanding increased climate financing at COP31 to address the impacts of rising sea levels.",
-  "group": "a0e1537d6f6a"
+  "group": "3199aa05b3c9"
  },
  {
   "id": "453e9233ff41",
@@ -23315,7 +25155,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "UNEP has identified waste management emissions as a primary focus area for action during the COP31 summit.",
-  "group": "f8b7ed3bc51a"
+  "group": "f0c8142fe1b6"
  },
  {
   "id": "1f4f81f5b5f3",
@@ -24229,7 +26069,7 @@
   "type": "substantive",
   "score": 6,
   "summary": "Mexico's state utility CFE announced a $10.6 billion investment plan to expand clean energy infrastructure.",
-  "group": "7c39ebb18099"
+  "group": "e9c34280635b"
  },
  {
   "id": "fc79347a8732",
@@ -25891,7 +27731,7 @@
   "type": "substantive",
   "score": 4,
   "summary": "Philippine fisheries authorities are urging stakeholders to implement mitigation measures to cope with Super El Niño impacts.",
-  "group": "7782943037ae"
+  "group": "e471e69ba89b"
  },
  {
   "id": "5892065faa0c",
@@ -54777,7 +56617,7 @@
   "type": "technical",
   "score": 3,
   "summary": "Market analysis projects growth in non-metallic conduit demand driven by data center infrastructure and renewable energy expansion through 2035.",
-  "group": "9371007b2aee"
+  "group": "d03f9d2005bb"
  },
  {
   "id": "47f35492b2d3",
@@ -69213,7 +71053,7 @@
   "type": "technical",
   "score": 7,
   "summary": "The IEA offers regional forecasts and energy data to track progress in global energy transitions.",
-  "group": "9486eba81675"
+  "group": "55672e9621a8"
  },
  {
   "id": "b46becdca034",
@@ -69234,6 +71074,46 @@
   "score": 6,
   "summary": "Youth representatives discussed the COP31 global electrification pledge at an IEA pavilion event.",
   "group": "4c7d3ac4d863"
+ },
+ {
+  "id": "dd4bcb4957c5",
+  "url": "https://iea.org/reports/renewables-2026/renewable-electricity",
+  "title": "Renewable electricity",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-11-06",
+  "blurb": "Renewable electricity IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 6,
+  "summary": "The IEA provides data and analysis regarding global renewable electricity generation trends.",
+  "group": "937f955d4e83"
+ },
+ {
+  "id": "55672e9621a8",
+  "url": "https://iea.org/reports/renewables-2026/regional-forecasts-and-data",
+  "title": "Regional forecasts and data",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-11-06",
+  "blurb": "Regional forecasts and data IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 6,
+  "summary": "The IEA offers regional energy forecasts and data sets for global energy planning.",
+  "group": "55672e9621a8"
  },
  {
   "id": "ac1960a52228",
@@ -160854,6 +162734,26 @@
   "same_as": "5273acd8277d",
   "match_confidence": 9,
   "group": "7d34b84625e0"
+ },
+ {
+  "id": "2af04c98aae7",
+  "url": "https://iea.org/events/iea-at-cop31",
+  "title": "IEA at COP31: Energy and Climate Action - IEA - Event",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-10-27",
+  "blurb": "IEA at COP31: Energy and Climate Action - IEA - Event IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 10,
+  "section": "solutions",
+  "type": "technical",
+  "score": 7,
+  "summary": "The IEA outlines its involvement and strategic focus for energy and climate action at COP31.",
+  "group": "2af04c98aae7"
  },
  {
   "id": "9560d9349011",
@@ -677344,6 +679244,26 @@
   "group": "564a750cd6b0"
  },
  {
+  "id": "17bcfa2ded4e",
+  "url": "https://iea.org/reports/household-energy-affordability-data-and-indicators/executive-summary",
+  "title": "Executive summary - Household Energy Affordability: Data and Indicators",
+  "source": "International Energy Agency",
+  "source_id": "iea",
+  "published": "2026-07-25",
+  "blurb": "Executive summary - Household Energy Affordability: Data and Indicators IEA - International Energy Agency",
+  "paywall": false,
+  "weight": 8,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 7,
+  "section": "solutions",
+  "type": "technical",
+  "score": 5,
+  "summary": "The IEA summarizes data and indicators related to the affordability of household energy transitions.",
+  "group": "17bcfa2ded4e"
+ },
+ {
   "id": "2b8ed47ab80e",
   "url": "https://canarymedia.com/articles/solar/doe-solar-power-day-night-texas",
   "title": "Duh, solar power doesn't work at night — but it excels during the day",
@@ -690824,6 +692744,26 @@
   "score": 5,
   "summary": "The AHAM World Series Global Climate Change Fund provides financial data regarding climate-focused investment strategies.",
   "group": "4c4494da2089"
+ },
+ {
+  "id": "4c99914a9e7f",
+  "url": "https://cpc.ncep.noaa.gov/products/predictions/threats/threats.php",
+  "title": "Probabilistic Hazards Outlook",
+  "source": "NOAA",
+  "source_id": "noaa",
+  "published": "2021-03-22",
+  "blurb": "Probabilistic Hazards Outlook Climate Prediction Center (.gov)",
+  "paywall": false,
+  "weight": 9,
+  "via": "google",
+  "found": "2026-11-15",
+  "status": "ok",
+  "relevance": 8,
+  "section": "effects",
+  "type": "technical",
+  "score": 7,
+  "summary": "NOAA provides probabilistic outlooks for weather-related hazards that are increasingly influenced by climate trends.",
+  "group": "4c99914a9e7f"
  },
  {
   "id": "f93f07d901bc",
